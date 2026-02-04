@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1abc9c"/>
+      <stop offset="100%" style="stop-color:#16a085"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="40" fill="url(#bg)"/>
+  <text x="96" y="75" font-family="Arial" font-size="28" font-weight="bold" fill="white" text-anchor="middle">MBTI</text>
+  <circle cx="60" cy="115" r="20" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="132" cy="115" r="20" fill="rgba(255,255,255,0.2)"/>
+  <text x="60" y="122" font-size="18" fill="white" text-anchor="middle">E</text>
+  <text x="132" y="122" font-size="18" fill="white" text-anchor="middle">I</text>
+  <path d="M80 115 L112 115" stroke="white" stroke-width="3" stroke-dasharray="5,3"/>
+  <text x="96" y="160" font-size="14" fill="rgba(255,255,255,0.8)" text-anchor="middle">=� �i</text>
+</svg>
