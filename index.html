@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MBTI 유형별 궁합, 성격 분석, 연애/직장 팁을 확인하세요">
+    <meta name="theme-color" content="#1abc9c">
+    <title>MBTI 궁합 & 팁</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icon-192.svg">
+    <link rel="apple-touch-icon" href="icon-192.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 상단 배너 광고 영역 -->
+        <div class="ad-banner top-ad"></div>
+
+        <!-- 헤더 -->
+        <header class="app-header">
+            <h1>🧬 MBTI 궁합 & 팁</h1>
+            <p class="subtitle">나의 유형을 선택하고 궁합을 확인하세요</p>
+        </header>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="main-content">
+            <!-- MBTI 선택 그리드 -->
+            <section class="mbti-selector">
+                <h2>나의 MBTI 유형 선택</h2>
+                <div class="mbti-grid" id="mbti-grid">
+                    <!-- 분석가 그룹 -->
+                    <button class="mbti-btn analyst" data-type="INTJ">INTJ</button>
+                    <button class="mbti-btn analyst" data-type="INTP">INTP</button>
+                    <button class="mbti-btn analyst" data-type="ENTJ">ENTJ</button>
+                    <button class="mbti-btn analyst" data-type="ENTP">ENTP</button>
+                    <!-- 외교관 그룹 -->
+                    <button class="mbti-btn diplomat" data-type="INFJ">INFJ</button>
+                    <button class="mbti-btn diplomat" data-type="INFP">INFP</button>
+                    <button class="mbti-btn diplomat" data-type="ENFJ">ENFJ</button>
+                    <button class="mbti-btn diplomat" data-type="ENFP">ENFP</button>
+                    <!-- 관리자 그룹 -->
+                    <button class="mbti-btn sentinel" data-type="ISTJ">ISTJ</button>
+                    <button class="mbti-btn sentinel" data-type="ISFJ">ISFJ</button>
+                    <button class="mbti-btn sentinel" data-type="ESTJ">ESTJ</button>
+                    <button class="mbti-btn sentinel" data-type="ESFJ">ESFJ</button>
+                    <!-- 탐험가 그룹 -->
+                    <button class="mbti-btn explorer" data-type="ISTP">ISTP</button>
+                    <button class="mbti-btn explorer" data-type="ISFP">ISFP</button>
+                    <button class="mbti-btn explorer" data-type="ESTP">ESTP</button>
+                    <button class="mbti-btn explorer" data-type="ESFP">ESFP</button>
+                </div>
+                <div class="group-legend">
+                    <span class="legend-item analyst">🔮 분석가</span>
+                    <span class="legend-item diplomat">💚 외교관</span>
+                    <span class="legend-item sentinel">🛡️ 관리자</span>
+                    <span class="legend-item explorer">🎨 탐험가</span>
+                </div>
+            </section>
+
+            <!-- 결과 카드 (선택 후 표시) -->
+            <section class="result-section hidden" id="result-section">
+                <!-- 기본 정보 -->
+                <div class="result-card main-card">
+                    <div class="type-header">
+                        <span class="type-icon" id="type-icon">🧬</span>
+                        <div>
+                            <h2 id="type-name">INTJ</h2>
+                            <p class="type-title" id="type-title">전략가</p>
+                        </div>
+                    </div>
+                    <p class="type-description" id="type-description"></p>
+                    
+                    <div class="traits-grid">
+                        <div class="trait-item">
+                            <span class="trait-label">에너지</span>
+                            <span class="trait-value" id="trait-energy">내향형</span>
+                        </div>
+                        <div class="trait-item">
+                            <span class="trait-label">인식</span>
+                            <span class="trait-value" id="trait-mind">직관형</span>
+                        </div>
+                        <div class="trait-item">
+                            <span class="trait-label">판단</span>
+                            <span class="trait-value" id="trait-nature">사고형</span>
+                        </div>
+                        <div class="trait-item">
+                            <span class="trait-label">생활</span>
+                            <span class="trait-value" id="trait-tactic">계획형</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 궁합 정보 -->
+                <div class="result-card compat-card">
+                    <h3>💕 연애 궁합</h3>
+                    <div class="compat-section">
+                        <div class="compat-item best">
+                            <span class="compat-label">💖 최고 궁합</span>
+                            <span class="compat-types" id="best-match"></span>
+                        </div>
+                        <div class="compat-item good">
+                            <span class="compat-label">💛 좋은 궁합</span>
+                            <span class="compat-types" id="good-match"></span>
+                        </div>
+                        <div class="compat-item bad">
+                            <span class="compat-label">💔 주의 궁합</span>
+                            <span class="compat-types" id="bad-match"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 팁 섹션 -->
+                <div class="result-card tips-card">
+                    <h3>💡 알아두면 좋은 팁</h3>
+                    <div class="tips-tabs">
+                        <button class="tip-tab active" data-tab="love">연애</button>
+                        <button class="tip-tab" data-tab="work">직장</button>
+                        <button class="tip-tab" data-tab="friend">친구</button>
+                    </div>
+                    <div class="tips-content" id="tips-content">
+                        <ul id="tips-list"></ul>
+                    </div>
+                </div>
+
+                <!-- 프리미엄 심층 분석 버튼 -->
+                <div class="premium-section">
+                    <button class="premium-btn" id="deep-analysis-btn">
+                        <span class="premium-icon">✨</span>
+                        AI 심층 분석 보기
+                        <span class="ad-tag">AD</span>
+                    </button>
+                </div>
+
+                <!-- 프리미엄 결과 (광고 후 표시) -->
+                <div class="result-card premium-result hidden" id="premium-result">
+                    <div class="premium-badge">✨ AI 심층 분석</div>
+                    <div id="premium-content"></div>
+                </div>
+
+                <!-- 공유 버튼 -->
+                <button class="share-btn" id="share-btn">📤 결과 공유하기</button>
+            </section>
+        </main>
+
+        <!-- 전면 광고 모달 -->
+        <div class="interstitial-ad hidden" id="interstitial-ad">
+            <div class="ad-content">
+                <p>광고</p>
+                <div class="ad-placeholder">광고 영역</div>
+                <button id="close-ad" disabled>닫기 (<span id="countdown">5</span>)</button>
+            </div>
+        </div>
+
+        <!-- 하단 배너 광고 영역 -->
+        <div class="ad-banner bottom-ad"></div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
