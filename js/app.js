@@ -12,6 +12,24 @@ class MbtiApp {
         this.setupPremiumButton();
         this.setupShareButton();
         this.registerServiceWorker();
+        this.loadSavedType();
+    }
+
+    // 저장된 MBTI 타입 복원
+    loadSavedType() {
+        try {
+            const saved = localStorage.getItem('mbti_selectedType');
+            if (saved && mbtiData[saved]) {
+                const btn = document.querySelector(`.mbti-btn[data-type="${saved}"]`);
+                if (btn) {
+                    document.querySelectorAll('.mbti-btn').forEach(b => b.classList.remove('selected'));
+                    btn.classList.add('selected');
+                    this.selectType(saved);
+                }
+            }
+        } catch (e) {
+            console.error('Failed to load saved type:', e);
+        }
     }
 
     setupMbtiGrid() {
@@ -32,6 +50,9 @@ class MbtiApp {
         this.selectedType = type;
         const data = mbtiData[type];
         if (!data) return;
+
+        // localStorage에 저장
+        try { localStorage.setItem('mbti_selectedType', type); } catch (e) {}
 
         // 기본 정보 업데이트
         document.getElementById('type-icon').textContent = data.icon;
