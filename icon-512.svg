@@ -6,11 +6,11 @@
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="100" fill="url(#bg)"/>
-  <text x="256" y="180" font-family="Arial" font-size="72" font-weight="bold" fill="white" text-anchor="middle">MBTI</text>
+  <text x="256" y="180" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">MBTI</text>
   <circle cx="150" cy="300" r="55" fill="rgba(255,255,255,0.2)"/>
   <circle cx="362" cy="300" r="55" fill="rgba(255,255,255,0.2)"/>
   <text x="150" y="318" font-size="48" fill="white" text-anchor="middle">E</text>
   <text x="362" y="318" font-size="48" fill="white" text-anchor="middle">I</text>
   <path d="M205 300 L307 300" stroke="white" stroke-width="6" stroke-dasharray="12,8"/>
-  <text x="256" y="420" font-size="36" fill="rgba(255,255,255,0.8)" text-anchor="middle">=� �i & </text>
+  <text x="256" y="420" font-size="36" fill="rgba(255,255,255,0.8)" text-anchor="middle" font-family="Arial, sans-serif">&#44417;&#54633; &amp; &#54017;</text>
 </svg>

@@ -12,5 +12,5 @@
   <text x="60" y="122" font-size="18" fill="white" text-anchor="middle">E</text>
   <text x="132" y="122" font-size="18" fill="white" text-anchor="middle">I</text>
   <path d="M80 115 L112 115" stroke="white" stroke-width="3" stroke-dasharray="5,3"/>
-  <text x="96" y="160" font-size="14" fill="rgba(255,255,255,0.8)" text-anchor="middle">=� �i</text>
+  <text x="96" y="160" font-size="14" fill="rgba(255,255,255,0.8)" text-anchor="middle" font-family="Arial, sans-serif">&#44417;&#54633; &amp; &#54017;</text>
 </svg>
