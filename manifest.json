@@ -1,24 +1,23 @@
 {
-    "name": "MBTI 궁합 & 팁",
-    "short_name": "MBTI",
-    "description": "MBTI 유형별 궁합, 성격 분석, 연애/직장 팁",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#0d1f1c",
-    "theme_color": "#1abc9c",
-    "orientation": "portrait",
-    "icons": [
-        {
-            "src": "icon-192.svg",
-            "sizes": "192x192",
-            "type": "image/svg+xml",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-512.svg",
-            "sizes": "512x512",
-            "type": "image/svg+xml",
-            "purpose": "any maskable"
-        }
-    ]
+  "name": "MBTI 궁합 & 팁",
+  "short_name": "MBTI",
+  "description": "MBTI 유형별 궁합, 성격 분석, 연애/직장 팁",
+  "id": ".",
+  "scope": ".",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0d1f1c",
+  "theme_color": "#1abc9c",
+  "orientation": "portrait",
+  "lang": "ko",
+  "dir": "ltr",
+  "icons": [
+    { "src": "icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "categories": ["lifestyle", "entertainment"]
 }
