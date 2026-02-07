@@ -171,17 +171,18 @@ class MbtiApp {
         if (!this.selectedType) return;
 
         const data = mbtiData[this.selectedType];
-        const text = `🧬 나의 MBTI: ${data.name} (${data.title})\n\n` +
-            `${data.description}\n\n` +
-            `💕 최고 궁합: ${data.compatibility.best.join(', ')}\n` +
-            `💛 좋은 궁합: ${data.compatibility.good.join(', ')}\n\n` +
-            `MBTI 궁합 & 팁 앱에서 확인하세요!`;
+        const url = 'https://swp1234.github.io/mbti-tips/';
+        const text = `🧩 나는 ${data.name} (${data.title})!\n\n` +
+            `💕 나의 찰떡궁합: ${data.compatibility.best.join(', ')}\n` +
+            `⚡ 주의할 궁합: ${data.compatibility.caution ? data.compatibility.caution.join(', ') : '없음'}\n\n` +
+            `너의 MBTI 궁합도 확인해봐! 👇\n${url}`;
 
         if (navigator.share) {
-            navigator.share({ title: 'MBTI 결과', text });
+            navigator.share({ title: `나는 ${data.name}! 너의 MBTI 궁합은?`, text, url }).catch(() => {});
         } else {
-            navigator.clipboard.writeText(text);
-            alert('결과가 클립보드에 복사되었습니다!');
+            navigator.clipboard.writeText(text).then(() => {
+                alert('결과가 복사되었습니다! 친구에게 공유해보세요 🎉');
+            }).catch(() => {});
         }
     }
 
