@@ -28,23 +28,36 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
+    <script src="js/i18n.js"></script>
 </head>
 <body>
     <div class="app-container">
         <!-- 상단 배너 광고 영역 -->
         <div class="ad-banner top-ad"></div>
 
+        <!-- 언어 선택기 -->
+        <div class="language-selector">
+            <button class="lang-btn" id="lang-toggle" title="Select Language">🌐</button>
+            <div class="lang-menu hidden" id="lang-menu">
+                <button class="lang-option" data-lang="ko">한국어</button>
+                <button class="lang-option" data-lang="en">English</button>
+                <button class="lang-option" data-lang="zh">简体中文</button>
+                <button class="lang-option" data-lang="hi">हिन्दी</button>
+                <button class="lang-option" data-lang="ru">Русский</button>
+            </div>
+        </div>
+
         <!-- 헤더 -->
         <header class="app-header">
-            <h1>🧬 MBTI 궁합 & 팁</h1>
-            <p class="subtitle">나의 유형을 선택하고 궁합을 확인하세요</p>
+            <h1 data-i18n="header.title">🧬 MBTI 궁합 & 팁</h1>
+            <p class="subtitle" data-i18n="header.subtitle">나의 유형을 선택하고 궁합을 확인하세요</p>
         </header>
 
         <!-- 메인 콘텐츠 -->
         <main class="main-content">
             <!-- MBTI 선택 그리드 -->
             <section class="mbti-selector">
-                <h2>나의 MBTI 유형 선택</h2>
+                <h2 data-i18n="selector.label">나의 MBTI 유형 선택</h2>
                 <div class="mbti-grid" id="mbti-grid">
                     <!-- 분석가 그룹 -->
                     <button class="mbti-btn analyst" data-type="INTJ">INTJ</button>
@@ -68,10 +81,10 @@
                     <button class="mbti-btn explorer" data-type="ESFP">ESFP</button>
                 </div>
                 <div class="group-legend">
-                    <span class="legend-item analyst">🔮 분석가</span>
-                    <span class="legend-item diplomat">💚 외교관</span>
-                    <span class="legend-item sentinel">🛡️ 관리자</span>
-                    <span class="legend-item explorer">🎨 탐험가</span>
+                    <span class="legend-item analyst" data-i18n="selector.groupLegend.analyst">🔮 분석가</span>
+                    <span class="legend-item diplomat" data-i18n="selector.groupLegend.diplomat">💚 외교관</span>
+                    <span class="legend-item sentinel" data-i18n="selector.groupLegend.sentinel">🛡️ 관리자</span>
+                    <span class="legend-item explorer" data-i18n="selector.groupLegend.explorer">🎨 탐험가</span>
                 </div>
             </section>
 
@@ -90,19 +103,19 @@
                     
                     <div class="traits-grid">
                         <div class="trait-item">
-                            <span class="trait-label">에너지</span>
+                            <span class="trait-label" data-i18n="traits.energy">에너지</span>
                             <span class="trait-value" id="trait-energy">내향형</span>
                         </div>
                         <div class="trait-item">
-                            <span class="trait-label">인식</span>
+                            <span class="trait-label" data-i18n="traits.mind">인식</span>
                             <span class="trait-value" id="trait-mind">직관형</span>
                         </div>
                         <div class="trait-item">
-                            <span class="trait-label">판단</span>
+                            <span class="trait-label" data-i18n="traits.nature">판단</span>
                             <span class="trait-value" id="trait-nature">사고형</span>
                         </div>
                         <div class="trait-item">
-                            <span class="trait-label">생활</span>
+                            <span class="trait-label" data-i18n="traits.tactic">생활</span>
                             <span class="trait-value" id="trait-tactic">계획형</span>
                         </div>
                     </div>
@@ -110,18 +123,18 @@
 
                 <!-- 궁합 정보 -->
                 <div class="result-card compat-card">
-                    <h3>💕 연애 궁합</h3>
+                    <h3 data-i18n="compatibility.title">💕 연애 궁합</h3>
                     <div class="compat-section">
                         <div class="compat-item best">
-                            <span class="compat-label">💖 최고 궁합</span>
+                            <span class="compat-label" data-i18n="compatibility.best">💖 최고 궁합</span>
                             <span class="compat-types" id="best-match"></span>
                         </div>
                         <div class="compat-item good">
-                            <span class="compat-label">💛 좋은 궁합</span>
+                            <span class="compat-label" data-i18n="compatibility.good">💛 좋은 궁합</span>
                             <span class="compat-types" id="good-match"></span>
                         </div>
                         <div class="compat-item bad">
-                            <span class="compat-label">💔 주의 궁합</span>
+                            <span class="compat-label" data-i18n="compatibility.bad">💔 주의 궁합</span>
                             <span class="compat-types" id="bad-match"></span>
                         </div>
                     </div>
@@ -129,11 +142,11 @@
 
                 <!-- 팁 섹션 -->
                 <div class="result-card tips-card">
-                    <h3>💡 알아두면 좋은 팁</h3>
+                    <h3 data-i18n="tips.title">💡 알아두면 좋은 팁</h3>
                     <div class="tips-tabs">
-                        <button class="tip-tab active" data-tab="love">연애</button>
-                        <button class="tip-tab" data-tab="work">직장</button>
-                        <button class="tip-tab" data-tab="friend">친구</button>
+                        <button class="tip-tab active" data-tab="love" data-i18n="tips.love">연애</button>
+                        <button class="tip-tab" data-tab="work" data-i18n="tips.work">직장</button>
+                        <button class="tip-tab" data-tab="friend" data-i18n="tips.friend">친구</button>
                     </div>
                     <div class="tips-content" id="tips-content">
                         <ul id="tips-list"></ul>
@@ -144,23 +157,23 @@
                 <div class="premium-section">
                     <button class="premium-btn" id="deep-analysis-btn">
                         <span class="premium-icon">✨</span>
-                        AI 심층 분석 보기
-                        <span class="ad-tag">AD</span>
+                        <span data-i18n="premium.button">AI 심층 분석 보기</span>
+                        <span class="ad-tag" data-i18n="ad.label">AD</span>
                     </button>
                 </div>
 
                 <!-- 프리미엄 결과 (광고 후 표시) -->
                 <div class="result-card premium-result hidden" id="premium-result">
-                    <div class="premium-badge">✨ AI 심층 분석</div>
+                    <div class="premium-badge" data-i18n="premium.badge">✨ AI 심층 분석</div>
                     <div id="premium-content"></div>
                 </div>
 
                 <!-- 공유 버튼 -->
-                <button class="share-btn" id="share-btn">📤 결과 공유하기</button>
+                <button class="share-btn" id="share-btn" data-i18n="buttons.share">📤 결과 공유하기</button>
 
                 <!-- 크로스 프로모션 섹션 -->
                 <div class="recommendations-section">
-                    <div class="rec-title">이것도 해보세요</div>
+                    <div class="rec-title" data-i18n="recommendations.title">이것도 해보세요</div>
                     <div class="rec-grid">
                         <a href="https://dopabrain.com/mbti-love/" class="rec-card" target="_blank">
                             <span class="rec-icon">💕</span>
@@ -210,5 +223,28 @@
 
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        // Initialize i18n system
+        (async function initI18n() {
+            await i18n.loadTranslations(i18n.getCurrentLanguage());
+            i18n.updateUI();
+            const langToggle = document.getElementById('lang-toggle');
+            const langMenu = document.getElementById('lang-menu');
+            const langOptions = document.querySelectorAll('.lang-option');
+            document.querySelector(`[data-lang="${i18n.getCurrentLanguage()}"]`)?.classList.add('active');
+            langToggle?.addEventListener('click', () => langMenu.classList.toggle('hidden'));
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.language-selector')) langMenu?.classList.add('hidden');
+            });
+            langOptions.forEach(opt => {
+                opt.addEventListener('click', async () => {
+                    await i18n.setLanguage(opt.getAttribute('data-lang'));
+                    langOptions.forEach(o => o.classList.remove('active'));
+                    opt.classList.add('active');
+                    langMenu.classList.add('hidden');
+                });
+            });
+        })();
+    </script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+{
+  "app": {
+    "title": "MBTI Compatibility & Tips",
+    "description": "Discover MBTI type compatibility, personality analysis, and dating/workplace tips. Who is your perfect match?"
+  },
+  "header": {
+    "title": "🧬 MBTI Compatibility & Tips",
+    "subtitle": "Select your type and explore your perfect matches"
+  },
+  "selector": {
+    "label": "Select Your MBTI Type",
+    "groupLegend": {
+      "analyst": "🔮 Analysts",
+      "diplomat": "💚 Diplomats",
+      "sentinel": "🛡️ Sentinels",
+      "explorer": "🎨 Explorers"
+    }
+  },
+  "traits": {
+    "energy": "Energy",
+    "mind": "Mind",
+    "nature": "Nature",
+    "tactic": "Tactics",
+    "introvert": "Introvert",
+    "extrovert": "Extrovert",
+    "sensing": "Sensing",
+    "intuition": "Intuition",
+    "thinking": "Thinking",
+    "feeling": "Feeling",
+    "judging": "Judging",
+    "prospecting": "Prospecting"
+  },
+  "compatibility": {
+    "title": "💕 Romance Compatibility",
+    "best": "💖 Best Match",
+    "good": "💛 Good Match",
+    "bad": "💔 Watch Out"
+  },
+  "tips": {
+    "title": "💡 Useful Tips",
+    "love": "Romance",
+    "work": "Workplace",
+    "friend": "Friendship"
+  },
+  "premium": {
+    "button": "✨ Show AI Deep Analysis",
+    "badge": "✨ AI Deep Analysis"
+  },
+  "buttons": {
+    "share": "📤 Share Results"
+  },
+  "recommendations": {
+    "title": "You Might Also Like"
+  },
+  "ad": {
+    "label": "AD"
+  }
+}
