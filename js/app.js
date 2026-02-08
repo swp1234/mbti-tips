@@ -154,7 +154,9 @@ class MbtiApp {
         content += `💼 추천 직업\n${deep.career}\n\n`;
         content += `⚡ 스트레스 반응\n${deep.stress}`;
 
-        document.getElementById('premium-content').textContent = content;
+        const premiumEl = document.getElementById('premium-content');
+        premiumEl.textContent = content;
+        premiumEl.style.whiteSpace = 'pre-line';
         
         const premiumResult = document.getElementById('premium-result');
         premiumResult.classList.remove('hidden');
@@ -174,7 +176,7 @@ class MbtiApp {
         const url = 'https://swp1234.github.io/mbti-tips/';
         const text = `🧩 나는 ${data.name} (${data.title})!\n\n` +
             `💕 나의 찰떡궁합: ${data.compatibility.best.join(', ')}\n` +
-            `⚡ 주의할 궁합: ${data.compatibility.caution ? data.compatibility.caution.join(', ') : '없음'}\n\n` +
+            `⚡ 주의할 궁합: ${data.compatibility.bad ? data.compatibility.bad.join(', ') : '없음'}\n\n` +
             `너의 MBTI 궁합도 확인해봐! 👇\n${url}`;
 
         if (navigator.share) {
