@@ -1,0 +1,65 @@
+{
+  "app": {
+    "title": "MBTI Kompatibilität & Tipps",
+    "description": "Entdecke MBTI-Typ-Kompatibilität, Persönlichkeitsanalyse und Dating-/Arbeitsplatz-Tipps. Wer ist deine perfekte Passung?"
+  },
+  "header": {
+    "title": "🧬 MBTI Kompatibilität & Tipps",
+    "subtitle": "Wähle deinen Typ und erkunde deine perfekten Passungen"
+  },
+  "selector": {
+    "label": "Wähle deinen MBTI-Typ",
+    "groupLegend": {
+      "analyst": "🔮 Analysten",
+      "diplomat": "💚 Diplomaten",
+      "sentinel": "🛡️ Wachposten",
+      "explorer": "🎨 Erkunder"
+    }
+  },
+  "traits": {
+    "energy": "Energie",
+    "mind": "Verstand",
+    "nature": "Natur",
+    "tactic": "Taktik",
+    "introvert": "Introvertiert",
+    "extrovert": "Extrovertiert",
+    "sensing": "Wahrnehmung",
+    "intuition": "Intuition",
+    "thinking": "Denken",
+    "feeling": "Fühlen",
+    "judging": "Urteilen",
+    "prospecting": "Prospektieren"
+  },
+  "compatibility": {
+    "title": "💕 Liebes-Kompatibilität",
+    "best": "💖 Beste Passung",
+    "good": "💛 Gute Passung",
+    "bad": "💔 Achte auf"
+  },
+  "tips": {
+    "title": "💡 Nützliche Tipps",
+    "love": "Liebe",
+    "work": "Arbeitsplatz",
+    "friend": "Freundschaft"
+  },
+  "premium": {
+    "button": "✨ Tiefe KI-Analyse anzeigen",
+    "badge": "✨ Tiefe KI-Analyse"
+  },
+  "buttons": {
+    "share": "📤 Ergebnisse teilen"
+  },
+  "recommendations": {
+    "title": "Dir könnten auch diese gefallen"
+  },
+  "compare": {
+    "title": "🤝 Freundes-Kompatibilitätsvergleich",
+    "me": "Ich",
+    "friend": "Freund",
+    "vs": "VS",
+    "selectType": "Wählen"
+  },
+  "ad": {
+    "label": "ANZEIGE"
+  }
+}

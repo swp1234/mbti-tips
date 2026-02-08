@@ -52,6 +52,13 @@
   "recommendations": {
     "title": "이것도 해보세요"
   },
+  "compare": {
+    "title": "🤝 친구와 궁합 비교",
+    "me": "나",
+    "friend": "친구",
+    "vs": "VS",
+    "selectType": "선택하세요"
+  },
   "ad": {
     "label": "AD"
   }

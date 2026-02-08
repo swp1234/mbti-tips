@@ -52,6 +52,13 @@
   "recommendations": {
     "title": "You Might Also Like"
   },
+  "compare": {
+    "title": "🤝 Friend Compatibility Comparison",
+    "me": "Me",
+    "friend": "Friend",
+    "vs": "VS",
+    "selectType": "Select"
+  },
   "ad": {
     "label": "AD"
   }

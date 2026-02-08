@@ -39,11 +39,18 @@
         <div class="language-selector">
             <button class="lang-btn" id="lang-toggle" title="Select Language">🌐</button>
             <div class="lang-menu hidden" id="lang-menu">
-                <button class="lang-option" data-lang="ko">한국어</button>
-                <button class="lang-option" data-lang="en">English</button>
-                <button class="lang-option" data-lang="zh">简体中文</button>
-                <button class="lang-option" data-lang="hi">हिन्दी</button>
-                <button class="lang-option" data-lang="ru">Русский</button>
+                <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
+                <button class="lang-option" data-lang="en">🇺🇸 English</button>
+                <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+                <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+                <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+                <button class="lang-option" data-lang="zh">🇨🇳 简体中文</button>
+                <button class="lang-option" data-lang="id">🇮🇩 Bahasa Indonesia</button>
+                <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
+                <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+                <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+                <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
+                <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
             </div>
         </div>
 
@@ -86,6 +93,41 @@
                     <span class="legend-item sentinel" data-i18n="selector.groupLegend.sentinel">🛡️ 관리자</span>
                     <span class="legend-item explorer" data-i18n="selector.groupLegend.explorer">🎨 탐험가</span>
                 </div>
+            </section>
+
+            <!-- 친구 비교 섹션 -->
+            <section class="compare-section">
+                <h2 data-i18n="compare.title">🤝 친구와 궁합 비교</h2>
+                <div class="compare-grid">
+                    <div class="compare-slot">
+                        <span class="compare-label" data-i18n="compare.me">나</span>
+                        <span class="compare-type" id="compare-my-type" data-i18n="compare.selectType">선택하세요</span>
+                    </div>
+                    <span class="compare-vs" data-i18n="compare.vs">VS</span>
+                    <div class="compare-slot">
+                        <span class="compare-label" data-i18n="compare.friend">친구</span>
+                        <select class="compare-select" id="compare-friend-select">
+                            <option value="" data-i18n="compare.selectType">유형 선택</option>
+                            <option value="INTJ">INTJ</option>
+                            <option value="INTP">INTP</option>
+                            <option value="ENTJ">ENTJ</option>
+                            <option value="ENTP">ENTP</option>
+                            <option value="INFJ">INFJ</option>
+                            <option value="INFP">INFP</option>
+                            <option value="ENFJ">ENFJ</option>
+                            <option value="ENFP">ENFP</option>
+                            <option value="ISTJ">ISTJ</option>
+                            <option value="ISFJ">ISFJ</option>
+                            <option value="ESTJ">ESTJ</option>
+                            <option value="ESFJ">ESFJ</option>
+                            <option value="ISTP">ISTP</option>
+                            <option value="ISFP">ISFP</option>
+                            <option value="ESTP">ESTP</option>
+                            <option value="ESFP">ESFP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="compare-result hidden" id="compare-result"></div>
             </section>
 
             <!-- 결과 카드 (선택 후 표시) -->
@@ -219,6 +261,9 @@
 
         <!-- 하단 배너 광고 영역 -->
         <div class="ad-banner bottom-ad"></div>
+
+        <!-- Hidden canvas for sharing images -->
+        <canvas id="share-canvas" width="1080" height="1080" style="display:none"></canvas>
     </div>
 
     <script src="js/data.js"></script>

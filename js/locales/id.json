@@ -1,0 +1,65 @@
+{
+  "app": {
+    "title": "Kompatibilitas & Tips MBTI",
+    "description": "Temukan kompatibilitas jenis MBTI, analisis kepribadian, dan tips kencan/tempat kerja. Siapa pasangan sempurna Anda?"
+  },
+  "header": {
+    "title": "🧬 Kompatibilitas & Tips MBTI",
+    "subtitle": "Pilih tipe Anda dan jelajahi kecocokan sempurna Anda"
+  },
+  "selector": {
+    "label": "Pilih Jenis MBTI Anda",
+    "groupLegend": {
+      "analyst": "🔮 Analis",
+      "diplomat": "💚 Diplomat",
+      "sentinel": "🛡️ Penjaga",
+      "explorer": "🎨 Penjelajah"
+    }
+  },
+  "traits": {
+    "energy": "Energi",
+    "mind": "Pikiran",
+    "nature": "Sifat",
+    "tactic": "Taktik",
+    "introvert": "Introvert",
+    "extrovert": "Ekstrovert",
+    "sensing": "Sensasi",
+    "intuition": "Intuisi",
+    "thinking": "Pemikiran",
+    "feeling": "Perasaan",
+    "judging": "Menilai",
+    "prospecting": "Prospeksif"
+  },
+  "compatibility": {
+    "title": "💕 Kompatibilitas Romansa",
+    "best": "💖 Pasangan Terbaik",
+    "good": "💛 Pasangan Baik",
+    "bad": "💔 Perhatikan"
+  },
+  "tips": {
+    "title": "💡 Tips Berguna",
+    "love": "Romansa",
+    "work": "Tempat Kerja",
+    "friend": "Persahabatan"
+  },
+  "premium": {
+    "button": "✨ Tampilkan Analisis Mendalam AI",
+    "badge": "✨ Analisis Mendalam AI"
+  },
+  "buttons": {
+    "share": "📤 Bagikan Hasil"
+  },
+  "recommendations": {
+    "title": "Anda Mungkin Juga Menyukai"
+  },
+  "compare": {
+    "title": "🤝 Perbandingan Kompatibilitas Teman",
+    "me": "Saya",
+    "friend": "Teman",
+    "vs": "VS",
+    "selectType": "Pilih"
+  },
+  "ad": {
+    "label": "IKLAN"
+  }
+}

@@ -52,6 +52,13 @@
   "recommendations": {
     "title": "您可能也会喜欢"
   },
+  "compare": {
+    "title": "🤝 朋友兼容性比较",
+    "me": "我",
+    "friend": "朋友",
+    "vs": "VS",
+    "selectType": "选择"
+  },
   "ad": {
     "label": "AD"
   }

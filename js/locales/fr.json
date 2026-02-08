@@ -1,0 +1,65 @@
+{
+  "app": {
+    "title": "Compatibilité MBTI & Conseils",
+    "description": "Découvre la compatibilité des types MBTI, l'analyse de personnalité et les conseils de rencontres/travail. Qui est ta correspondance parfaite?"
+  },
+  "header": {
+    "title": "🧬 Compatibilité MBTI & Conseils",
+    "subtitle": "Sélectionne ton type et explore tes correspondances parfaites"
+  },
+  "selector": {
+    "label": "Sélectionne ton Type MBTI",
+    "groupLegend": {
+      "analyst": "🔮 Analystes",
+      "diplomat": "💚 Diplomates",
+      "sentinel": "🛡️ Sentinelles",
+      "explorer": "🎨 Explorateurs"
+    }
+  },
+  "traits": {
+    "energy": "Énergie",
+    "mind": "Esprit",
+    "nature": "Nature",
+    "tactic": "Tactiques",
+    "introvert": "Introverti",
+    "extrovert": "Extraverti",
+    "sensing": "Sensation",
+    "intuition": "Intuition",
+    "thinking": "Pensée",
+    "feeling": "Sentiment",
+    "judging": "Jugement",
+    "prospecting": "Prospection"
+  },
+  "compatibility": {
+    "title": "💕 Compatibilité Romantique",
+    "best": "💖 Meilleure Correspondance",
+    "good": "💛 Bonne Correspondance",
+    "bad": "💔 Attention"
+  },
+  "tips": {
+    "title": "💡 Conseils Utiles",
+    "love": "Amour",
+    "work": "Travail",
+    "friend": "Amitié"
+  },
+  "premium": {
+    "button": "✨ Afficher l'Analyse Profonde IA",
+    "badge": "✨ Analyse Profonde IA"
+  },
+  "buttons": {
+    "share": "📤 Partager les Résultats"
+  },
+  "recommendations": {
+    "title": "Tu Pourrais aussi Aimer"
+  },
+  "compare": {
+    "title": "🤝 Comparaison de Compatibilité Amis",
+    "me": "Moi",
+    "friend": "Ami",
+    "vs": "VS",
+    "selectType": "Sélectionner"
+  },
+  "ad": {
+    "label": "ANNONCE"
+  }
+}

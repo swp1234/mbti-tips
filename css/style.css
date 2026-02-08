@@ -492,6 +492,126 @@ body {
     cursor: not-allowed;
 }
 
+/* 친구 비교 섹션 */
+.compare-section {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+}
+
+.compare-section h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 18px;
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
+.compare-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.compare-slot {
+    flex: 1;
+    text-align: center;
+    padding: 15px 10px;
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+}
+
+.compare-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.compare-type {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.compare-vs {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+.compare-select {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.compare-select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.compare-select option {
+    background: #1a2a25;
+    color: var(--text-primary);
+}
+
+.compare-result {
+    margin-top: 18px;
+    padding: 20px;
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.compare-match-level {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.compare-match-emoji {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.compare-match-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-light);
+}
+
+.compare-match-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 8px;
+}
+
 /* Recommendations Section */
 .recommendations-section { margin: 24px 0 0; padding: 0 16px; }
 .rec-title { font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.5); margin-bottom: 12px; text-align: center; letter-spacing: 0.5px; }

@@ -1,0 +1,65 @@
+{
+  "app": {
+    "title": "Compatibilidad MBTI y Consejos",
+    "description": "Descubre la compatibilidad de tipos MBTI, análisis de personalidad y consejos para citas y el trabajo. ¿Quién es tu pareja perfecta?"
+  },
+  "header": {
+    "title": "🧬 Compatibilidad MBTI y Consejos",
+    "subtitle": "Selecciona tu tipo y explora tus parejas perfectas"
+  },
+  "selector": {
+    "label": "Selecciona tu Tipo MBTI",
+    "groupLegend": {
+      "analyst": "🔮 Analistas",
+      "diplomat": "💚 Diplomáticos",
+      "sentinel": "🛡️ Centinelas",
+      "explorer": "🎨 Exploradores"
+    }
+  },
+  "traits": {
+    "energy": "Energía",
+    "mind": "Mente",
+    "nature": "Naturaleza",
+    "tactic": "Tácticas",
+    "introvert": "Introvertido",
+    "extrovert": "Extrovertido",
+    "sensing": "Sensación",
+    "intuition": "Intuición",
+    "thinking": "Pensamiento",
+    "feeling": "Sentimiento",
+    "judging": "Juzgador",
+    "prospecting": "Explorador"
+  },
+  "compatibility": {
+    "title": "💕 Compatibilidad Romántica",
+    "best": "💖 Mejor Coincidencia",
+    "good": "💛 Buena Coincidencia",
+    "bad": "💔 Ten Cuidado"
+  },
+  "tips": {
+    "title": "💡 Consejos Útiles",
+    "love": "Romance",
+    "work": "Trabajo",
+    "friend": "Amistad"
+  },
+  "premium": {
+    "button": "✨ Mostrar Análisis Profundo de IA",
+    "badge": "✨ Análisis Profundo de IA"
+  },
+  "buttons": {
+    "share": "📤 Compartir Resultados"
+  },
+  "recommendations": {
+    "title": "También Te Puede Gustar"
+  },
+  "compare": {
+    "title": "🤝 Comparación de Compatibilidad de Amigos",
+    "me": "Yo",
+    "friend": "Amigo",
+    "vs": "VS",
+    "selectType": "Seleccionar"
+  },
+  "ad": {
+    "label": "ANUNCIO"
+  }
+}

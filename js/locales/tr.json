@@ -1,0 +1,65 @@
+{
+  "app": {
+    "title": "MBTI Uyumluluğu & İpuçları",
+    "description": "MBTI tip uyumluluğunu, kişilik analizini ve dating/iş yerinde ipuçlarını keşfet. Mükemmel eşin kim?"
+  },
+  "header": {
+    "title": "🧬 MBTI Uyumluluğu & İpuçları",
+    "subtitle": "Tipini seç ve mükemmel eşleri keşfet"
+  },
+  "selector": {
+    "label": "MBTI Tipini Seç",
+    "groupLegend": {
+      "analyst": "🔮 Analistler",
+      "diplomat": "💚 Diplomsiler",
+      "sentinel": "🛡️ Nöbetçiler",
+      "explorer": "🎨 Kaşifler"
+    }
+  },
+  "traits": {
+    "energy": "Enerji",
+    "mind": "Akıl",
+    "nature": "Doğa",
+    "tactic": "Taktik",
+    "introvert": "İçe Dönük",
+    "extrovert": "Dışa Dönük",
+    "sensing": "Algılama",
+    "intuition": "Sezgi",
+    "thinking": "Düşünce",
+    "feeling": "Duygu",
+    "judging": "Yargılama",
+    "prospecting": "Keşif"
+  },
+  "compatibility": {
+    "title": "💕 Romantik Uyumluluk",
+    "best": "💖 En İyi Uyum",
+    "good": "💛 İyi Uyum",
+    "bad": "💔 Dikkat Et"
+  },
+  "tips": {
+    "title": "💡 Faydalı İpuçları",
+    "love": "Aşk",
+    "work": "İş Yeri",
+    "friend": "Arkadaşlık"
+  },
+  "premium": {
+    "button": "✨ YZ Derinlemesine Analizini Göster",
+    "badge": "✨ YZ Derinlemesine Analiz"
+  },
+  "buttons": {
+    "share": "📤 Sonuçları Paylaş"
+  },
+  "recommendations": {
+    "title": "Ayrıca Beğenebilirsin"
+  },
+  "compare": {
+    "title": "🤝 Arkadaş Uyumluluk Karşılaştırması",
+    "me": "Ben",
+    "friend": "Arkadaş",
+    "vs": "VS",
+    "selectType": "Seç"
+  },
+  "ad": {
+    "label": "REKLAM"
+  }
+}
