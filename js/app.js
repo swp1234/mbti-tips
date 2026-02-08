@@ -173,7 +173,7 @@ class MbtiApp {
         if (!this.selectedType) return;
 
         const data = mbtiData[this.selectedType];
-        const url = 'https://swp1234.github.io/mbti-tips/';
+        const url = 'https://dopabrain.com/mbti-tips/';
         const text = `🧩 나는 ${data.name} (${data.title})!\n\n` +
             `💕 나의 찰떡궁합: ${data.compatibility.best.join(', ')}\n` +
             `⚡ 주의할 궁합: ${data.compatibility.bad ? data.compatibility.bad.join(', ') : '없음'}\n\n` +
