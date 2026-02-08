@@ -337,7 +337,7 @@ MBTI, अनुकूलता, व्यक्तित्व प्रका�
 - 욕설: 없음
 
 **개인정보 처리방침**:
-- URL: https://swp1234.github.io/mbti-tips/privacy-policy.html
+- URL: https://dopabrain.com/mbti-tips/privacy-policy.html
 - 수집 정보: 없음 (로컬 저장소만 사용)
 - 외부 서버 전송: 없음
 
@@ -377,7 +377,7 @@ MBTI, अनुकूलता, व्यक्तित्व प्रका�
    - 도메인 소유권 검증
 
 3. **manifest.xml 설정**
-   - TWA URL: https://swp1234.github.io/mbti-tips/
+   - TWA URL: https://dopabrain.com/mbti-tips/
    - Theme color: #1abc9c
    - App name (각 언어별 values 폴더)
 
