@@ -319,8 +319,12 @@
     <script>
         // Initialize i18n system
         (async function initI18n() {
-            await i18n.loadTranslations(i18n.getCurrentLanguage());
-            i18n.updateUI();
+            try {
+                await i18n.loadTranslations(i18n.getCurrentLanguage());
+                i18n.updateUI();
+            } catch (e) {
+                console.warn('i18n init failed:', e);
+            }
             const langToggle = document.getElementById('lang-toggle');
             const langMenu = document.getElementById('lang-menu');
             const langOptions = document.querySelectorAll('.lang-option');
