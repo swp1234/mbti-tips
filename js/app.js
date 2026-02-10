@@ -407,4 +407,11 @@ class MbtiApp {
 // 앱 시작
 document.addEventListener('DOMContentLoaded', () => {
     new MbtiApp();
+
+    // Hide app loader
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+        loader.classList.add('hidden');
+        setTimeout(() => loader.remove(), 300);
+    }
 });
