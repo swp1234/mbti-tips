@@ -82,6 +82,17 @@
     "caution": "⚡ 要注意",
     "none": "无",
     "cta": "检查你的MBTI相性！👇",
-    "copied": "结果已复制！与朋友分享吧 🎉"
+    "copied": "结果已复制！与朋友分享吧 🎉",
+    "nativeTitle": "我是 {type}!",
+    "nativeText": "我的MBTI是 {type} ({title})!",
+    "compareTitle": "我是 {type}！你的MBTI相性是什么？",
+    "bestMatch": "最佳搭档!",
+    "bestDesc": "{type1} 和 {type2} 相互完美补充。你们可以最大化彼此的优势并填补空缺。",
+    "goodMatch": "不错的搭档",
+    "goodDesc": "{type1} 和 {type2} 合作良好。稍微努力一下，你们可以建立更深的关系。",
+    "badMatch": "具有挑战性的搭档",
+    "badDesc": "{type1} 和 {type2} 可能有性格差异，但理解彼此的独特之处可以成为成长的机会。",
+    "neutralMatch": "一般搭档",
+    "neutralDesc": "{type1} 和 {type2} 没有特别的优势或劣势。但通过努力，可以发展成为良好的关系。"
   }
 }

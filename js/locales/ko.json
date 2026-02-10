@@ -82,6 +82,17 @@
     "caution": "⚡ 주의할 궁합",
     "none": "없음",
     "cta": "너의 MBTI 궁합도 확인해봐! 👇",
-    "copied": "결과가 복사되었습니다! 친구에게 공유해보세요 🎉"
+    "copied": "결과가 복사되었습니다! 친구에게 공유해보세요 🎉",
+    "nativeTitle": "나는 {type}!",
+    "nativeText": "나의 MBTI는 {type} ({title})입니다!",
+    "compareTitle": "나는 {type}! 너의 MBTI 궁합은?",
+    "bestMatch": "최고의 궁합!",
+    "bestDesc": "{type1}와 {type2}는 서로를 완벽하게 보완하는 관계입니다. 서로의 장점을 극대화하고 약점을 채워줄 수 있어요.",
+    "goodMatch": "좋은 궁합",
+    "goodDesc": "{type1}와 {type2}는 서로 잘 어울리는 관계입니다. 약간의 노력으로 더 깊은 관계를 만들 수 있어요.",
+    "badMatch": "도전적인 궁합",
+    "badDesc": "{type1}와 {type2}는 성격 차이가 클 수 있지만, 서로의 다른 점을 이해하면 성장의 기회가 됩니다.",
+    "neutralMatch": "일반적인 궁합",
+    "neutralDesc": "{type1}와 {type2}는 특별한 강점이나 약점 없이 평범한 관계입니다. 하지만 노력에 따라 좋은 관계로 발전할 수 있어요."
   }
 }

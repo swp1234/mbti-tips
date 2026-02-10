@@ -82,6 +82,17 @@
     "caution": "⚡ Dikkat",
     "none": "Yok",
     "cta": "Senin MBTI uyumluluğunu da kontrol et! 👇",
-    "copied": "Sonuç kopyalandı! Arkadaşlarınla paylaş 🎉"
+    "copied": "Sonuç kopyalandı! Arkadaşlarınla paylaş 🎉",
+    "nativeTitle": "Ben {type}!",
+    "nativeText": "Benim MBTI'm {type} ({title})!",
+    "compareTitle": "Ben {type}! Senin MBTI uyumluluğun nedir?",
+    "bestMatch": "En iyi eşleşme!",
+    "bestDesc": "{type1} ve {type2} birbirini mükemmel şekilde tamamlar. Her birinizin güçlü yönlerini maksimize edebilir ve eksikleri doldurabilirsiniz.",
+    "goodMatch": "İyi eşleşme",
+    "goodDesc": "{type1} ve {type2} iyi bir şekilde birlikte çalışır. Biraz çabayla, daha derin bir ilişki kurabilirsiniz.",
+    "badMatch": "Zorlayıcı eşleşme",
+    "badDesc": "{type1} ve {type2} kişilik farklılıkları olabilir, ancak birbirinizin özgünlüğünü anlamak büyüme fırsatı olabilir.",
+    "neutralMatch": "Orta düzey eşleşme",
+    "neutralDesc": "{type1} ve {type2} özel bir güç veya zayıflığı yoktur. Ancak çabayla iyi bir ilişkiye gelişebilir."
   }
 }

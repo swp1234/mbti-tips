@@ -82,6 +82,17 @@
     "caution": "⚡ Attention",
     "none": "Aucun",
     "cta": "Vérifiez aussi votre compatibilité MBTI! 👇",
-    "copied": "Résultat copié! Partagez avec vos amis 🎉"
+    "copied": "Résultat copié! Partagez avec vos amis 🎉",
+    "nativeTitle": "Je suis {type}!",
+    "nativeText": "Mon MBTI est {type} ({title})!",
+    "compareTitle": "Je suis {type}! Quelle est votre compatibilité MBTI?",
+    "bestMatch": "Meilleure correspondance!",
+    "bestDesc": "{type1} et {type2} se complètent parfaitement. Vous pouvez maximiser vos forces respectives et combler les lacunes.",
+    "goodMatch": "Bonne correspondance",
+    "goodDesc": "{type1} et {type2} travaillent bien ensemble. Avec un peu d'effort, vous pouvez construire une relation plus profonde.",
+    "badMatch": "Correspondance délicate",
+    "badDesc": "{type1} et {type2} peuvent avoir des différences de personnalité, mais se comprendre peut être une opportunité de croissance.",
+    "neutralMatch": "Correspondance moyenne",
+    "neutralDesc": "{type1} et {type2} n'ont pas de forces ou de faiblesses particulières. Mais avec de l'effort, cela peut se développer en une bonne relation."
   }
 }

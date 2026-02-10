@@ -82,6 +82,17 @@
     "caution": "⚡ Perhatian",
     "none": "Tidak ada",
     "cta": "Periksa kompatibilitas MBTI Anda juga! 👇",
-    "copied": "Hasil disalin! Bagikan dengan teman 🎉"
+    "copied": "Hasil disalin! Bagikan dengan teman 🎉",
+    "nativeTitle": "Saya {type}!",
+    "nativeText": "MBTI saya adalah {type} ({title})!",
+    "compareTitle": "Saya {type}! Apa kompatibilitas MBTI Anda?",
+    "bestMatch": "Kecocokan terbaik!",
+    "bestDesc": "{type1} dan {type2} saling melengkapi dengan sempurna. Anda dapat memaksimalkan kekuatan masing-masing dan mengisi celah.",
+    "goodMatch": "Kecocokan baik",
+    "goodDesc": "{type1} dan {type2} bekerja dengan baik bersama. Dengan sedikit usaha, Anda dapat membangun hubungan yang lebih dalam.",
+    "badMatch": "Kecocokan menantang",
+    "badDesc": "{type1} dan {type2} mungkin memiliki perbedaan kepribadian, tetapi memahami keunikan satu sama lain dapat menjadi peluang pertumbuhan.",
+    "neutralMatch": "Kecocokan rata-rata",
+    "neutralDesc": "{type1} dan {type2} tidak memiliki kekuatan atau kelemahan khusus. Tetapi dengan usaha, dapat berkembang menjadi hubungan yang baik."
   }
 }

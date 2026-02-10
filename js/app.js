@@ -262,8 +262,8 @@ class MbtiApp {
             if (navigator.share && navigator.canShare) {
                 const file = new File([blob], 'mbti-result.png', { type: 'image/png' });
                 navigator.share({
-                    title: `나는 ${data.name}!`,
-                    text: `나의 MBTI는 ${data.name} (${data.title})입니다!`,
+                    title: (window.i18n?.t('share.nativeTitle') || 'I am {type}!').replace('{type}', data.name),
+                    text: (window.i18n?.t('share.nativeText') || 'My MBTI is {type} ({title})!').replace('{type}', data.name).replace('{title}', data.title),
                     files: [file]
                 }).catch(() => {
                     // Fallback
@@ -313,7 +313,7 @@ class MbtiApp {
             `${i18n.t('share.cta')}\n${url}`;
 
         if (navigator.share) {
-            navigator.share({ title: `나는 ${data.name}! 너의 MBTI 궁합은?`, text, url }).catch(() => {});
+            navigator.share({ title: (window.i18n?.t('share.compareTitle') || 'I am {type}! What\'s your MBTI compatibility?').replace('{type}', data.name), text, url }).catch(() => {});
         } else {
             navigator.clipboard.writeText(text).then(() => {
                 alert(i18n.t('share.copied'));
@@ -355,18 +355,18 @@ class MbtiApp {
         if (myData.compatibility.best.includes(friendType)) {
             matchLevel = 'best';
             matchEmoji = '💖';
-            matchText = '최고의 궁합!';
-            matchDesc = `${this.selectedType}와 ${friendType}는 서로를 완벽하게 보완하는 관계입니다. 서로의 장점을 극대화하고 약점을 채워줄 수 있어요.`;
+            matchText = window.i18n?.t('share.bestMatch') || 'Best Match!';
+            matchDesc = (window.i18n?.t('share.bestDesc') || 'Perfect match description').replace('{type1}', this.selectedType).replace('{type2}', friendType);
         } else if (myData.compatibility.good.includes(friendType)) {
             matchLevel = 'good';
             matchEmoji = '💛';
-            matchText = '좋은 궁합';
-            matchDesc = `${this.selectedType}와 ${friendType}는 서로 잘 어울리는 관계입니다. 약간의 노력으로 더 깊은 관계를 만들 수 있어요.`;
+            matchText = window.i18n?.t('share.goodMatch') || 'Good Match';
+            matchDesc = (window.i18n?.t('share.goodDesc') || 'Good match description').replace('{type1}', this.selectedType).replace('{type2}', friendType);
         } else if (myData.compatibility.bad && myData.compatibility.bad.includes(friendType)) {
             matchLevel = 'bad';
             matchEmoji = '⚡';
-            matchText = '도전적인 궁합';
-            matchDesc = `${this.selectedType}와 ${friendType}는 성격 차이가 클 수 있지만, 서로의 다른 점을 이해하면 성장의 기회가 됩니다.`;
+            matchText = window.i18n?.t('share.badMatch') || 'Challenging Match';
+            matchDesc = (window.i18n?.t('share.badDesc') || 'Bad match description').replace('{type1}', this.selectedType).replace('{type2}', friendType);
         } else {
             matchLevel = 'neutral';
             matchEmoji = '🤝';

@@ -82,6 +82,17 @@
     "caution": "⚡ 注意",
     "none": "なし",
     "cta": "あなたのMBTI相性も確認してください！👇",
-    "copied": "結果がコピーされました！友人とシェアしてください🎉"
+    "copied": "結果がコピーされました！友人とシェアしてください🎉",
+    "nativeTitle": "私は {type} です!",
+    "nativeText": "私のMBTIは {type} ({title}) です!",
+    "compareTitle": "私は {type} です! あなたのMBTI相性は?",
+    "bestMatch": "ベストマッチ!",
+    "bestDesc": "{type1} と {type2} は互いに完璧に補い合えます。相手の長所を最大化し、弱点を埋められます。",
+    "goodMatch": "良い相性",
+    "goodDesc": "{type1} と {type2} はうまく協力できます。少しの努力で、より深い関係が築けます。",
+    "badMatch": "チャレンジングな相性",
+    "badDesc": "{type1} と {type2} は性格差がある可能性がありますが、相手の違いを理解することで成長の機会になります。",
+    "neutralMatch": "普通の相性",
+    "neutralDesc": "{type1} と {type2} に特別な強みや弱みはありません。でも努力次第で、良い関係に発展する可能性があります。"
   }
 }
