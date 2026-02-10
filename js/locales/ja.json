@@ -61,5 +61,27 @@
   },
   "ad": {
     "label": "広告"
+  },
+  "buttons": {
+    "close": "閉じる"
+  },
+  "premium": {
+    "psychology": "🧠 心理分析",
+    "growth": "🌱 成長ポイント",
+    "career": "💼 職業適性",
+    "stress": "⚡ ストレス反応"
+  },
+  "canvas": {
+    "myType": "私のMBTIタイプは",
+    "bestMatch": "ベストマッチ",
+    "cta": "あなたのMBTI相性も確認してください→"
+  },
+  "share": {
+    "intro": "🧩 私は",
+    "best": "💕 私のベストマッチ",
+    "caution": "⚡ 注意",
+    "none": "なし",
+    "cta": "あなたのMBTI相性も確認してください！👇",
+    "copied": "結果がコピーされました！友人とシェアしてください🎉"
   }
 }

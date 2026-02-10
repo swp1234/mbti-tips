@@ -61,5 +61,27 @@
   },
   "ad": {
     "label": "ANZEIGE"
+  },
+  "buttons": {
+    "close": "Schließen"
+  },
+  "premium": {
+    "psychology": "🧠 Psychologie",
+    "growth": "🌱 Wachstumspunkte",
+    "career": "💼 Berufliche Eignung",
+    "stress": "⚡ Stressreaktion"
+  },
+  "canvas": {
+    "myType": "Mein MBTI-Typ ist",
+    "bestMatch": "Beste Passung",
+    "cta": "Überprüfe deine MBTI-Kompatibilität →"
+  },
+  "share": {
+    "intro": "🧩 Ich bin",
+    "best": "💕 Meine beste Passung",
+    "caution": "⚡ Achtung",
+    "none": "Keine",
+    "cta": "Überprüfe auch deine MBTI-Kompatibilität! 👇",
+    "copied": "Ergebnis kopiert! Mit Freunden teilen 🎉"
   }
 }

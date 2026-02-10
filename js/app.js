@@ -140,11 +140,11 @@ class MbtiApp {
             if (seconds <= 0) {
                 clearInterval(timer);
                 closeBtn.disabled = false;
-                closeBtn.textContent = '닫기';
+                closeBtn.textContent = i18n.t('buttons.close');
 
                 closeBtn.onclick = () => {
                     adModal.classList.add('hidden');
-                    closeBtn.textContent = '닫기 (5)';
+                    closeBtn.textContent = `${i18n.t('buttons.close')} (5)`;
                     if (callback) callback();
                 };
             }
@@ -157,10 +157,10 @@ class MbtiApp {
         const data = mbtiData[this.selectedType];
         const deep = data.deepAnalysis;
 
-        let content = `🧠 심리 분석\n${deep.psychology}\n\n`;
-        content += `🌱 성장 포인트\n${deep.growth}\n\n`;
-        content += `💼 추천 직업\n${deep.career}\n\n`;
-        content += `⚡ 스트레스 반응\n${deep.stress}`;
+        let content = `🧠 ${i18n.t('premium.psychology')}\n${deep.psychology}\n\n`;
+        content += `🌱 ${i18n.t('premium.growth')}\n${deep.growth}\n\n`;
+        content += `💼 ${i18n.t('premium.career')}\n${deep.career}\n\n`;
+        content += `⚡ ${i18n.t('premium.stress')}\n${deep.stress}`;
 
         const premiumEl = document.getElementById('premium-content');
         premiumEl.textContent = content;
@@ -220,7 +220,7 @@ class MbtiApp {
         ctx.textAlign = 'center';
         ctx.fillStyle = 'rgba(255,255,255,0.5)';
         ctx.font = '32px sans-serif';
-        ctx.fillText('나의 MBTI 유형은', 540, 140);
+        ctx.fillText(i18n.t('canvas.myType'), 540, 140);
 
         // Main emoji (large)
         ctx.font = '140px serif';
@@ -245,12 +245,12 @@ class MbtiApp {
         // Best match
         ctx.font = 'bold 32px sans-serif';
         ctx.fillStyle = 'rgba(255,255,255,0.8)';
-        ctx.fillText(`💕 최고 궁합: ${data.compatibility.best.join(', ')}`, 540, 820);
+        ctx.fillText(`💕 ${i18n.t('canvas.bestMatch')}: ${data.compatibility.best.join(', ')}`, 540, 820);
 
         // CTA
         ctx.font = '26px sans-serif';
         ctx.fillStyle = 'rgba(255,255,255,0.6)';
-        ctx.fillText('당신의 MBTI 궁합도 확인해보세요 →', 540, 900);
+        ctx.fillText(i18n.t('canvas.cta'), 540, 900);
 
         // Branding
         ctx.font = '20px sans-serif';
@@ -307,16 +307,16 @@ class MbtiApp {
 
         const data = mbtiData[this.selectedType];
         const url = 'https://dopabrain.com/mbti-tips/';
-        const text = `🧩 나는 ${data.name} (${data.title})!\n\n` +
-            `💕 나의 찰떡궁합: ${data.compatibility.best.join(', ')}\n` +
-            `⚡ 주의할 궁합: ${data.compatibility.bad ? data.compatibility.bad.join(', ') : '없음'}\n\n` +
-            `너의 MBTI 궁합도 확인해봐! 👇\n${url}`;
+        const text = `🧩 ${i18n.t('share.intro')} ${data.name} (${data.title})!\n\n` +
+            `💕 ${i18n.t('share.best')}: ${data.compatibility.best.join(', ')}\n` +
+            `⚡ ${i18n.t('share.caution')}: ${data.compatibility.bad ? data.compatibility.bad.join(', ') : i18n.t('share.none')}\n\n` +
+            `${i18n.t('share.cta')}\n${url}`;
 
         if (navigator.share) {
             navigator.share({ title: `나는 ${data.name}! 너의 MBTI 궁합은?`, text, url }).catch(() => {});
         } else {
             navigator.clipboard.writeText(text).then(() => {
-                alert('결과가 복사되었습니다! 친구에게 공유해보세요 🎉');
+                alert(i18n.t('share.copied'));
             }).catch(() => {});
         }
     }

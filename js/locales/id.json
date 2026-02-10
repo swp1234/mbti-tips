@@ -61,5 +61,27 @@
   },
   "ad": {
     "label": "IKLAN"
+  },
+  "buttons": {
+    "close": "Tutup"
+  },
+  "premium": {
+    "psychology": "🧠 Psikologi",
+    "growth": "🌱 Titik Pertumbuhan",
+    "career": "💼 Kesesuaian Karir",
+    "stress": "⚡ Respons Stres"
+  },
+  "canvas": {
+    "myType": "Tipe MBTI saya adalah",
+    "bestMatch": "Kecocokan terbaik",
+    "cta": "Periksa kompatibilitas MBTI Anda →"
+  },
+  "share": {
+    "intro": "🧩 Saya adalah",
+    "best": "💕 Kecocokan terbaik saya",
+    "caution": "⚡ Perhatian",
+    "none": "Tidak ada",
+    "cta": "Periksa kompatibilitas MBTI Anda juga! 👇",
+    "copied": "Hasil disalin! Bagikan dengan teman 🎉"
   }
 }

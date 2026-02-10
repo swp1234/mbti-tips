@@ -61,5 +61,27 @@
   },
   "ad": {
     "label": "REKLAM"
+  },
+  "buttons": {
+    "close": "Kapat"
+  },
+  "premium": {
+    "psychology": "🧠 Psikoloji",
+    "growth": "🌱 Büyüme Noktaları",
+    "career": "💼 Kariyer Uygunluğu",
+    "stress": "⚡ Stres Tepkisi"
+  },
+  "canvas": {
+    "myType": "Benim MBTI tipin",
+    "bestMatch": "En iyi eşleşme",
+    "cta": "Senin MBTI uyumluluğunu da kontrol et →"
+  },
+  "share": {
+    "intro": "🧩 Ben",
+    "best": "💕 Benim en iyi eşleşmem",
+    "caution": "⚡ Dikkat",
+    "none": "Yok",
+    "cta": "Senin MBTI uyumluluğunu da kontrol et! 👇",
+    "copied": "Sonuç kopyalandı! Arkadaşlarınla paylaş 🎉"
   }
 }

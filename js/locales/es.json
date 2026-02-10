@@ -61,5 +61,27 @@
   },
   "ad": {
     "label": "ANUNCIO"
+  },
+  "buttons": {
+    "close": "Cerrar"
+  },
+  "premium": {
+    "psychology": "🧠 Psicología",
+    "growth": "🌱 Puntos de Crecimiento",
+    "career": "💼 Ajuste de Carrera",
+    "stress": "⚡ Respuesta al Estrés"
+  },
+  "canvas": {
+    "myType": "Mi tipo MBTI es",
+    "bestMatch": "Mejor compatibilidad",
+    "cta": "Verifica tu compatibilidad MBTI →"
+  },
+  "share": {
+    "intro": "🧩 Soy",
+    "best": "💕 Mi mejor compatibilidad",
+    "caution": "⚡ Ten cuidado",
+    "none": "Ninguno",
+    "cta": "¡Verifica tu compatibilidad MBTI también! 👇",
+    "copied": "¡Resultado copiado! Comparte con amigos 🎉"
   }
 }

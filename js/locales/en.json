@@ -61,5 +61,27 @@
   },
   "ad": {
     "label": "AD"
+  },
+  "buttons": {
+    "close": "Close"
+  },
+  "premium": {
+    "psychology": "🧠 Psychology",
+    "growth": "🌱 Growth Points",
+    "career": "💼 Career Fit",
+    "stress": "⚡ Stress Response"
+  },
+  "canvas": {
+    "myType": "My MBTI Type Is",
+    "bestMatch": "Best Match",
+    "cta": "Check Your MBTI Compatibility Too →"
+  },
+  "share": {
+    "intro": "🧩 I am",
+    "best": "💕 My Best Match",
+    "caution": "⚡ Watch Out For",
+    "none": "None",
+    "cta": "Check your MBTI compatibility too! 👇",
+    "copied": "Results copied! Share with friends 🎉"
   }
 }
