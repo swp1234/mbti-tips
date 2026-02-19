@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "MBTI Kompatibilität & Tipps",
-    "description": "Entdecke MBTI-Typ-Kompatibilität, Persönlichkeitsanalyse und Dating-/Arbeitsplatz-Tipps. Wer ist deine perfekte Passung?"
+    "description": "Entdecke MBTI-Typ-Kompatibilität, Persönlichkeitsanalyse und Dating-/Arbeitsplatz-Tipps. Wer ist deine perfekte Passung?",
+    "skipLink": "Zum Hauptinhalt",
+    "socialProof": "🔥 100.000+ Nutzer"
   },
   "header": {
     "title": "🧬 MBTI Kompatibilität & Tipps",
@@ -94,5 +96,10 @@
     "badDesc": "{type1} und {type2} könnten Persönlichkeitsunterschiede haben, aber das Verständnis füreinander kann eine Wachstumschance sein.",
     "neutralMatch": "Durchschnittliche Passung",
     "neutralDesc": "{type1} und {type2} haben keine besonderen Stärken oder Schwächen. Aber mit Anstrengung kann sich eine gute Beziehung entwickeln."
+  },
+  "ads": {
+    "label": "Anzeige",
+    "banner": "Anzeigenbereich",
+    "close": "Schließen"
   }
 }

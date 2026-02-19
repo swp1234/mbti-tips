@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Kompatibilitas & Tips MBTI",
-    "description": "Temukan kompatibilitas jenis MBTI, analisis kepribadian, dan tips kencan/tempat kerja. Siapa pasangan sempurna Anda?"
+    "description": "Temukan kompatibilitas jenis MBTI, analisis kepribadian, dan tips kencan/tempat kerja. Siapa pasangan sempurna Anda?",
+    "skipLink": "Langsung ke konten utama",
+    "socialProof": "🔥 100.000+ pengguna"
   },
   "header": {
     "title": "🧬 Kompatibilitas & Tips MBTI",
@@ -94,5 +96,10 @@
     "badDesc": "{type1} dan {type2} mungkin memiliki perbedaan kepribadian, tetapi memahami keunikan satu sama lain dapat menjadi peluang pertumbuhan.",
     "neutralMatch": "Kecocokan rata-rata",
     "neutralDesc": "{type1} dan {type2} tidak memiliki kekuatan atau kelemahan khusus. Tetapi dengan usaha, dapat berkembang menjadi hubungan yang baik."
+  },
+  "ads": {
+    "label": "Iklan",
+    "banner": "Area iklan",
+    "close": "Tutup"
   }
 }

@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "MBTI Uyumluluğu & İpuçları",
-    "description": "MBTI tip uyumluluğunu, kişilik analizini ve dating/iş yerinde ipuçlarını keşfet. Mükemmel eşin kim?"
+    "description": "MBTI tip uyumluluğunu, kişilik analizini ve dating/iş yerinde ipuçlarını keşfet. Mükemmel eşin kim?",
+    "skipLink": "Ana içeriğe geç",
+    "socialProof": "🔥 100.000+ kullanıcı"
   },
   "header": {
     "title": "🧬 MBTI Uyumluluğu & İpuçları",
@@ -94,5 +96,10 @@
     "badDesc": "{type1} ve {type2} kişilik farklılıkları olabilir, ancak birbirinizin özgünlüğünü anlamak büyüme fırsatı olabilir.",
     "neutralMatch": "Orta düzey eşleşme",
     "neutralDesc": "{type1} ve {type2} özel bir güç veya zayıflığı yoktur. Ancak çabayla iyi bir ilişkiye gelişebilir."
+  },
+  "ads": {
+    "label": "Reklam",
+    "banner": "Reklam alanı",
+    "close": "Kapat"
   }
 }

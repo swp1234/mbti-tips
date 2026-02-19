@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "MBTI Compatibility & Tips",
-    "description": "Discover MBTI type compatibility, personality analysis, and dating/workplace tips. Who is your perfect match?"
+    "description": "Discover MBTI type compatibility, personality analysis, and dating/workplace tips. Who is your perfect match?",
+    "skipLink": "Skip to main content",
+    "socialProof": "🔥 100,000+ Users"
   },
   "header": {
     "title": "🧬 MBTI Compatibility & Tips",
@@ -94,5 +96,10 @@
     "badDesc": "{type1} and {type2} may have personality differences, but understanding each other's uniqueness can be a growth opportunity.",
     "neutralMatch": "Average Match",
     "neutralDesc": "{type1} and {type2} have no particular strengths or weaknesses. However, with effort, it can develop into a good relationship."
+  },
+  "ads": {
+    "label": "Ad",
+    "banner": "Advertisement",
+    "close": "Close"
   }
 }

@@ -94,7 +94,7 @@
     <script src="js/i18n.js"></script>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">본문으로 이동</a>
+    <a href="#main-content" class="skip-link" data-i18n="app.skipLink">본문으로 이동</a>
     <div class="app-loader" id="app-loader">
         <div class="loader-content">
             <div class="loader-emoji">🎯</div>
@@ -133,7 +133,7 @@
         <header class="app-header">
             <h1 data-i18n="header.title">🧬 MBTI 궁합 & 팁</h1>
             <p class="subtitle" data-i18n="header.subtitle">나의 유형을 선택하고 궁합을 확인하세요</p>
-            <div class="social-proof-badge" style="margin-top: 12px; display: inline-block; background: rgba(26, 188, 156, 0.15); border: 1px solid rgba(26, 188, 156, 0.3); color: #48c9b0; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">🔥 100,000+ 사용자 경험</div>
+            <div class="social-proof-badge" data-i18n="app.socialProof" style="margin-top: 12px; display: inline-block; background: rgba(26, 188, 156, 0.15); border: 1px solid rgba(26, 188, 156, 0.3); color: #48c9b0; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">🔥 100,000+ 사용자 경험</div>
         </header>
 
         <!-- 메인 콘텐츠 -->
@@ -297,9 +297,9 @@
         <!-- 전면 광고 모달 -->
         <div class="interstitial-ad hidden" id="interstitial-ad">
             <div class="ad-content">
-                <p>광고</p>
-                <div class="ad-placeholder">광고 영역</div>
-                <button id="close-ad" disabled>닫기 (<span id="countdown">5</span>)</button>
+                <p data-i18n="ads.label">광고</p>
+                <div class="ad-placeholder" data-i18n="ads.banner">광고 영역</div>
+                <button id="close-ad" disabled><span data-i18n="ads.close">닫기</span> (<span id="countdown">5</span>)</button>
             </div>
         </div>
 

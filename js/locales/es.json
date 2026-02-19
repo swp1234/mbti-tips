@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Compatibilidad MBTI y Consejos",
-    "description": "Descubre la compatibilidad de tipos MBTI, análisis de personalidad y consejos para citas y el trabajo. ¿Quién es tu pareja perfecta?"
+    "description": "Descubre la compatibilidad de tipos MBTI, análisis de personalidad y consejos para citas y el trabajo. ¿Quién es tu pareja perfecta?",
+    "skipLink": "Ir al contenido principal",
+    "socialProof": "🔥 100.000+ usuarios"
   },
   "header": {
     "title": "🧬 Compatibilidad MBTI y Consejos",
@@ -94,5 +96,10 @@
     "badDesc": "{type1} y {type2} pueden tener diferencias de personalidad, pero entender la unicidad del otro puede ser una oportunidad de crecimiento.",
     "neutralMatch": "Compatibilidad promedio",
     "neutralDesc": "{type1} y {type2} no tienen fortalezas o debilidades especiales. Pero con esfuerzo, puede desarrollarse en una buena relación."
+  },
+  "ads": {
+    "label": "Anuncio",
+    "banner": "Área de anuncio",
+    "close": "Cerrar"
   }
 }

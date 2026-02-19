@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Compatibilité MBTI & Conseils",
-    "description": "Découvre la compatibilité des types MBTI, l'analyse de personnalité et les conseils de rencontres/travail. Qui est ta correspondance parfaite?"
+    "description": "Découvre la compatibilité des types MBTI, l'analyse de personnalité et les conseils de rencontres/travail. Qui est ta correspondance parfaite?",
+    "skipLink": "Aller au contenu principal",
+    "socialProof": "🔥 100 000+ utilisateurs"
   },
   "header": {
     "title": "🧬 Compatibilité MBTI & Conseils",
@@ -94,5 +96,10 @@
     "badDesc": "{type1} et {type2} peuvent avoir des différences de personnalité, mais se comprendre peut être une opportunité de croissance.",
     "neutralMatch": "Correspondance moyenne",
     "neutralDesc": "{type1} et {type2} n'ont pas de forces ou de faiblesses particulières. Mais avec de l'effort, cela peut se développer en une bonne relation."
+  },
+  "ads": {
+    "label": "Publicité",
+    "banner": "Zone publicitaire",
+    "close": "Fermer"
   }
 }

@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "MBTI 兼容性 & 提示",
-    "description": "发现MBTI类型兼容性，性格分析和约会/工作场所建议。谁是你的完美匹配？"
+    "description": "发现MBTI类型兼容性，性格分析和约会/工作场所建议。谁是你的完美匹配？",
+    "skipLink": "跳到主内容",
+    "socialProof": "🔥 100,000+ 用户"
   },
   "header": {
     "title": "🧬 MBTI 兼容性 & 提示",
@@ -94,5 +96,10 @@
     "badDesc": "{type1} 和 {type2} 可能有性格差异，但理解彼此的独特之处可以成为成长的机会。",
     "neutralMatch": "一般搭档",
     "neutralDesc": "{type1} 和 {type2} 没有特别的优势或劣势。但通过努力，可以发展成为良好的关系。"
+  },
+  "ads": {
+    "label": "广告",
+    "banner": "广告区域",
+    "close": "关闭"
   }
 }
