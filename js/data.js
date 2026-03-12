@@ -1,17 +1,23 @@
-// MBTI 데이터
+// MBTI data — i18n keys + English fallbacks
 const mbtiData = {
-    // 분석가 그룹
+    // Analysts
     "INTJ": {
         name: "INTJ",
-        title: "전략가",
-        icon: "🎯",
+        titleKey: "mbti.INTJ.title",
+        title: "The Strategist",
+        icon: "\uD83C\uDFAF",
         group: "analyst",
-        description: "상상력이 풍부하고 전략적인 사고를 가진 타입입니다. 모든 것에 대한 계획을 가지고 있으며, 독립적이고 결단력 있게 목표를 향해 나아갑니다. 높은 기준을 가지고 있으며, 비효율성을 싫어합니다.",
+        descriptionKey: "mbti.INTJ.description",
+        description: "Imaginative and strategic thinker with a plan for everything. Independent and determined, moving toward goals with high standards and a dislike for inefficiency.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "직관형 (N)",
-            nature: "사고형 (T)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["ENFP", "ENTP"],
@@ -19,43 +25,56 @@ const mbtiData = {
             bad: ["ESFP", "ISFP", "ESFJ"]
         },
         tips: {
+            loveKeys: ["mbti.INTJ.love.0","mbti.INTJ.love.1","mbti.INTJ.love.2","mbti.INTJ.love.3"],
             love: [
-                "감정 표현에 서툴러도 파트너에게 애정을 말로 전해보세요",
-                "상대방의 감정적 필요를 논리로만 분석하지 마세요",
-                "가끔은 계획 없는 데이트도 즐겨보세요",
-                "비판보다 칭찬을 먼저 하는 연습을 해보세요"
+                "Even if expressing feelings is hard, try telling your partner you care",
+                "Don't just analyze your partner's emotional needs logically",
+                "Sometimes enjoy an unplanned date",
+                "Practice giving compliments before criticism"
             ],
+            workKeys: ["mbti.INTJ.work.0","mbti.INTJ.work.1","mbti.INTJ.work.2","mbti.INTJ.work.3"],
             work: [
-                "팀원들과 아이디어를 공유할 때 인내심을 가지세요",
-                "당신의 비전을 쉬운 말로 설명하는 연습을 하세요",
-                "모든 것을 혼자 하려 하지 말고 위임도 고려하세요",
-                "비효율적으로 보여도 팀 빌딩 활동에 참여하세요"
+                "Be patient when sharing ideas with team members",
+                "Practice explaining your vision in simple terms",
+                "Don't try to do everything alone; consider delegating",
+                "Participate in team building even if it seems inefficient"
             ],
+            friendKeys: ["mbti.INTJ.friend.0","mbti.INTJ.friend.1","mbti.INTJ.friend.2","mbti.INTJ.friend.3"],
             friend: [
-                "친구들의 일상적인 대화도 가치 있게 여겨보세요",
-                "조언보다 그냥 들어주는 것이 필요할 때도 있어요",
-                "가끔은 감정적 지지만 원하는 것일 수 있어요",
-                "소수의 깊은 관계에 집중하는 것도 좋아요"
+                "Value your friends' everyday conversations too",
+                "Sometimes just listening is better than giving advice",
+                "Sometimes they just want emotional support",
+                "Focusing on a few deep relationships is also great"
             ]
         },
         deepAnalysis: {
-            psychology: "INTJ는 내면에 풍부한 상상의 세계를 가지고 있습니다. 어린 시절부터 '왜?'라는 질문을 많이 했을 가능성이 높으며, 시스템과 패턴을 이해하는 데 뛰어납니다. 감정보다 논리를 우선시하지만, 이것이 감정이 없다는 것을 의미하지는 않습니다. 오히려 감정을 깊이 느끼지만 표현하는 방법을 모를 뿐입니다.",
-            growth: "성장을 위해서는 감정 지능(EQ) 개발에 집중하세요. 완벽주의를 조금 내려놓고, 실패를 학습의 기회로 받아들이세요. 다른 사람의 방식도 가치 있을 수 있음을 인정하면 관계가 좋아집니다.",
-            career: "전략 컨설턴트, 과학자, 소프트웨어 아키텍트, 투자 분석가, 작가 등 독립적으로 깊이 사고할 수 있는 직업이 적합합니다.",
-            stress: "스트레스를 받으면 평소와 달리 충동적이 되거나, 과도하게 세부사항에 집착할 수 있습니다. 혼자만의 시간과 명상이 회복에 도움이 됩니다."
+            psychologyKey: "mbti.INTJ.psychology",
+            psychology: "INTJs have a rich inner world of imagination. They likely asked 'why?' a lot as children and excel at understanding systems and patterns. They prioritize logic over emotions, but this doesn't mean they lack feelings. They feel deeply but may not know how to express it.",
+            growthKey: "mbti.INTJ.growth",
+            growth: "Focus on developing emotional intelligence (EQ). Let go of perfectionism a little and accept failure as a learning opportunity. Acknowledging that others' methods can also be valuable will improve your relationships.",
+            careerKey: "mbti.INTJ.career",
+            career: "Strategy consultant, scientist, software architect, investment analyst, writer — jobs that allow independent deep thinking are ideal.",
+            stressKey: "mbti.INTJ.stress",
+            stress: "Under stress, you may become unusually impulsive or obsess over details. Alone time and meditation help with recovery."
         }
     },
     "INTP": {
         name: "INTP",
-        title: "논리술사",
-        icon: "🔬",
+        titleKey: "mbti.INTP.title",
+        title: "The Logician",
+        icon: "\uD83D\uDD2C",
         group: "analyst",
-        description: "혁신적인 발명가로, 지식에 대한 갈증이 끝이 없습니다. 논리와 이론을 사랑하며, 추상적인 아이디어를 탐구하는 것을 즐깁니다. 조용하지만 머릿속에서는 항상 새로운 아이디어가 돌아갑니다.",
+        descriptionKey: "mbti.INTP.description",
+        description: "An innovative inventor with an endless thirst for knowledge. Loves logic and theory, enjoys exploring abstract ideas. Quiet but always generating new ideas internally.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "직관형 (N)",
-            nature: "사고형 (T)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["ENTJ", "ENFJ"],
@@ -63,43 +82,56 @@ const mbtiData = {
             bad: ["ESFJ", "ISFJ", "ESTJ"]
         },
         tips: {
+            loveKeys: ["mbti.INTP.love.0","mbti.INTP.love.1","mbti.INTP.love.2","mbti.INTP.love.3"],
             love: [
-                "관심을 말과 행동으로 표현하는 연습을 하세요",
-                "상대방의 감정적 필요에 더 주의를 기울이세요",
-                "분석보다 공감이 필요한 순간을 구분하세요",
-                "가끔은 즉흥적인 로맨틱한 행동을 시도해보세요"
+                "Practice expressing interest through words and actions",
+                "Pay more attention to your partner's emotional needs",
+                "Learn to distinguish when empathy is needed over analysis",
+                "Try spontaneous romantic gestures sometimes"
             ],
+            workKeys: ["mbti.INTP.work.0","mbti.INTP.work.1","mbti.INTP.work.2","mbti.INTP.work.3"],
             work: [
-                "아이디어를 실행으로 옮기는 것도 중요해요",
-                "마감 기한을 지키는 시스템을 만들어보세요",
-                "팀 미팅에서 당신의 인사이트를 공유하세요",
-                "사소해 보이는 업무도 전체 그림의 일부예요"
+                "Turning ideas into action is also important",
+                "Create a system to meet deadlines",
+                "Share your insights in team meetings",
+                "Even small tasks are part of the big picture"
             ],
+            friendKeys: ["mbti.INTP.friend.0","mbti.INTP.friend.1","mbti.INTP.friend.2","mbti.INTP.friend.3"],
             friend: [
-                "친구들의 감정에 더 주의를 기울여보세요",
-                "가끔은 그냥 함께 있어주는 것만으로 충분해요",
-                "모든 대화를 토론으로 만들 필요는 없어요",
-                "약속을 잊지 않도록 리마인더를 설정하세요"
+                "Pay more attention to your friends' emotions",
+                "Sometimes just being there is enough",
+                "Not every conversation needs to be a debate",
+                "Set reminders so you don't forget plans"
             ]
         },
         deepAnalysis: {
-            psychology: "INTP는 진정한 사색가입니다. 복잡한 시스템을 이해하고 새로운 아이디어를 탐구하는 데서 에너지를 얻습니다. 사회적 규범에 의문을 품는 경향이 있으며, '왜 그래야 하는가?'를 끊임없이 질문합니다.",
-            growth: "아이디어를 현실로 구현하는 연습이 필요합니다. 완벽한 이론보다 '충분히 좋은' 실행이 더 가치 있을 수 있습니다. 감정을 논리적으로 이해하려 하기보다 그냥 느껴보세요.",
-            career: "연구원, 철학자, 프로그래머, 수학자, 분석가 등 독립적으로 사고하고 문제를 해결하는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 과도하게 걱정하거나, 평소와 달리 감정적으로 예민해질 수 있습니다. 산책이나 퍼즐 같은 단순한 활동이 도움이 됩니다."
+            psychologyKey: "mbti.INTP.psychology",
+            psychology: "INTPs are true thinkers. They gain energy from understanding complex systems and exploring new ideas. They tend to question social norms and constantly ask 'why should it be that way?'",
+            growthKey: "mbti.INTP.growth",
+            growth: "You need practice turning ideas into reality. A 'good enough' execution can be more valuable than a perfect theory. Try feeling emotions instead of trying to understand them logically.",
+            careerKey: "mbti.INTP.career",
+            career: "Researcher, philosopher, programmer, mathematician, analyst — jobs that involve independent thinking and problem-solving are ideal.",
+            stressKey: "mbti.INTP.stress",
+            stress: "Under stress, you may worry excessively or become unusually emotionally sensitive. Simple activities like walks or puzzles can help."
         }
     },
     "ENTJ": {
         name: "ENTJ",
-        title: "통솔자",
-        icon: "👔",
+        titleKey: "mbti.ENTJ.title",
+        title: "The Commander",
+        icon: "\uD83D\uDC54",
         group: "analyst",
-        description: "대담하고 상상력이 풍부한 강한 의지의 리더입니다. 항상 방법을 찾거나 만들어냅니다. 효율성과 성과를 중시하며, 다른 사람들을 이끌어 목표를 달성하는 데 뛰어납니다.",
+        descriptionKey: "mbti.ENTJ.description",
+        description: "A bold, imaginative, strong-willed leader who always finds or creates a way. Values efficiency and results, excels at leading others toward goals.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "직관형 (N)",
-            nature: "사고형 (T)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["INTP", "INFP"],
@@ -107,43 +139,56 @@ const mbtiData = {
             bad: ["ISFP", "ESFP", "ISFJ"]
         },
         tips: {
+            loveKeys: ["mbti.ENTJ.love.0","mbti.ENTJ.love.1","mbti.ENTJ.love.2","mbti.ENTJ.love.3"],
             love: [
-                "상대방을 '프로젝트'처럼 대하지 마세요",
-                "가끔은 이기는 것보다 화목이 더 중요해요",
-                "파트너의 페이스를 존중해주세요",
-                "취약함을 보여주는 것도 강함입니다"
+                "Don't treat your partner like a 'project'",
+                "Sometimes harmony matters more than winning",
+                "Respect your partner's pace",
+                "Showing vulnerability is also a form of strength"
             ],
+            workKeys: ["mbti.ENTJ.work.0","mbti.ENTJ.work.1","mbti.ENTJ.work.2","mbti.ENTJ.work.3"],
             work: [
-                "팀원들의 의견을 경청하는 시간을 가지세요",
-                "모든 것을 통제하려 하지 마세요",
-                "비판은 건설적으로, 칭찬은 자주 하세요",
-                "때로는 합의를 통한 결정도 필요합니다"
+                "Take time to listen to team members' opinions",
+                "Don't try to control everything",
+                "Be constructive with criticism, generous with praise",
+                "Sometimes consensus-based decisions are needed"
             ],
+            friendKeys: ["mbti.ENTJ.friend.0","mbti.ENTJ.friend.1","mbti.ENTJ.friend.2","mbti.ENTJ.friend.3"],
             friend: [
-                "모든 대화를 리드하려 하지 마세요",
-                "친구들의 작은 성취도 축하해주세요",
-                "조언 대신 지지가 필요할 때도 있어요",
-                "약속은 꼭 지키세요, 신뢰가 중요합니다"
+                "Don't always try to lead every conversation",
+                "Celebrate your friends' small achievements too",
+                "Sometimes support is needed more than advice",
+                "Keep your promises — trust is important"
             ]
         },
         deepAnalysis: {
-            psychology: "ENTJ는 타고난 리더십을 가지고 있습니다. 어린 시절부터 그룹을 이끌거나 계획을 세우는 역할을 맡았을 가능성이 높습니다. 비효율성에 대한 인내심이 적고, 빠른 의사결정을 선호합니다.",
-            growth: "감성 지능 개발이 리더십을 한 단계 높여줍니다. 결과만큼 과정도 중요하다는 것, 그리고 사람들은 논리만으로 움직이지 않는다는 것을 이해하면 더 큰 영향력을 가질 수 있습니다.",
-            career: "CEO, 경영 컨설턴트, 변호사, 판사, 기업가 등 리더십을 발휘할 수 있는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 더욱 공격적이 되거나, 평소보다 더 통제하려 할 수 있습니다. 신뢰할 수 있는 사람과의 대화가 도움이 됩니다."
+            psychologyKey: "mbti.ENTJ.psychology",
+            psychology: "ENTJs are born leaders. They likely led groups or planned activities from childhood. They have little patience for inefficiency and prefer fast decision-making.",
+            growthKey: "mbti.ENTJ.growth",
+            growth: "Developing emotional intelligence will elevate your leadership. Understanding that process matters as much as results, and that people don't move on logic alone, will give you greater influence.",
+            careerKey: "mbti.ENTJ.career",
+            career: "CEO, management consultant, lawyer, judge, entrepreneur — jobs where you can exercise leadership are ideal.",
+            stressKey: "mbti.ENTJ.stress",
+            stress: "Under stress, you may become more aggressive or try to control even more. Talking with someone you trust helps."
         }
     },
     "ENTP": {
         name: "ENTP",
-        title: "변론가",
-        icon: "💡",
+        titleKey: "mbti.ENTP.title",
+        title: "The Debater",
+        icon: "\uD83D\uDCA1",
         group: "analyst",
-        description: "똑똑하고 호기심이 많은 사색가로, 지적인 도전을 즐깁니다. 토론을 좋아하며, 기존의 관념에 도전하는 것을 두려워하지 않습니다. 아이디어의 세계에서 살아갑니다.",
+        descriptionKey: "mbti.ENTP.description",
+        description: "Smart, curious thinker who enjoys intellectual challenges. Loves debate and isn't afraid to challenge conventions. Lives in a world of ideas.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "직관형 (N)",
-            nature: "사고형 (T)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["INTJ", "INFJ"],
@@ -151,45 +196,58 @@ const mbtiData = {
             bad: ["ISFJ", "ISTJ", "ESFJ"]
         },
         tips: {
+            loveKeys: ["mbti.ENTP.love.0","mbti.ENTP.love.1","mbti.ENTP.love.2","mbti.ENTP.love.3"],
             love: [
-                "모든 것을 토론으로 만들지 마세요",
-                "상대방의 감정을 '틀렸다'고 하지 마세요",
-                "한 관계에 깊이 집중하는 것도 가치있어요",
-                "말한 것은 꼭 실행에 옮기세요"
+                "Don't turn everything into a debate",
+                "Don't tell your partner their feelings are 'wrong'",
+                "Deeply focusing on one relationship has value too",
+                "Follow through on what you say"
             ],
+            workKeys: ["mbti.ENTP.work.0","mbti.ENTP.work.1","mbti.ENTP.work.2","mbti.ENTP.work.3"],
             work: [
-                "시작한 프로젝트를 끝까지 완수하세요",
-                "팀원들의 감정도 고려하세요",
-                "규칙에도 때로는 좋은 이유가 있어요",
-                "세부사항도 때로는 중요합니다"
+                "Finish projects you start",
+                "Consider your team members' feelings too",
+                "Rules sometimes have good reasons",
+                "Details can be important too"
             ],
+            friendKeys: ["mbti.ENTP.friend.0","mbti.ENTP.friend.1","mbti.ENTP.friend.2","mbti.ENTP.friend.3"],
             friend: [
-                "친구의 의견을 반박만 하지 마세요",
-                "가끔은 그냥 동의해주는 것도 좋아요",
-                "깊고 지속적인 우정도 가치있어요",
-                "친구의 기분이 안 좋을 때 농담은 자제하세요"
+                "Don't just refute your friends' opinions",
+                "Sometimes just agreeing is fine too",
+                "Deep, lasting friendships are valuable too",
+                "Hold back on jokes when a friend is feeling down"
             ]
         },
         deepAnalysis: {
-            psychology: "ENTP는 아이디어의 연금술사입니다. 새로운 가능성을 탐색하고 기존 시스템에 도전하는 것에서 에너지를 얻습니다. '악마의 변호인' 역할을 즐기며, 토론 자체를 스포츠처럼 여기기도 합니다.",
-            growth: "시작한 것을 끝까지 완수하는 연습이 필요합니다. 새로운 아이디어에 쉽게 매료되지만, 실행력을 키우면 정말 큰 성과를 낼 수 있습니다. 다른 사람의 감정을 '비합리적'으로 치부하지 마세요.",
-            career: "기업가, 변호사, 마케터, 발명가, 코미디언 등 창의적으로 사고하고 새로운 아이디어를 탐구할 수 있는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 더욱 논쟁적이 되거나, 사소한 것에 집착할 수 있습니다. 새로운 환경이나 여행이 리프레시에 도움이 됩니다."
+            psychologyKey: "mbti.ENTP.psychology",
+            psychology: "ENTPs are alchemists of ideas. They gain energy from exploring new possibilities and challenging existing systems. They enjoy playing 'devil's advocate' and sometimes treat debate like a sport.",
+            growthKey: "mbti.ENTP.growth",
+            growth: "You need practice finishing what you start. You're easily captivated by new ideas, but building execution skills can lead to truly great results. Don't dismiss others' emotions as 'irrational.'",
+            careerKey: "mbti.ENTP.career",
+            career: "Entrepreneur, lawyer, marketer, inventor, comedian — jobs where you can think creatively and explore new ideas are ideal.",
+            stressKey: "mbti.ENTP.stress",
+            stress: "Under stress, you may become more argumentative or obsess over trivial things. New environments or travel can help refresh you."
         }
     },
 
-    // 외교관 그룹
+    // Diplomats
     "INFJ": {
         name: "INFJ",
-        title: "옹호자",
-        icon: "🌟",
+        titleKey: "mbti.INFJ.title",
+        title: "The Advocate",
+        icon: "\uD83C\uDF1F",
         group: "diplomat",
-        description: "조용하고 신비로우면서도 영감을 주는 이상주의자입니다. 다른 사람을 돕고 세상을 더 나은 곳으로 만들고자 하는 깊은 열망을 가지고 있습니다. 가장 희귀한 성격 유형 중 하나입니다.",
+        descriptionKey: "mbti.INFJ.description",
+        description: "Quiet, mysterious, and inspiring idealist. Has a deep desire to help others and make the world a better place. One of the rarest personality types.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "직관형 (N)",
-            nature: "감정형 (F)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["ENTP", "ENFP"],
@@ -197,43 +255,56 @@ const mbtiData = {
             bad: ["ESTP", "ISTP", "ESTJ"]
         },
         tips: {
+            loveKeys: ["mbti.INFJ.love.0","mbti.INFJ.love.1","mbti.INFJ.love.2","mbti.INFJ.love.3"],
             love: [
-                "모든 것을 혼자 해결하려 하지 마세요",
-                "파트너에게 당신의 필요도 표현하세요",
-                "완벽한 관계는 없다는 것을 받아들이세요",
-                "상대방을 바꾸려 하기보다 이해하세요"
+                "Don't try to solve everything alone",
+                "Express your own needs to your partner too",
+                "Accept that no relationship is perfect",
+                "Try to understand rather than change your partner"
             ],
+            workKeys: ["mbti.INFJ.work.0","mbti.INFJ.work.1","mbti.INFJ.work.2","mbti.INFJ.work.3"],
             work: [
-                "당신의 아이디어를 더 적극적으로 공유하세요",
-                "모든 사람을 도울 수는 없어요, 경계를 지키세요",
-                "갈등을 피하기만 하지 말고 건설적으로 해결하세요",
-                "완벽주의를 조금 내려놓으세요"
+                "Share your ideas more actively",
+                "You can't help everyone — set boundaries",
+                "Don't just avoid conflict; resolve it constructively",
+                "Let go of perfectionism a little"
             ],
+            friendKeys: ["mbti.INFJ.friend.0","mbti.INFJ.friend.1","mbti.INFJ.friend.2","mbti.INFJ.friend.3"],
             friend: [
-                "친구들이 당신을 이용하게 두지 마세요",
-                "당신의 필요도 중요하다는 것을 기억하세요",
-                "모든 친구의 문제를 해결해줄 필요는 없어요",
-                "혼자만의 시간이 필요할 때 말씀하세요"
+                "Don't let friends take advantage of you",
+                "Remember that your needs matter too",
+                "You don't need to solve every friend's problems",
+                "Speak up when you need alone time"
             ]
         },
         deepAnalysis: {
-            psychology: "INFJ는 깊은 공감 능력과 직관력을 가지고 있습니다. 다른 사람의 감정을 거의 텔레파시처럼 읽어내기도 합니다. 하지만 이 능력이 때로는 짐이 될 수 있습니다. 다른 사람의 감정을 과도하게 흡수하여 지칠 수 있습니다.",
-            growth: "자신을 위한 경계를 설정하는 것이 중요합니다. 다른 사람을 돕는 것도 좋지만, 먼저 자신의 컵을 채워야 합니다. 완벽한 비전에 도달하지 못해도 자신을 용서하세요.",
-            career: "상담사, 심리학자, 작가, 교사, 사회복지사 등 사람들을 돕고 의미 있는 변화를 만들 수 있는 직업이 적합합니다.",
-            stress: "스트레스가 심하면 '도어 슬램'이라고 알려진 현상처럼 갑자기 관계를 끊을 수 있습니다. 정기적인 자기 돌봄과 신뢰할 수 있는 사람과의 대화가 중요합니다."
+            psychologyKey: "mbti.INFJ.psychology",
+            psychology: "INFJs have deep empathy and intuition. They can read others' emotions almost telepathically. But this ability can sometimes be a burden, as they may absorb others' emotions and become exhausted.",
+            growthKey: "mbti.INFJ.growth",
+            growth: "Setting boundaries for yourself is crucial. Helping others is great, but you need to fill your own cup first. Forgive yourself when you can't reach your perfect vision.",
+            careerKey: "mbti.INFJ.career",
+            career: "Counselor, psychologist, writer, teacher, social worker — jobs where you can help people and create meaningful change are ideal.",
+            stressKey: "mbti.INFJ.stress",
+            stress: "Under extreme stress, you might suddenly cut off relationships in what's known as a 'door slam.' Regular self-care and talking with someone you trust are important."
         }
     },
     "INFP": {
         name: "INFP",
-        title: "중재자",
-        icon: "🦋",
+        titleKey: "mbti.INFP.title",
+        title: "The Mediator",
+        icon: "\uD83E\uDD8B",
         group: "diplomat",
-        description: "시적이고 친절하며 이타적인 성격으로, 언제나 선한 일을 위해 도움을 주려 합니다. 내면의 깊은 가치와 이상을 따르며, 진정성을 중요시합니다.",
+        descriptionKey: "mbti.INFP.description",
+        description: "Poetic, kind, and altruistic, always ready to help for a good cause. Follows deep inner values and ideals, and values authenticity highly.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "직관형 (N)",
-            nature: "감정형 (F)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["ENTJ", "ENFJ"],
@@ -241,43 +312,56 @@ const mbtiData = {
             bad: ["ESTJ", "ISTJ", "ESTP"]
         },
         tips: {
+            loveKeys: ["mbti.INFP.love.0","mbti.INFP.love.1","mbti.INFP.love.2","mbti.INFP.love.3"],
             love: [
-                "이상화하기보다 현실의 파트너를 사랑하세요",
-                "갈등을 피하지 말고 건강하게 다뤄보세요",
-                "당신의 감정을 말로 표현하세요",
-                "상대방이 마음을 읽을 수 있다고 기대하지 마세요"
+                "Love your real partner, not an idealized version",
+                "Don't avoid conflict — handle it in a healthy way",
+                "Express your feelings in words",
+                "Don't expect your partner to read your mind"
             ],
+            workKeys: ["mbti.INFP.work.0","mbti.INFP.work.1","mbti.INFP.work.2","mbti.INFP.work.3"],
             work: [
-                "비판을 개인적으로 받아들이지 마세요",
-                "마감 기한에 맞추는 시스템을 만드세요",
-                "가치와 맞지 않는 일도 때로는 필요해요",
-                "당신의 창의성을 실용적으로 적용해보세요"
+                "Don't take criticism personally",
+                "Create a system to meet deadlines",
+                "Work that doesn't align with your values is sometimes necessary",
+                "Apply your creativity in practical ways"
             ],
+            friendKeys: ["mbti.INFP.friend.0","mbti.INFP.friend.1","mbti.INFP.friend.2","mbti.INFP.friend.3"],
             friend: [
-                "친구들과 일상도 함께 나누세요",
-                "깊은 대화만 원하지 말고 가벼움도 즐기세요",
-                "친구의 작은 잘못에 너무 상처받지 마세요",
-                "먼저 연락하는 것도 좋아요"
+                "Share everyday things with your friends too",
+                "Don't only seek deep conversations; enjoy light ones too",
+                "Don't be too hurt by friends' small mistakes",
+                "Taking the initiative to reach out is good too"
             ]
         },
         deepAnalysis: {
-            psychology: "INFP는 깊은 내면의 세계를 가지고 있습니다. 강한 가치관과 이상을 품고 있으며, 진정성과 의미를 추구합니다. 예술적 감수성이 뛰어나며, 글쓰기나 예술을 통해 자신을 표현하는 경우가 많습니다.",
-            growth: "이상과 현실 사이의 균형을 찾는 것이 중요합니다. 완벽한 세상을 꿈꾸되, 작은 변화의 가치도 인정하세요. 비판을 개인 공격으로 받아들이지 않는 연습이 필요합니다.",
-            career: "작가, 상담사, 예술가, 그래픽 디자이너, 사회복지사 등 창의성과 가치를 표현할 수 있는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 현실에서 도피하거나 자기 비판에 빠질 수 있습니다. 창작 활동이나 자연에서의 시간이 회복에 도움이 됩니다."
+            psychologyKey: "mbti.INFP.psychology",
+            psychology: "INFPs have a deep inner world. They hold strong values and ideals, pursuing authenticity and meaning. They have excellent artistic sensitivity and often express themselves through writing or art.",
+            growthKey: "mbti.INFP.growth",
+            growth: "Finding balance between ideals and reality is important. Dream of a perfect world, but also acknowledge the value of small changes. Practice not taking criticism as a personal attack.",
+            careerKey: "mbti.INFP.career",
+            career: "Writer, counselor, artist, graphic designer, social worker — jobs where you can express creativity and values are ideal.",
+            stressKey: "mbti.INFP.stress",
+            stress: "Under stress, you may escape from reality or fall into self-criticism. Creative activities or time in nature help with recovery."
         }
     },
     "ENFJ": {
         name: "ENFJ",
-        title: "선도자",
-        icon: "👑",
+        titleKey: "mbti.ENFJ.title",
+        title: "The Protagonist",
+        icon: "\uD83D\uDC51",
         group: "diplomat",
-        description: "카리스마 있고 영감을 주는 리더로, 청중을 사로잡을 수 있습니다. 다른 사람의 성장을 돕는 것에서 큰 기쁨을 느끼며, 자연스럽게 사람들을 이끕니다.",
+        descriptionKey: "mbti.ENFJ.description",
+        description: "Charismatic and inspiring leader who can captivate an audience. Finds great joy in helping others grow and naturally leads people.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "직관형 (N)",
-            nature: "감정형 (F)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["INTP", "INFP"],
@@ -285,43 +369,56 @@ const mbtiData = {
             bad: ["ISTP", "ESTP", "ISTJ"]
         },
         tips: {
+            loveKeys: ["mbti.ENFJ.love.0","mbti.ENFJ.love.1","mbti.ENFJ.love.2","mbti.ENFJ.love.3"],
             love: [
-                "상대방을 위한답시고 지나치게 통제하지 마세요",
-                "당신의 필요도 우선시하는 것이 이기적인 게 아니에요",
-                "파트너의 성장 속도를 존중하세요",
-                "항상 조화를 유지하려 하지 않아도 괜찮아요"
+                "Don't be overly controlling in the name of 'helping'",
+                "Prioritizing your own needs isn't selfish",
+                "Respect your partner's growth pace",
+                "It's okay not to maintain harmony at all times"
             ],
+            workKeys: ["mbti.ENFJ.work.0","mbti.ENFJ.work.1","mbti.ENFJ.work.2","mbti.ENFJ.work.3"],
             work: [
-                "다른 사람의 승인 없이도 스스로를 인정하세요",
-                "모든 사람을 만족시킬 수는 없어요",
-                "비판도 건설적으로 전달할 수 있어요",
-                "번아웃에 주의하세요, 자기 돌봄이 중요해요"
+                "Validate yourself without needing others' approval",
+                "You can't please everyone",
+                "You can deliver criticism constructively",
+                "Watch out for burnout — self-care matters"
             ],
+            friendKeys: ["mbti.ENFJ.friend.0","mbti.ENFJ.friend.1","mbti.ENFJ.friend.2","mbti.ENFJ.friend.3"],
             friend: [
-                "친구들이 스스로 해결하게 두는 것도 좋아요",
-                "모든 관계에서 '구원자' 역할을 할 필요 없어요",
-                "당신의 고민도 친구들과 나누세요",
-                "관계에서 받는 것도 허용하세요"
+                "It's okay to let friends solve things on their own",
+                "You don't need to be the 'savior' in every relationship",
+                "Share your own struggles with friends too",
+                "Allow yourself to receive in relationships"
             ]
         },
         deepAnalysis: {
-            psychology: "ENFJ는 다른 사람의 잠재력을 보고 그것을 이끌어내는 데 뛰어납니다. 자연스러운 멘토이자 코치입니다. 하지만 다른 사람을 돕느라 자신을 소진시키는 경향이 있습니다.",
-            growth: "자신의 필요를 우선시하는 것이 이기적인 것이 아님을 배워야 합니다. 모든 사람을 구할 수는 없다는 것, 그리고 사람들이 스스로 배울 기회도 필요하다는 것을 이해하세요.",
-            career: "교사, 상담사, HR 전문가, 코치, 정치가 등 사람들을 이끌고 성장시키는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 자기 비판적이 되거나, 다른 사람의 문제에 과도하게 개입할 수 있습니다. 건강한 경계 설정이 중요합니다."
+            psychologyKey: "mbti.ENFJ.psychology",
+            psychology: "ENFJs excel at seeing others' potential and drawing it out. They are natural mentors and coaches. But they tend to exhaust themselves helping others.",
+            growthKey: "mbti.ENFJ.growth",
+            growth: "Learn that prioritizing your own needs isn't selfish. Understand that you can't save everyone and that people need the opportunity to learn on their own.",
+            careerKey: "mbti.ENFJ.career",
+            career: "Teacher, counselor, HR professional, coach, politician — jobs where you can lead and develop people are ideal.",
+            stressKey: "mbti.ENFJ.stress",
+            stress: "Under stress, you may become self-critical or overly involved in others' problems. Healthy boundary-setting is important."
         }
     },
     "ENFP": {
         name: "ENFP",
-        title: "활동가",
-        icon: "🌈",
+        titleKey: "mbti.ENFP.title",
+        title: "The Campaigner",
+        icon: "\uD83C\uDF08",
         group: "diplomat",
-        description: "열정적이고 창의적이며 사교적인 자유로운 영혼입니다. 언제나 새로운 가능성을 발견하며, 열정으로 주변 사람들에게 영감을 줍니다.",
+        descriptionKey: "mbti.ENFP.description",
+        description: "Enthusiastic, creative, and sociable free spirit. Always discovering new possibilities and inspiring others with passion.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "직관형 (N)",
-            nature: "감정형 (F)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.intuitionN",
+            mind: "Intuition (N)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["INTJ", "INFJ"],
@@ -329,45 +426,58 @@ const mbtiData = {
             bad: ["ISTJ", "ESTJ", "ISTP"]
         },
         tips: {
+            loveKeys: ["mbti.ENFP.love.0","mbti.ENFP.love.1","mbti.ENFP.love.2","mbti.ENFP.love.3"],
             love: [
-                "새로움에 대한 추구가 파트너를 불안하게 할 수 있어요",
-                "약속은 꼭 지키세요, 신뢰가 중요해요",
-                "관계의 일상적인 부분도 가치있게 여기세요",
-                "한 관계에 깊이 집중하는 것도 배워보세요"
+                "Your quest for novelty can make your partner anxious",
+                "Keep your promises — trust is important",
+                "Value the everyday aspects of your relationship too",
+                "Learn to deeply focus on one relationship"
             ],
+            workKeys: ["mbti.ENFP.work.0","mbti.ENFP.work.1","mbti.ENFP.work.2","mbti.ENFP.work.3"],
             work: [
-                "시작한 프로젝트를 끝까지 완수하세요",
-                "세부사항에도 주의를 기울이세요",
-                "일정 관리 도구를 활용하세요",
-                "모든 아이디어를 다 추구할 수는 없어요"
+                "Finish projects you start",
+                "Pay attention to details",
+                "Use scheduling tools",
+                "You can't pursue every idea"
             ],
+            friendKeys: ["mbti.ENFP.friend.0","mbti.ENFP.friend.1","mbti.ENFP.friend.2","mbti.ENFP.friend.3"],
             friend: [
-                "많은 친구보다 깊은 우정도 가치있어요",
-                "친구의 이야기를 끝까지 들어주세요",
-                "약속 시간을 지키는 것이 존중의 표현이에요",
-                "가끔은 친구들과 조용한 시간도 필요해요"
+                "Deep friendships are just as valuable as many friends",
+                "Listen to your friends' stories all the way through",
+                "Being on time shows respect",
+                "Sometimes quiet time with friends is needed too"
             ]
         },
         deepAnalysis: {
-            psychology: "ENFP는 가능성의 탐험가입니다. 새로운 아이디어와 경험에 끝없이 끌립니다. 깊은 감정적 연결을 갈망하며, 진정성 있는 관계를 추구합니다. 열정적으로 시작하지만 흥미가 떨어지면 유지하기 어려워할 수 있습니다.",
-            growth: "시작한 것을 끝까지 완수하는 연습이 필요합니다. 새로운 것에 대한 열정은 장점이지만, 깊이 있는 전문성도 가치 있습니다. 일상의 루틴도 자유를 위한 기반이 될 수 있습니다.",
-            career: "마케터, 작가, 배우, 상담사, 기업가 등 창의성을 발휘하고 사람들과 연결될 수 있는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 과도하게 자기 비판적이 되거나, 사소한 것에 집착할 수 있습니다. 새로운 환경이나 창의적 활동이 회복에 도움이 됩니다."
+            psychologyKey: "mbti.ENFP.psychology",
+            psychology: "ENFPs are explorers of possibility. They are endlessly drawn to new ideas and experiences. They crave deep emotional connections and pursue authentic relationships. They start passionately but may struggle to maintain things when interest wanes.",
+            growthKey: "mbti.ENFP.growth",
+            growth: "Practice finishing what you start. Enthusiasm for new things is a strength, but deep expertise is also valuable. Daily routines can actually be a foundation for freedom.",
+            careerKey: "mbti.ENFP.career",
+            career: "Marketer, writer, actor, counselor, entrepreneur — jobs where you can be creative and connect with people are ideal.",
+            stressKey: "mbti.ENFP.stress",
+            stress: "Under stress, you may become excessively self-critical or obsess over trivial things. New environments or creative activities help with recovery."
         }
     },
 
-    // 관리자 그룹
+    // Sentinels
     "ISTJ": {
         name: "ISTJ",
-        title: "현실주의자",
-        icon: "📋",
+        titleKey: "mbti.ISTJ.title",
+        title: "The Realist",
+        icon: "\uD83D\uDCCB",
         group: "sentinel",
-        description: "사실에 기반한 사고를 하며 책임감이 강합니다. 약속을 반드시 지키며, 전통과 질서를 중시합니다. 신뢰할 수 있는 사람으로 알려져 있습니다.",
+        descriptionKey: "mbti.ISTJ.description",
+        description: "Fact-based thinker with a strong sense of responsibility. Always keeps promises and values tradition and order. Known as someone you can rely on.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "감각형 (S)",
-            nature: "사고형 (T)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["ESFP", "ESTP"],
@@ -375,43 +485,56 @@ const mbtiData = {
             bad: ["ENFP", "ENTP", "INFP"]
         },
         tips: {
+            loveKeys: ["mbti.ISTJ.love.0","mbti.ISTJ.love.1","mbti.ISTJ.love.2","mbti.ISTJ.love.3"],
             love: [
-                "감정 표현을 연습해보세요, 파트너에게 중요해요",
-                "변화에 조금 더 열린 마음을 가져보세요",
-                "가끔은 계획 없는 것도 즐겨보세요",
-                "파트너의 다른 방식도 존중해주세요"
+                "Practice expressing emotions — it matters to your partner",
+                "Be a little more open to change",
+                "Sometimes enjoy things without a plan",
+                "Respect your partner's different approach"
             ],
+            workKeys: ["mbti.ISTJ.work.0","mbti.ISTJ.work.1","mbti.ISTJ.work.2","mbti.ISTJ.work.3"],
             work: [
-                "새로운 방식에도 열린 마음을 가지세요",
-                "모든 것이 완벽할 필요는 없어요",
-                "팀원들의 창의적 아이디어도 가치있어요",
-                "가끔은 규칙을 유연하게 적용해보세요"
+                "Stay open-minded to new approaches",
+                "Not everything needs to be perfect",
+                "Team members' creative ideas have value too",
+                "Sometimes apply rules flexibly"
             ],
+            friendKeys: ["mbti.ISTJ.friend.0","mbti.ISTJ.friend.1","mbti.ISTJ.friend.2","mbti.ISTJ.friend.3"],
             friend: [
-                "친구들의 감정적 필요에도 귀 기울이세요",
-                "해결책 제시보다 들어주는 것도 좋아요",
-                "가끔은 즉흥적인 계획도 즐겨보세요",
-                "자신의 감정도 나눠보세요"
+                "Listen to your friends' emotional needs too",
+                "Sometimes listening is better than offering solutions",
+                "Sometimes enjoy spontaneous plans",
+                "Share your own feelings too"
             ]
         },
         deepAnalysis: {
-            psychology: "ISTJ는 안정과 질서를 추구합니다. 약속을 철저히 지키며, 책임감이 강합니다. 전통과 검증된 방법을 선호하며, 변화보다는 안정을 중시합니다. 내면의 감정이 풍부하지만 표현하는 데 어려움을 겪기도 합니다.",
-            growth: "변화가 위협이 아닌 기회가 될 수 있음을 배우세요. 감정을 표현하는 것이 약함이 아님을 이해하면 관계가 더 깊어집니다. 가끔은 '충분히 좋은' 것도 괜찮습니다.",
-            career: "회계사, 변호사, 군인, 프로젝트 매니저, 검사 등 체계적이고 책임감 있는 역할이 적합합니다.",
-            stress: "스트레스 상황에서 더욱 경직되거나, 최악의 시나리오에 집착할 수 있습니다. 신뢰할 수 있는 루틴과 가까운 사람들의 지지가 도움이 됩니다."
+            psychologyKey: "mbti.ISTJ.psychology",
+            psychology: "ISTJs seek stability and order. They keep promises faithfully and have a strong sense of responsibility. They prefer tradition and proven methods, valuing stability over change. They have rich inner emotions but may find them hard to express.",
+            growthKey: "mbti.ISTJ.growth",
+            growth: "Learn that change can be an opportunity, not a threat. Understanding that expressing emotions isn't weakness will deepen your relationships. Sometimes 'good enough' is okay.",
+            careerKey: "mbti.ISTJ.career",
+            career: "Accountant, lawyer, military officer, project manager, inspector — systematic and responsible roles are ideal.",
+            stressKey: "mbti.ISTJ.stress",
+            stress: "Under stress, you may become more rigid or fixate on worst-case scenarios. Reliable routines and support from close ones help."
         }
     },
     "ISFJ": {
         name: "ISFJ",
-        title: "수호자",
-        icon: "🛡️",
+        titleKey: "mbti.ISFJ.title",
+        title: "The Defender",
+        icon: "\uD83D\uDEE1\uFE0F",
         group: "sentinel",
-        description: "매우 헌신적이고 따뜻한 보호자로, 사랑하는 사람을 지키기 위해 항상 준비되어 있습니다. 조용하지만 사회적이며, 안정과 조화를 추구합니다.",
+        descriptionKey: "mbti.ISFJ.description",
+        description: "Very devoted and warm protector, always ready to defend loved ones. Quiet but social, seeking stability and harmony.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "감각형 (S)",
-            nature: "감정형 (F)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["ESTP", "ESFP"],
@@ -419,43 +542,56 @@ const mbtiData = {
             bad: ["ENTP", "INTP", "ENFP"]
         },
         tips: {
+            loveKeys: ["mbti.ISFJ.love.0","mbti.ISFJ.love.1","mbti.ISFJ.love.2","mbti.ISFJ.love.3"],
             love: [
-                "당신의 필요도 중요하다는 것을 기억하세요",
-                "상대방이 부탁하지 않은 것까지 다 할 필요 없어요",
-                "갈등을 피하지 말고 건강하게 다뤄보세요",
-                "과거의 실수를 너무 오래 붙잡고 있지 마세요"
+                "Remember that your needs matter too",
+                "You don't need to do everything your partner doesn't ask for",
+                "Don't avoid conflict — handle it healthily",
+                "Don't hold on to past mistakes for too long"
             ],
+            workKeys: ["mbti.ISFJ.work.0","mbti.ISFJ.work.1","mbti.ISFJ.work.2","mbti.ISFJ.work.3"],
             work: [
-                "인정받기 위해 과도하게 일하지 마세요",
-                "아니라고 말하는 것도 배워보세요",
-                "당신의 공로도 드러내는 것이 중요해요",
-                "변화에 조금 더 열린 마음을 가지세요"
+                "Don't overwork just to be recognized",
+                "Learn to say no",
+                "It's important to show your contributions",
+                "Be more open to change"
             ],
+            friendKeys: ["mbti.ISFJ.friend.0","mbti.ISFJ.friend.1","mbti.ISFJ.friend.2","mbti.ISFJ.friend.3"],
             friend: [
-                "친구들이 당신을 이용하게 두지 마세요",
-                "도움을 요청하는 것도 괜찮아요",
-                "당신의 감정도 나눠보세요",
-                "자기 돌봄에도 시간을 투자하세요"
+                "Don't let friends take advantage of you",
+                "It's okay to ask for help too",
+                "Share your own feelings too",
+                "Invest time in self-care too"
             ]
         },
         deepAnalysis: {
-            psychology: "ISFJ는 조용한 영웅입니다. 다른 사람을 돌보는 데서 깊은 만족을 느끼며, 종종 자신의 필요를 뒤로 미룹니다. 세부사항에 주의를 기울이며, 과거의 경험에서 배운 것을 소중히 여깁니다.",
-            growth: "자신의 필요를 우선시하는 것이 이기적인 것이 아님을 배우세요. 다른 사람에게 '아니오'라고 말하는 것도 건강한 경계입니다. 변화가 항상 나쁜 것은 아닙니다.",
-            career: "간호사, 교사, 사회복지사, 행정가, 도서관 사서 등 사람들을 돌보고 질서를 유지하는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 자신을 더욱 내세우지 않고 숨기거나, 최악의 시나리오를 상상할 수 있습니다. 신뢰할 수 있는 사람에게 마음을 터놓는 것이 도움이 됩니다."
+            psychologyKey: "mbti.ISFJ.psychology",
+            psychology: "ISFJs are quiet heroes. They find deep satisfaction in caring for others, often putting their own needs last. They pay attention to details and cherish lessons learned from past experiences.",
+            growthKey: "mbti.ISFJ.growth",
+            growth: "Learn that putting your own needs first isn't selfish. Saying 'no' to others is also a healthy boundary. Change isn't always bad.",
+            careerKey: "mbti.ISFJ.career",
+            career: "Nurse, teacher, social worker, administrator, librarian — jobs where you can care for others and maintain order are ideal.",
+            stressKey: "mbti.ISFJ.stress",
+            stress: "Under stress, you may hide yourself more rather than asserting, or imagine worst-case scenarios. Opening up to someone you trust helps."
         }
     },
     "ESTJ": {
         name: "ESTJ",
-        title: "경영자",
-        icon: "📊",
+        titleKey: "mbti.ESTJ.title",
+        title: "The Executive",
+        icon: "\uD83D\uDCCA",
         group: "sentinel",
-        description: "뛰어난 관리자로, 사람이나 사물을 관리하는 데 뛰어납니다. 정직하고 헌신적이며, 전통과 질서를 중시합니다. 리더십을 발휘하여 조직을 이끕니다.",
+        descriptionKey: "mbti.ESTJ.description",
+        description: "Excellent manager who excels at managing people and things. Honest, devoted, values tradition and order. Leads organizations with strong leadership.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "감각형 (S)",
-            nature: "사고형 (T)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["ISFP", "ISTP"],
@@ -463,43 +599,56 @@ const mbtiData = {
             bad: ["INFP", "ENFP", "INTP"]
         },
         tips: {
+            loveKeys: ["mbti.ESTJ.love.0","mbti.ESTJ.love.1","mbti.ESTJ.love.2","mbti.ESTJ.love.3"],
             love: [
-                "파트너의 감정도 데이터처럼 중요해요",
-                "항상 옳을 필요 없어요, 타협도 배우세요",
-                "부드러움도 강함의 일부예요",
-                "상대방의 다른 방식도 존중해주세요"
+                "Your partner's feelings are as important as data",
+                "You don't always need to be right — learn to compromise",
+                "Softness is also a part of strength",
+                "Respect your partner's different approach"
             ],
+            workKeys: ["mbti.ESTJ.work.0","mbti.ESTJ.work.1","mbti.ESTJ.work.2","mbti.ESTJ.work.3"],
             work: [
-                "팀원들의 개인적 상황도 고려하세요",
-                "규칙보다 사람이 먼저일 때도 있어요",
-                "다른 방식에도 열린 마음을 가지세요",
-                "칭찬을 더 자주 해보세요"
+                "Consider team members' personal situations",
+                "Sometimes people come before rules",
+                "Stay open to different approaches",
+                "Give praise more often"
             ],
+            friendKeys: ["mbti.ESTJ.friend.0","mbti.ESTJ.friend.1","mbti.ESTJ.friend.2","mbti.ESTJ.friend.3"],
             friend: [
-                "친구들의 감정적 필요를 무시하지 마세요",
-                "조언보다 그냥 들어주는 것도 좋아요",
-                "모든 것을 통제하려 하지 마세요",
-                "유연함도 때로는 필요해요"
+                "Don't ignore your friends' emotional needs",
+                "Sometimes just listening is better than giving advice",
+                "Don't try to control everything",
+                "Flexibility is sometimes needed"
             ]
         },
         deepAnalysis: {
-            psychology: "ESTJ는 타고난 조직가입니다. 명확한 구조와 규칙을 좋아하며, 무질서를 싫어합니다. 직접적이고 정직하며, 말한 대로 행동합니다. 때로는 유연성이 부족해 보일 수 있습니다.",
-            growth: "감정도 사실만큼 중요하다는 것을 배우세요. 모든 상황에 규칙이 적용되지 않을 수 있습니다. 다른 사람의 방식도 가치 있을 수 있음을 인정하면 리더십이 더 효과적이 됩니다.",
-            career: "관리자, 경영자, 판사, 군 장교, 재무 담당자 등 조직을 이끌고 관리하는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 더욱 통제적이 되거나 비판적이 될 수 있습니다. 운동이나 성취감을 느낄 수 있는 활동이 도움이 됩니다."
+            psychologyKey: "mbti.ESTJ.psychology",
+            psychology: "ESTJs are born organizers. They like clear structures and rules and dislike disorder. They are direct and honest, acting as they speak. Sometimes they may appear inflexible.",
+            growthKey: "mbti.ESTJ.growth",
+            growth: "Learn that emotions are as important as facts. Not every situation can have rules applied. Recognizing that others' methods can be valuable will make your leadership more effective.",
+            careerKey: "mbti.ESTJ.career",
+            career: "Manager, executive, judge, military officer, financial officer — jobs where you can lead and manage organizations are ideal.",
+            stressKey: "mbti.ESTJ.stress",
+            stress: "Under stress, you may become more controlling or critical. Exercise or activities that give a sense of achievement help."
         }
     },
     "ESFJ": {
         name: "ESFJ",
-        title: "집정관",
-        icon: "🤝",
+        titleKey: "mbti.ESFJ.title",
+        title: "The Consul",
+        icon: "\uD83E\uDD1D",
         group: "sentinel",
-        description: "매우 배려심 있고 사교적이며 인기 있는 사람입니다. 다른 사람을 돕는 것을 좋아하며, 조화로운 환경을 만들기 위해 노력합니다. 커뮤니티의 중심 역할을 합니다.",
+        descriptionKey: "mbti.ESFJ.description",
+        description: "Very caring, social, and popular. Loves helping others and strives to create a harmonious environment. Plays a central role in the community.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "감각형 (S)",
-            nature: "감정형 (F)",
-            tactic: "계획형 (J)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.judgingJ",
+            tactic: "Judging (J)"
         },
         compatibility: {
             best: ["ISTP", "ISFP"],
@@ -507,45 +656,58 @@ const mbtiData = {
             bad: ["INTP", "ENTP", "INTJ"]
         },
         tips: {
+            loveKeys: ["mbti.ESFJ.love.0","mbti.ESFJ.love.1","mbti.ESFJ.love.2","mbti.ESFJ.love.3"],
             love: [
-                "모든 것을 파트너를 위해 희생할 필요 없어요",
-                "갈등은 정상적인 것이에요, 피하지 마세요",
-                "다른 사람의 의견에 너무 신경 쓰지 마세요",
-                "파트너가 당신과 다른 것도 괜찮아요"
+                "You don't need to sacrifice everything for your partner",
+                "Conflict is normal — don't avoid it",
+                "Don't worry too much about others' opinions",
+                "It's okay that your partner is different from you"
             ],
+            workKeys: ["mbti.ESFJ.work.0","mbti.ESFJ.work.1","mbti.ESFJ.work.2","mbti.ESFJ.work.3"],
             work: [
-                "모든 사람의 기대에 부응할 필요 없어요",
-                "비판을 개인적으로 받아들이지 마세요",
-                "당신의 의견도 중요해요, 말하세요",
-                "자기 돌봄을 위한 시간도 만드세요"
+                "You don't need to meet everyone's expectations",
+                "Don't take criticism personally",
+                "Your opinion matters too — speak up",
+                "Make time for self-care"
             ],
+            friendKeys: ["mbti.ESFJ.friend.0","mbti.ESFJ.friend.1","mbti.ESFJ.friend.2","mbti.ESFJ.friend.3"],
             friend: [
-                "친구들의 문제를 다 해결해줄 필요 없어요",
-                "가십에 너무 많이 에너지를 쏟지 마세요",
-                "당신과 다른 친구도 받아들이세요",
-                "자신의 필요도 표현하세요"
+                "You don't need to solve all your friends' problems",
+                "Don't spend too much energy on gossip",
+                "Accept friends who are different from you",
+                "Express your own needs too"
             ]
         },
         deepAnalysis: {
-            psychology: "ESFJ는 사회적 조화의 수호자입니다. 다른 사람의 필요에 민감하며, 모든 사람이 편안하게 느끼도록 노력합니다. 전통과 관습을 중시하며, 커뮤니티에서 중심 역할을 하는 경우가 많습니다.",
-            growth: "다른 사람의 승인 없이도 자신을 가치있게 여기는 법을 배우세요. 갈등이 항상 나쁜 것은 아닙니다. 자신의 필요를 다른 사람만큼 중요하게 여기세요.",
-            career: "간호사, 교사, 이벤트 플래너, HR 담당자, 영업직 등 사람들과 함께하고 돌보는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 다른 사람에게 인정받지 못한다고 느끼면 매우 상처받습니다. 가까운 사람들의 지지와 감사 표현이 도움이 됩니다."
+            psychologyKey: "mbti.ESFJ.psychology",
+            psychology: "ESFJs are guardians of social harmony. They are sensitive to others' needs and work to make everyone feel comfortable. They value tradition and customs and often play central roles in communities.",
+            growthKey: "mbti.ESFJ.growth",
+            growth: "Learn to value yourself without others' approval. Conflict isn't always bad. Treat your own needs as important as others'.",
+            careerKey: "mbti.ESFJ.career",
+            career: "Nurse, teacher, event planner, HR representative, sales — jobs where you can be with people and care for them are ideal.",
+            stressKey: "mbti.ESFJ.stress",
+            stress: "Under stress, you may feel deeply hurt if you feel unappreciated. Support and expressions of gratitude from close ones help."
         }
     },
 
-    // 탐험가 그룹
+    // Explorers
     "ISTP": {
         name: "ISTP",
-        title: "장인",
-        icon: "🔧",
+        titleKey: "mbti.ISTP.title",
+        title: "The Craftsman",
+        icon: "\uD83D\uDD27",
         group: "explorer",
-        description: "대담하고 실용적인 실험가입니다. 손으로 뭔가를 만들고 분해하는 것을 좋아하며, 위기 상황에서 침착함을 유지합니다. 자유를 중시합니다.",
+        descriptionKey: "mbti.ISTP.description",
+        description: "Bold and practical experimenter. Loves building and taking things apart, stays calm in crises. Values freedom highly.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "감각형 (S)",
-            nature: "사고형 (T)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["ESFJ", "ESTJ"],
@@ -553,43 +715,56 @@ const mbtiData = {
             bad: ["ENFJ", "INFJ", "ENFP"]
         },
         tips: {
+            loveKeys: ["mbti.ISTP.love.0","mbti.ISTP.love.1","mbti.ISTP.love.2","mbti.ISTP.love.3"],
             love: [
-                "감정을 말로 표현하는 연습을 해보세요",
-                "파트너에게 당신의 생각을 공유하세요",
-                "감정적 필요도 중요하다는 것을 인정하세요",
-                "관계에도 투자가 필요해요"
+                "Practice expressing emotions in words",
+                "Share your thoughts with your partner",
+                "Acknowledge that emotional needs are important too",
+                "Relationships need investment too"
             ],
+            workKeys: ["mbti.ISTP.work.0","mbti.ISTP.work.1","mbti.ISTP.work.2","mbti.ISTP.work.3"],
             work: [
-                "팀 미팅에서 당신의 인사이트를 공유하세요",
-                "장기 계획도 때로는 필요해요",
-                "다른 사람의 감정적 반응도 고려하세요",
-                "규칙이 있는 이유를 이해해보세요"
+                "Share your insights in team meetings",
+                "Long-term plans are sometimes necessary",
+                "Consider others' emotional reactions",
+                "Try to understand why rules exist"
             ],
+            friendKeys: ["mbti.ISTP.friend.0","mbti.ISTP.friend.1","mbti.ISTP.friend.2","mbti.ISTP.friend.3"],
             friend: [
-                "가끔은 친구들의 감정적 대화에도 참여하세요",
-                "약속은 지키는 것이 중요해요",
-                "친구들에게 먼저 연락해보세요",
-                "당신의 활동에 친구들도 초대하세요"
+                "Join your friends' emotional conversations sometimes",
+                "Keeping promises is important",
+                "Reach out to friends first sometimes",
+                "Invite friends to your activities"
             ]
         },
         deepAnalysis: {
-            psychology: "ISTP는 실용적인 문제 해결사입니다. 손으로 만들고, 분석하고, 고치는 것을 좋아합니다. 위기 상황에서 놀라울 정도로 침착하며, 논리적으로 대처합니다. 개인의 자유와 독립을 매우 중시합니다.",
-            growth: "감정도 중요한 정보원임을 인정하세요. 장기적인 약속을 유지하는 것이 관계를 깊게 합니다. 다른 사람의 감정적 필요에 더 주의를 기울이면 관계가 좋아집니다.",
-            career: "엔지니어, 기술자, 파일럿, 응급 구조원, 운동선수 등 실용적 기술을 사용하고 자율성이 있는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 더욱 고립되거나, 무모한 행동을 할 수 있습니다. 손으로 하는 활동이나 자연에서의 시간이 도움이 됩니다."
+            psychologyKey: "mbti.ISTP.psychology",
+            psychology: "ISTPs are practical problem solvers. They love building, analyzing, and fixing things. They are remarkably calm in crises and respond logically. They highly value personal freedom and independence.",
+            growthKey: "mbti.ISTP.growth",
+            growth: "Acknowledge that emotions are an important source of information. Maintaining long-term commitments deepens relationships. Paying more attention to others' emotional needs will improve your relationships.",
+            careerKey: "mbti.ISTP.career",
+            career: "Engineer, technician, pilot, paramedic, athlete — jobs using practical skills with autonomy are ideal.",
+            stressKey: "mbti.ISTP.stress",
+            stress: "Under stress, you may isolate further or engage in reckless behavior. Hands-on activities or time in nature help."
         }
     },
     "ISFP": {
         name: "ISFP",
-        title: "모험가",
-        icon: "🎨",
+        titleKey: "mbti.ISFP.title",
+        title: "The Adventurer",
+        icon: "\uD83C\uDFA8",
         group: "explorer",
-        description: "유연하고 매력적인 예술가로, 새로운 경험을 탐색하고 시도할 준비가 되어 있습니다. 조용하지만 내면의 열정이 뜨겁습니다. 현재를 즐기며 삽니다.",
+        descriptionKey: "mbti.ISFP.description",
+        description: "Flexible and charming artist, ready to explore and try new experiences. Quiet on the outside but burning with inner passion. Lives in the present moment.",
         traits: {
-            energy: "내향형 (I)",
-            mind: "감각형 (S)",
-            nature: "감정형 (F)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.introvertI",
+            energy: "Introvert (I)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["ESTJ", "ENTJ"],
@@ -597,43 +772,56 @@ const mbtiData = {
             bad: ["INTJ", "ENTJ", "ENFJ"]
         },
         tips: {
+            loveKeys: ["mbti.ISFP.love.0","mbti.ISFP.love.1","mbti.ISFP.love.2","mbti.ISFP.love.3"],
             love: [
-                "감정을 말로 표현하는 연습을 해보세요",
-                "갈등을 피하지 말고 대화하세요",
-                "장기적인 계획도 함께 세워보세요",
-                "상대방의 비판을 개인 공격으로 받지 마세요"
+                "Practice expressing emotions in words",
+                "Don't avoid conflict — talk it through",
+                "Make long-term plans together too",
+                "Don't take your partner's criticism as a personal attack"
             ],
+            workKeys: ["mbti.ISFP.work.0","mbti.ISFP.work.1","mbti.ISFP.work.2","mbti.ISFP.work.3"],
             work: [
-                "마감 기한을 지키는 시스템을 만드세요",
-                "당신의 작업을 더 적극적으로 보여주세요",
-                "장기 목표도 설정해보세요",
-                "구조가 창의성을 죽이지 않아요"
+                "Create a system to meet deadlines",
+                "Show your work more actively",
+                "Set long-term goals too",
+                "Structure doesn't kill creativity"
             ],
+            friendKeys: ["mbti.ISFP.friend.0","mbti.ISFP.friend.1","mbti.ISFP.friend.2","mbti.ISFP.friend.3"],
             friend: [
-                "친구들에게 먼저 연락해보세요",
-                "당신의 감정도 나눠보세요",
-                "약속 시간을 지키는 것이 중요해요",
-                "깊은 대화도 시도해보세요"
+                "Reach out to friends first sometimes",
+                "Share your feelings too",
+                "Being on time matters",
+                "Try having deeper conversations"
             ]
         },
         deepAnalysis: {
-            psychology: "ISFP는 조용한 예술가입니다. 아름다움과 조화를 추구하며, 감각적 경험을 즐깁니다. 강한 내면의 가치관을 가지고 있지만 표현하는 것에 어려움을 겪기도 합니다. 현재 순간을 살아가는 것을 중시합니다.",
-            growth: "당신의 감정과 가치관을 말로 표현하는 연습이 필요합니다. 갈등을 피하기보다 건강하게 다루는 것이 관계를 더 깊게 합니다. 미래 계획도 때로는 필요합니다.",
-            career: "예술가, 디자이너, 뮤지션, 셰프, 간호사 등 감성과 미적 감각을 활용할 수 있는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 더욱 고립되거나, 자기 비판에 빠질 수 있습니다. 예술 활동이나 자연에서의 시간이 회복에 도움이 됩니다."
+            psychologyKey: "mbti.ISFP.psychology",
+            psychology: "ISFPs are quiet artists. They pursue beauty and harmony, enjoying sensory experiences. They have strong inner values but may struggle to express them. They value living in the present moment.",
+            growthKey: "mbti.ISFP.growth",
+            growth: "Practice expressing your emotions and values in words. Handling conflict healthily rather than avoiding it will deepen your relationships. Future planning is sometimes necessary.",
+            careerKey: "mbti.ISFP.career",
+            career: "Artist, designer, musician, chef, nurse — jobs that utilize emotion and aesthetic sense are ideal.",
+            stressKey: "mbti.ISFP.stress",
+            stress: "Under stress, you may isolate further or fall into self-criticism. Artistic activities or time in nature help with recovery."
         }
     },
     "ESTP": {
         name: "ESTP",
-        title: "사업가",
-        icon: "🎲",
+        titleKey: "mbti.ESTP.title",
+        title: "The Entrepreneur",
+        icon: "\uD83C\uDFB2",
         group: "explorer",
-        description: "똑똑하고 에너지가 넘치며, 위험을 무릅쓰는 것을 즐깁니다. 상황을 빠르게 파악하고 즉각적으로 행동합니다. 모험을 좋아하고 스릴을 즐깁니다.",
+        descriptionKey: "mbti.ESTP.description",
+        description: "Smart, energetic, and enjoys taking risks. Quickly assesses situations and acts immediately. Loves adventure and thrills.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "감각형 (S)",
-            nature: "사고형 (T)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.thinkingT",
+            nature: "Thinking (T)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["ISFJ", "ISTJ"],
@@ -641,43 +829,56 @@ const mbtiData = {
             bad: ["INFJ", "ENFJ", "INFP"]
         },
         tips: {
+            loveKeys: ["mbti.ESTP.love.0","mbti.ESTP.love.1","mbti.ESTP.love.2","mbti.ESTP.love.3"],
             love: [
-                "파트너의 감정적 필요에도 주의를 기울이세요",
-                "장기적인 관계에도 투자해보세요",
-                "약속과 일관성이 중요해요",
-                "가끔은 진지한 대화도 필요해요"
+                "Pay attention to your partner's emotional needs too",
+                "Invest in long-term relationships too",
+                "Promises and consistency are important",
+                "Serious conversations are needed sometimes"
             ],
+            workKeys: ["mbti.ESTP.work.0","mbti.ESTP.work.1","mbti.ESTP.work.2","mbti.ESTP.work.3"],
             work: [
-                "장기 계획도 세워보세요",
-                "충동적인 결정을 줄여보세요",
-                "팀원들의 감정도 고려하세요",
-                "세부사항에도 주의를 기울이세요"
+                "Make long-term plans too",
+                "Reduce impulsive decisions",
+                "Consider your team members' feelings too",
+                "Pay attention to details too"
             ],
+            friendKeys: ["mbti.ESTP.friend.0","mbti.ESTP.friend.1","mbti.ESTP.friend.2","mbti.ESTP.friend.3"],
             friend: [
-                "친구들의 경계도 존중하세요",
-                "깊은 대화도 시도해보세요",
-                "모든 것을 즉흥적으로 하지 않아도 돼요",
-                "친구의 조용한 시간도 존중하세요"
+                "Respect your friends' boundaries",
+                "Try having deeper conversations",
+                "Not everything needs to be spontaneous",
+                "Respect your friend's quiet time"
             ]
         },
         deepAnalysis: {
-            psychology: "ESTP는 행동의 사람입니다. 현재 순간에 완전히 몰입하며, 빠른 판단과 적응력을 가지고 있습니다. 스릴과 모험을 즐기며, 지루함을 싫어합니다. 카리스마가 있어 사람들을 자연스럽게 이끕니다.",
-            growth: "장기적인 결과를 고려하는 연습이 필요합니다. 다른 사람의 감정도 중요한 정보원입니다. 때로는 멈추고 생각하는 것도 필요합니다.",
-            career: "기업가, 영업직, 운동선수, 응급 구조원, 마케터 등 빠른 판단과 행동이 필요한 직업이 적합합니다.",
-            stress: "스트레스 상황에서 더욱 충동적이 되거나, 위험한 행동을 할 수 있습니다. 신체 활동이나 새로운 경험이 스트레스 해소에 도움이 됩니다."
+            psychologyKey: "mbti.ESTP.psychology",
+            psychology: "ESTPs are people of action. They are fully immersed in the present moment, with quick judgment and adaptability. They enjoy thrills and adventure and dislike boredom. Their charisma naturally draws people to follow them.",
+            growthKey: "mbti.ESTP.growth",
+            growth: "Practice considering long-term consequences. Others' emotions are also important information. Sometimes stopping to think is also necessary.",
+            careerKey: "mbti.ESTP.career",
+            career: "Entrepreneur, sales professional, athlete, paramedic, marketer — jobs requiring quick judgment and action are ideal.",
+            stressKey: "mbti.ESTP.stress",
+            stress: "Under stress, you may become more impulsive or engage in risky behavior. Physical activity or new experiences help with stress relief."
         }
     },
     "ESFP": {
         name: "ESFP",
-        title: "연예인",
-        icon: "🎭",
+        titleKey: "mbti.ESFP.title",
+        title: "The Entertainer",
+        icon: "\uD83C\uDFAD",
         group: "explorer",
-        description: "자발적이고 에너지가 넘치며 열정적인 연예인입니다. 삶은 파티이며, 당신은 그 파티의 주인공입니다. 순간을 즐기고 사람들을 즐겁게 하는 것을 좋아합니다.",
+        descriptionKey: "mbti.ESFP.description",
+        description: "Spontaneous, energetic, and passionate entertainer. Life is a party and you're the star. Loves enjoying the moment and making people happy.",
         traits: {
-            energy: "외향형 (E)",
-            mind: "감각형 (S)",
-            nature: "감정형 (F)",
-            tactic: "인식형 (P)"
+            energyKey: "mbti.traits.extrovertE",
+            energy: "Extrovert (E)",
+            mindKey: "mbti.traits.sensingS",
+            mind: "Sensing (S)",
+            natureKey: "mbti.traits.feelingF",
+            nature: "Feeling (F)",
+            tacticKey: "mbti.traits.prospectingP",
+            tactic: "Prospecting (P)"
         },
         compatibility: {
             best: ["ISTJ", "ISFJ"],
@@ -685,30 +886,37 @@ const mbtiData = {
             bad: ["INTJ", "INFJ", "INTP"]
         },
         tips: {
+            loveKeys: ["mbti.ESFP.love.0","mbti.ESFP.love.1","mbti.ESFP.love.2","mbti.ESFP.love.3"],
             love: [
-                "장기적인 관계에도 투자해보세요",
-                "진지한 대화도 필요해요",
-                "파트너의 조용한 시간도 존중하세요",
-                "약속을 지키는 것이 신뢰를 쌓아요"
+                "Invest in long-term relationships too",
+                "Serious conversations are needed too",
+                "Respect your partner's quiet time",
+                "Keeping promises builds trust"
             ],
+            workKeys: ["mbti.ESFP.work.0","mbti.ESFP.work.1","mbti.ESFP.work.2","mbti.ESFP.work.3"],
             work: [
-                "마감 기한과 세부사항에 주의하세요",
-                "모든 업무가 재미있지는 않아요",
-                "장기 목표도 설정해보세요",
-                "충동적인 결정을 줄이세요"
+                "Pay attention to deadlines and details",
+                "Not every task will be fun",
+                "Set long-term goals too",
+                "Reduce impulsive decisions"
             ],
+            friendKeys: ["mbti.ESFP.friend.0","mbti.ESFP.friend.1","mbti.ESFP.friend.2","mbti.ESFP.friend.3"],
             friend: [
-                "친구들의 조용한 필요도 존중하세요",
-                "깊은 대화도 시도해보세요",
-                "항상 파티 분위기가 필요한 건 아니에요",
-                "친구의 성공도 진심으로 축하하세요"
+                "Respect your friends' quiet needs too",
+                "Try having deeper conversations",
+                "A party atmosphere isn't always needed",
+                "Sincerely celebrate your friends' success"
             ]
         },
         deepAnalysis: {
-            psychology: "ESFP는 삶의 축제를 즐기는 사람입니다. 현재 순간에 완전히 몰입하며, 사람들에게 기쁨을 주는 것을 좋아합니다. 감각적 경험을 즐기고, 자발적이며 유연합니다. 주목받는 것을 좋아합니다.",
-            growth: "장기적인 결과를 고려하는 연습이 필요합니다. 인생에는 파티뿐 아니라 책임도 있습니다. 진지한 대화와 깊은 관계도 가치 있습니다. 미래를 위한 계획도 때로는 필요합니다.",
-            career: "연예인, 이벤트 플래너, 판매직, 여행 가이드, 교사 등 사람들과 함께하고 즐거움을 주는 직업이 적합합니다.",
-            stress: "스트레스 상황에서 현실에서 도피하거나, 과도하게 자극을 추구할 수 있습니다. 친한 친구와의 시간이나 창의적 활동이 도움이 됩니다."
+            psychologyKey: "mbti.ESFP.psychology",
+            psychology: "ESFPs are people who enjoy life's celebrations. They are fully immersed in the present, love bringing joy to people, enjoy sensory experiences, and are spontaneous and flexible. They enjoy being the center of attention.",
+            growthKey: "mbti.ESFP.growth",
+            growth: "Practice considering long-term consequences. Life has responsibilities as well as parties. Serious conversations and deep relationships are also valuable. Planning for the future is sometimes necessary.",
+            careerKey: "mbti.ESFP.career",
+            career: "Entertainer, event planner, sales, tour guide, teacher — jobs where you can be with people and bring joy are ideal.",
+            stressKey: "mbti.ESFP.stress",
+            stress: "Under stress, you may escape from reality or seek excessive stimulation. Time with close friends or creative activities help."
         }
     }
 };

@@ -55,17 +55,17 @@ class MbtiApp {
         // localStorage에 저장
         try { localStorage.setItem('mbti_selectedType', type); } catch (e) {}
 
-        // 기본 정보 업데이트
+        // basic info update (i18n with English fallback)
         document.getElementById('type-icon').textContent = data.icon;
         document.getElementById('type-name').textContent = data.name;
-        document.getElementById('type-title').textContent = data.title;
-        document.getElementById('type-description').textContent = data.description;
+        document.getElementById('type-title').textContent = window.i18n?.t(data.titleKey) || data.title;
+        document.getElementById('type-description').textContent = window.i18n?.t(data.descriptionKey) || data.description;
 
-        // 특성 업데이트
-        document.getElementById('trait-energy').textContent = data.traits.energy;
-        document.getElementById('trait-mind').textContent = data.traits.mind;
-        document.getElementById('trait-nature').textContent = data.traits.nature;
-        document.getElementById('trait-tactic').textContent = data.traits.tactic;
+        // traits update (i18n with English fallback)
+        document.getElementById('trait-energy').textContent = window.i18n?.t(data.traits.energyKey) || data.traits.energy;
+        document.getElementById('trait-mind').textContent = window.i18n?.t(data.traits.mindKey) || data.traits.mind;
+        document.getElementById('trait-nature').textContent = window.i18n?.t(data.traits.natureKey) || data.traits.nature;
+        document.getElementById('trait-tactic').textContent = window.i18n?.t(data.traits.tacticKey) || data.traits.tactic;
 
         // 궁합 정보
         document.getElementById('best-match').textContent = data.compatibility.best.join(', ');
@@ -110,7 +110,12 @@ class MbtiApp {
         const tips = data.tips[category] || [];
         const tipsList = document.getElementById('tips-list');
         
-        tipsList.innerHTML = tips.map(tip => `<li>${tip}</li>`).join('');
+        const tipKeys = data.tips[category + 'Keys'] || [];
+        tipsList.innerHTML = tips.map((tip, idx) => {
+            const key = tipKeys[idx];
+            const text = (key && window.i18n?.t(key)) || tip;
+            return `<li>${text}</li>`;
+        }).join('');
     }
 
     setupPremiumButton() {
@@ -157,10 +162,10 @@ class MbtiApp {
         const data = mbtiData[this.selectedType];
         const deep = data.deepAnalysis;
 
-        let content = `🧠 ${i18n.t('premium.psychology')}\n${deep.psychology}\n\n`;
-        content += `🌱 ${i18n.t('premium.growth')}\n${deep.growth}\n\n`;
-        content += `💼 ${i18n.t('premium.career')}\n${deep.career}\n\n`;
-        content += `⚡ ${i18n.t('premium.stress')}\n${deep.stress}`;
+        let content = `🧠 ${i18n.t('premium.psychology')}\n${window.i18n?.t(deep.psychologyKey) || deep.psychology}\n\n`;
+        content += `🌱 ${i18n.t('premium.growth')}\n${window.i18n?.t(deep.growthKey) || deep.growth}\n\n`;
+        content += `💼 ${i18n.t('premium.career')}\n${window.i18n?.t(deep.careerKey) || deep.career}\n\n`;
+        content += `⚡ ${i18n.t('premium.stress')}\n${window.i18n?.t(deep.stressKey) || deep.stress}`;
 
         const premiumEl = document.getElementById('premium-content');
         premiumEl.textContent = content;
@@ -235,12 +240,12 @@ class MbtiApp {
         // Title
         ctx.font = 'bold 52px sans-serif';
         ctx.fillStyle = 'rgba(255,255,255,0.9)';
-        ctx.fillText(`"${data.title}"`, 540, 530);
+        ctx.fillText(`"${window.i18n?.t(data.titleKey) || data.title}"`, 540, 530);
 
         // Description (wrapped)
         ctx.font = '24px sans-serif';
         ctx.fillStyle = 'rgba(255,255,255,0.7)';
-        this.wrapText(ctx, data.description, 540, 600, 900, 32);
+        this.wrapText(ctx, window.i18n?.t(data.descriptionKey) || data.description, 540, 600, 900, 32);
 
         // Best match
         ctx.font = 'bold 32px sans-serif';
@@ -263,7 +268,7 @@ class MbtiApp {
                 const file = new File([blob], 'mbti-result.png', { type: 'image/png' });
                 navigator.share({
                     title: (window.i18n?.t('share.nativeTitle') || 'I am {type}!').replace('{type}', data.name),
-                    text: (window.i18n?.t('share.nativeText') || 'My MBTI is {type} ({title})!').replace('{type}', data.name).replace('{title}', data.title),
+                    text: (window.i18n?.t('share.nativeText') || 'My MBTI is {type} ({title})!').replace('{type}', data.name).replace('{title}', window.i18n?.t(data.titleKey) || data.title),
                     files: [file]
                 }).catch(() => {
                     // Fallback
@@ -307,7 +312,8 @@ class MbtiApp {
 
         const data = mbtiData[this.selectedType];
         const url = 'https://dopabrain.com/mbti-tips/';
-        const text = `🧩 ${i18n.t('share.intro')} ${data.name} (${data.title})!\n\n` +
+        const localTitle = window.i18n?.t(data.titleKey) || data.title;
+        const text = `🧩 ${i18n.t('share.intro')} ${data.name} (${localTitle})!\n\n` +
             `💕 ${i18n.t('share.best')}: ${data.compatibility.best.join(', ')}\n` +
             `⚡ ${i18n.t('share.caution')}: ${data.compatibility.bad ? data.compatibility.bad.join(', ') : i18n.t('share.none')}\n\n` +
             `${i18n.t('share.cta')}\n${url}`;
@@ -370,8 +376,8 @@ class MbtiApp {
         } else {
             matchLevel = 'neutral';
             matchEmoji = '🤝';
-            matchText = '보통 궁합';
-            matchDesc = `${this.selectedType}와 ${friendType}는 무난한 관계입니다. 공통 관심사를 찾으면 더 가까워질 수 있어요.`;
+            matchText = window.i18n?.t('share.neutralMatch') || 'Average Match';
+            matchDesc = (window.i18n?.t('share.neutralDesc') || '{type1} and {type2} have an average relationship. Finding common interests can bring you closer.').replace('{type1}', this.selectedType).replace('{type2}', friendType);
         }
 
         // 공통점 / 차이점 분석
@@ -389,7 +395,7 @@ class MbtiApp {
             </div>
             <div class="compare-match-desc">${matchDesc}</div>
             <div class="compare-match-desc" style="margin-top: 10px; color: var(--primary-light);">
-                4가지 성향 중 ${common}개 일치 · ${4 - common}개 차이
+                ${(window.i18n?.t('compare.traitMatch') || '{common} of 4 traits match · {diff} differ').replace('{common}', common).replace('{diff}', 4 - common)}
             </div>
         `;
         resultEl.classList.remove('hidden');

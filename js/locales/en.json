@@ -46,10 +46,15 @@
   },
   "premium": {
     "button": "✨ Show AI Deep Analysis",
-    "badge": "✨ AI Deep Analysis"
+    "badge": "✨ AI Deep Analysis",
+    "psychology": "🧠 Psychology",
+    "growth": "🌱 Growth Points",
+    "career": "💼 Career Fit",
+    "stress": "⚡ Stress Response"
   },
   "buttons": {
-    "share": "📤 Share Results"
+    "share": "📤 Share Results",
+    "close": "Close"
   },
   "recommendations": {
     "title": "You Might Also Like"
@@ -59,19 +64,11 @@
     "me": "Me",
     "friend": "Friend",
     "vs": "VS",
-    "selectType": "Select"
+    "selectType": "Select",
+    "traitMatch": "{common} of 4 traits match · {diff} differ"
   },
   "ad": {
     "label": "AD"
-  },
-  "buttons": {
-    "close": "Close"
-  },
-  "premium": {
-    "psychology": "🧠 Psychology",
-    "growth": "🌱 Growth Points",
-    "career": "💼 Career Fit",
-    "stress": "⚡ Stress Response"
   },
   "canvas": {
     "myType": "My MBTI Type Is",
@@ -109,5 +106,193 @@
     "audio": "Audio unavailable. You can still continue.",
     "network": "Please check your connection and try again.",
     "general": "Something went wrong. Please refresh or try again."
+  },
+  "mbti": {
+    "traits": {
+      "introvertI": "Introvert (I)",
+      "extrovertE": "Extrovert (E)",
+      "intuitionN": "Intuition (N)",
+      "sensingS": "Sensing (S)",
+      "thinkingT": "Thinking (T)",
+      "feelingF": "Feeling (F)",
+      "judgingJ": "Judging (J)",
+      "prospectingP": "Prospecting (P)"
+    },
+    "INTJ": {
+      "title": "The Strategist",
+      "description": "Imaginative and strategic thinker with a plan for everything. Independent and determined, moving toward goals with high standards and a dislike for inefficiency.",
+      "love": { "0": "Even if expressing feelings is hard, try telling your partner you care", "1": "Don't just analyze your partner's emotional needs logically", "2": "Sometimes enjoy an unplanned date", "3": "Practice giving compliments before criticism" },
+      "work": { "0": "Be patient when sharing ideas with team members", "1": "Practice explaining your vision in simple terms", "2": "Don't try to do everything alone; consider delegating", "3": "Participate in team building even if it seems inefficient" },
+      "friend": { "0": "Value your friends' everyday conversations too", "1": "Sometimes just listening is better than giving advice", "2": "Sometimes they just want emotional support", "3": "Focusing on a few deep relationships is also great" },
+      "psychology": "INTJs have a rich inner world of imagination. They likely asked 'why?' a lot as children and excel at understanding systems and patterns. They prioritize logic over emotions, but this doesn't mean they lack feelings. They feel deeply but may not know how to express it.",
+      "growth": "Focus on developing emotional intelligence (EQ). Let go of perfectionism a little and accept failure as a learning opportunity. Acknowledging that others' methods can also be valuable will improve your relationships.",
+      "career": "Strategy consultant, scientist, software architect, investment analyst, writer — jobs that allow independent deep thinking are ideal.",
+      "stress": "Under stress, you may become unusually impulsive or obsess over details. Alone time and meditation help with recovery."
+    },
+    "INTP": {
+      "title": "The Logician",
+      "description": "An innovative inventor with an endless thirst for knowledge. Loves logic and theory, enjoys exploring abstract ideas. Quiet but always generating new ideas internally.",
+      "love": { "0": "Practice expressing interest through words and actions", "1": "Pay more attention to your partner's emotional needs", "2": "Learn to distinguish when empathy is needed over analysis", "3": "Try spontaneous romantic gestures sometimes" },
+      "work": { "0": "Turning ideas into action is also important", "1": "Create a system to meet deadlines", "2": "Share your insights in team meetings", "3": "Even small tasks are part of the big picture" },
+      "friend": { "0": "Pay more attention to your friends' emotions", "1": "Sometimes just being there is enough", "2": "Not every conversation needs to be a debate", "3": "Set reminders so you don't forget plans" },
+      "psychology": "INTPs are true thinkers. They gain energy from understanding complex systems and exploring new ideas. They tend to question social norms and constantly ask 'why should it be that way?'",
+      "growth": "You need practice turning ideas into reality. A 'good enough' execution can be more valuable than a perfect theory. Try feeling emotions instead of trying to understand them logically.",
+      "career": "Researcher, philosopher, programmer, mathematician, analyst — jobs that involve independent thinking and problem-solving are ideal.",
+      "stress": "Under stress, you may worry excessively or become unusually emotionally sensitive. Simple activities like walks or puzzles can help."
+    },
+    "ENTJ": {
+      "title": "The Commander",
+      "description": "A bold, imaginative, strong-willed leader who always finds or creates a way. Values efficiency and results, excels at leading others toward goals.",
+      "love": { "0": "Don't treat your partner like a 'project'", "1": "Sometimes harmony matters more than winning", "2": "Respect your partner's pace", "3": "Showing vulnerability is also a form of strength" },
+      "work": { "0": "Take time to listen to team members' opinions", "1": "Don't try to control everything", "2": "Be constructive with criticism, generous with praise", "3": "Sometimes consensus-based decisions are needed" },
+      "friend": { "0": "Don't always try to lead every conversation", "1": "Celebrate your friends' small achievements too", "2": "Sometimes support is needed more than advice", "3": "Keep your promises — trust is important" },
+      "psychology": "ENTJs are born leaders. They likely led groups or planned activities from childhood. They have little patience for inefficiency and prefer fast decision-making.",
+      "growth": "Developing emotional intelligence will elevate your leadership. Understanding that process matters as much as results, and that people don't move on logic alone, will give you greater influence.",
+      "career": "CEO, management consultant, lawyer, judge, entrepreneur — jobs where you can exercise leadership are ideal.",
+      "stress": "Under stress, you may become more aggressive or try to control even more. Talking with someone you trust helps."
+    },
+    "ENTP": {
+      "title": "The Debater",
+      "description": "Smart, curious thinker who enjoys intellectual challenges. Loves debate and isn't afraid to challenge conventions. Lives in a world of ideas.",
+      "love": { "0": "Don't turn everything into a debate", "1": "Don't tell your partner their feelings are 'wrong'", "2": "Deeply focusing on one relationship has value too", "3": "Follow through on what you say" },
+      "work": { "0": "Finish projects you start", "1": "Consider your team members' feelings too", "2": "Rules sometimes have good reasons", "3": "Details can be important too" },
+      "friend": { "0": "Don't just refute your friends' opinions", "1": "Sometimes just agreeing is fine too", "2": "Deep, lasting friendships are valuable too", "3": "Hold back on jokes when a friend is feeling down" },
+      "psychology": "ENTPs are alchemists of ideas. They gain energy from exploring new possibilities and challenging existing systems. They enjoy playing 'devil's advocate' and sometimes treat debate like a sport.",
+      "growth": "You need practice finishing what you start. You're easily captivated by new ideas, but building execution skills can lead to truly great results. Don't dismiss others' emotions as 'irrational.'",
+      "career": "Entrepreneur, lawyer, marketer, inventor, comedian — jobs where you can think creatively and explore new ideas are ideal.",
+      "stress": "Under stress, you may become more argumentative or obsess over trivial things. New environments or travel can help refresh you."
+    },
+    "INFJ": {
+      "title": "The Advocate",
+      "description": "Quiet, mysterious, and inspiring idealist. Has a deep desire to help others and make the world a better place. One of the rarest personality types.",
+      "love": { "0": "Don't try to solve everything alone", "1": "Express your own needs to your partner too", "2": "Accept that no relationship is perfect", "3": "Try to understand rather than change your partner" },
+      "work": { "0": "Share your ideas more actively", "1": "You can't help everyone — set boundaries", "2": "Don't just avoid conflict; resolve it constructively", "3": "Let go of perfectionism a little" },
+      "friend": { "0": "Don't let friends take advantage of you", "1": "Remember that your needs matter too", "2": "You don't need to solve every friend's problems", "3": "Speak up when you need alone time" },
+      "psychology": "INFJs have deep empathy and intuition. They can read others' emotions almost telepathically. But this ability can sometimes be a burden, as they may absorb others' emotions and become exhausted.",
+      "growth": "Setting boundaries for yourself is crucial. Helping others is great, but you need to fill your own cup first. Forgive yourself when you can't reach your perfect vision.",
+      "career": "Counselor, psychologist, writer, teacher, social worker — jobs where you can help people and create meaningful change are ideal.",
+      "stress": "Under extreme stress, you might suddenly cut off relationships in what's known as a 'door slam.' Regular self-care and talking with someone you trust are important."
+    },
+    "INFP": {
+      "title": "The Mediator",
+      "description": "Poetic, kind, and altruistic, always ready to help for a good cause. Follows deep inner values and ideals, and values authenticity highly.",
+      "love": { "0": "Love your real partner, not an idealized version", "1": "Don't avoid conflict — handle it in a healthy way", "2": "Express your feelings in words", "3": "Don't expect your partner to read your mind" },
+      "work": { "0": "Don't take criticism personally", "1": "Create a system to meet deadlines", "2": "Work that doesn't align with your values is sometimes necessary", "3": "Apply your creativity in practical ways" },
+      "friend": { "0": "Share everyday things with your friends too", "1": "Don't only seek deep conversations; enjoy light ones too", "2": "Don't be too hurt by friends' small mistakes", "3": "Taking the initiative to reach out is good too" },
+      "psychology": "INFPs have a deep inner world. They hold strong values and ideals, pursuing authenticity and meaning. They have excellent artistic sensitivity and often express themselves through writing or art.",
+      "growth": "Finding balance between ideals and reality is important. Dream of a perfect world, but also acknowledge the value of small changes. Practice not taking criticism as a personal attack.",
+      "career": "Writer, counselor, artist, graphic designer, social worker — jobs where you can express creativity and values are ideal.",
+      "stress": "Under stress, you may escape from reality or fall into self-criticism. Creative activities or time in nature help with recovery."
+    },
+    "ENFJ": {
+      "title": "The Protagonist",
+      "description": "Charismatic and inspiring leader who can captivate an audience. Finds great joy in helping others grow and naturally leads people.",
+      "love": { "0": "Don't be overly controlling in the name of 'helping'", "1": "Prioritizing your own needs isn't selfish", "2": "Respect your partner's growth pace", "3": "It's okay not to maintain harmony at all times" },
+      "work": { "0": "Validate yourself without needing others' approval", "1": "You can't please everyone", "2": "You can deliver criticism constructively", "3": "Watch out for burnout — self-care matters" },
+      "friend": { "0": "It's okay to let friends solve things on their own", "1": "You don't need to be the 'savior' in every relationship", "2": "Share your own struggles with friends too", "3": "Allow yourself to receive in relationships" },
+      "psychology": "ENFJs excel at seeing others' potential and drawing it out. They are natural mentors and coaches. But they tend to exhaust themselves helping others.",
+      "growth": "Learn that prioritizing your own needs isn't selfish. Understand that you can't save everyone and that people need the opportunity to learn on their own.",
+      "career": "Teacher, counselor, HR professional, coach, politician — jobs where you can lead and develop people are ideal.",
+      "stress": "Under stress, you may become self-critical or overly involved in others' problems. Healthy boundary-setting is important."
+    },
+    "ENFP": {
+      "title": "The Campaigner",
+      "description": "Enthusiastic, creative, and sociable free spirit. Always discovering new possibilities and inspiring others with passion.",
+      "love": { "0": "Your quest for novelty can make your partner anxious", "1": "Keep your promises — trust is important", "2": "Value the everyday aspects of your relationship too", "3": "Learn to deeply focus on one relationship" },
+      "work": { "0": "Finish projects you start", "1": "Pay attention to details", "2": "Use scheduling tools", "3": "You can't pursue every idea" },
+      "friend": { "0": "Deep friendships are just as valuable as many friends", "1": "Listen to your friends' stories all the way through", "2": "Being on time shows respect", "3": "Sometimes quiet time with friends is needed too" },
+      "psychology": "ENFPs are explorers of possibility. They are endlessly drawn to new ideas and experiences. They crave deep emotional connections and pursue authentic relationships. They start passionately but may struggle to maintain things when interest wanes.",
+      "growth": "Practice finishing what you start. Enthusiasm for new things is a strength, but deep expertise is also valuable. Daily routines can actually be a foundation for freedom.",
+      "career": "Marketer, writer, actor, counselor, entrepreneur — jobs where you can be creative and connect with people are ideal.",
+      "stress": "Under stress, you may become excessively self-critical or obsess over trivial things. New environments or creative activities help with recovery."
+    },
+    "ISTJ": {
+      "title": "The Realist",
+      "description": "Fact-based thinker with a strong sense of responsibility. Always keeps promises and values tradition and order. Known as someone you can rely on.",
+      "love": { "0": "Practice expressing emotions — it matters to your partner", "1": "Be a little more open to change", "2": "Sometimes enjoy things without a plan", "3": "Respect your partner's different approach" },
+      "work": { "0": "Stay open-minded to new approaches", "1": "Not everything needs to be perfect", "2": "Team members' creative ideas have value too", "3": "Sometimes apply rules flexibly" },
+      "friend": { "0": "Listen to your friends' emotional needs too", "1": "Sometimes listening is better than offering solutions", "2": "Sometimes enjoy spontaneous plans", "3": "Share your own feelings too" },
+      "psychology": "ISTJs seek stability and order. They keep promises faithfully and have a strong sense of responsibility. They prefer tradition and proven methods, valuing stability over change. They have rich inner emotions but may find them hard to express.",
+      "growth": "Learn that change can be an opportunity, not a threat. Understanding that expressing emotions isn't weakness will deepen your relationships. Sometimes 'good enough' is okay.",
+      "career": "Accountant, lawyer, military officer, project manager, inspector — systematic and responsible roles are ideal.",
+      "stress": "Under stress, you may become more rigid or fixate on worst-case scenarios. Reliable routines and support from close ones help."
+    },
+    "ISFJ": {
+      "title": "The Defender",
+      "description": "Very devoted and warm protector, always ready to defend loved ones. Quiet but social, seeking stability and harmony.",
+      "love": { "0": "Remember that your needs matter too", "1": "You don't need to do everything your partner doesn't ask for", "2": "Don't avoid conflict — handle it healthily", "3": "Don't hold on to past mistakes for too long" },
+      "work": { "0": "Don't overwork just to be recognized", "1": "Learn to say no", "2": "It's important to show your contributions", "3": "Be more open to change" },
+      "friend": { "0": "Don't let friends take advantage of you", "1": "It's okay to ask for help too", "2": "Share your own feelings too", "3": "Invest time in self-care too" },
+      "psychology": "ISFJs are quiet heroes. They find deep satisfaction in caring for others, often putting their own needs last. They pay attention to details and cherish lessons learned from past experiences.",
+      "growth": "Learn that putting your own needs first isn't selfish. Saying 'no' to others is also a healthy boundary. Change isn't always bad.",
+      "career": "Nurse, teacher, social worker, administrator, librarian — jobs where you can care for others and maintain order are ideal.",
+      "stress": "Under stress, you may hide yourself more rather than asserting, or imagine worst-case scenarios. Opening up to someone you trust helps."
+    },
+    "ESTJ": {
+      "title": "The Executive",
+      "description": "Excellent manager who excels at managing people and things. Honest, devoted, values tradition and order. Leads organizations with strong leadership.",
+      "love": { "0": "Your partner's feelings are as important as data", "1": "You don't always need to be right — learn to compromise", "2": "Softness is also a part of strength", "3": "Respect your partner's different approach" },
+      "work": { "0": "Consider team members' personal situations", "1": "Sometimes people come before rules", "2": "Stay open to different approaches", "3": "Give praise more often" },
+      "friend": { "0": "Don't ignore your friends' emotional needs", "1": "Sometimes just listening is better than giving advice", "2": "Don't try to control everything", "3": "Flexibility is sometimes needed" },
+      "psychology": "ESTJs are born organizers. They like clear structures and rules and dislike disorder. They are direct and honest, acting as they speak. Sometimes they may appear inflexible.",
+      "growth": "Learn that emotions are as important as facts. Not every situation can have rules applied. Recognizing that others' methods can be valuable will make your leadership more effective.",
+      "career": "Manager, executive, judge, military officer, financial officer — jobs where you can lead and manage organizations are ideal.",
+      "stress": "Under stress, you may become more controlling or critical. Exercise or activities that give a sense of achievement help."
+    },
+    "ESFJ": {
+      "title": "The Consul",
+      "description": "Very caring, social, and popular. Loves helping others and strives to create a harmonious environment. Plays a central role in the community.",
+      "love": { "0": "You don't need to sacrifice everything for your partner", "1": "Conflict is normal — don't avoid it", "2": "Don't worry too much about others' opinions", "3": "It's okay that your partner is different from you" },
+      "work": { "0": "You don't need to meet everyone's expectations", "1": "Don't take criticism personally", "2": "Your opinion matters too — speak up", "3": "Make time for self-care" },
+      "friend": { "0": "You don't need to solve all your friends' problems", "1": "Don't spend too much energy on gossip", "2": "Accept friends who are different from you", "3": "Express your own needs too" },
+      "psychology": "ESFJs are guardians of social harmony. They are sensitive to others' needs and work to make everyone feel comfortable. They value tradition and customs and often play central roles in communities.",
+      "growth": "Learn to value yourself without others' approval. Conflict isn't always bad. Treat your own needs as important as others'.",
+      "career": "Nurse, teacher, event planner, HR representative, sales — jobs where you can be with people and care for them are ideal.",
+      "stress": "Under stress, you may feel deeply hurt if you feel unappreciated. Support and expressions of gratitude from close ones help."
+    },
+    "ISTP": {
+      "title": "The Craftsman",
+      "description": "Bold and practical experimenter. Loves building and taking things apart, stays calm in crises. Values freedom highly.",
+      "love": { "0": "Practice expressing emotions in words", "1": "Share your thoughts with your partner", "2": "Acknowledge that emotional needs are important too", "3": "Relationships need investment too" },
+      "work": { "0": "Share your insights in team meetings", "1": "Long-term plans are sometimes necessary", "2": "Consider others' emotional reactions", "3": "Try to understand why rules exist" },
+      "friend": { "0": "Join your friends' emotional conversations sometimes", "1": "Keeping promises is important", "2": "Reach out to friends first sometimes", "3": "Invite friends to your activities" },
+      "psychology": "ISTPs are practical problem solvers. They love building, analyzing, and fixing things. They are remarkably calm in crises and respond logically. They highly value personal freedom and independence.",
+      "growth": "Acknowledge that emotions are an important source of information. Maintaining long-term commitments deepens relationships. Paying more attention to others' emotional needs will improve your relationships.",
+      "career": "Engineer, technician, pilot, paramedic, athlete — jobs using practical skills with autonomy are ideal.",
+      "stress": "Under stress, you may isolate further or engage in reckless behavior. Hands-on activities or time in nature help."
+    },
+    "ISFP": {
+      "title": "The Adventurer",
+      "description": "Flexible and charming artist, ready to explore and try new experiences. Quiet on the outside but burning with inner passion. Lives in the present moment.",
+      "love": { "0": "Practice expressing emotions in words", "1": "Don't avoid conflict — talk it through", "2": "Make long-term plans together too", "3": "Don't take your partner's criticism as a personal attack" },
+      "work": { "0": "Create a system to meet deadlines", "1": "Show your work more actively", "2": "Set long-term goals too", "3": "Structure doesn't kill creativity" },
+      "friend": { "0": "Reach out to friends first sometimes", "1": "Share your feelings too", "2": "Being on time matters", "3": "Try having deeper conversations" },
+      "psychology": "ISFPs are quiet artists. They pursue beauty and harmony, enjoying sensory experiences. They have strong inner values but may struggle to express them. They value living in the present moment.",
+      "growth": "Practice expressing your emotions and values in words. Handling conflict healthily rather than avoiding it will deepen your relationships. Future planning is sometimes necessary.",
+      "career": "Artist, designer, musician, chef, nurse — jobs that utilize emotion and aesthetic sense are ideal.",
+      "stress": "Under stress, you may isolate further or fall into self-criticism. Artistic activities or time in nature help with recovery."
+    },
+    "ESTP": {
+      "title": "The Entrepreneur",
+      "description": "Smart, energetic, and enjoys taking risks. Quickly assesses situations and acts immediately. Loves adventure and thrills.",
+      "love": { "0": "Pay attention to your partner's emotional needs too", "1": "Invest in long-term relationships too", "2": "Promises and consistency are important", "3": "Serious conversations are needed sometimes" },
+      "work": { "0": "Make long-term plans too", "1": "Reduce impulsive decisions", "2": "Consider your team members' feelings too", "3": "Pay attention to details too" },
+      "friend": { "0": "Respect your friends' boundaries", "1": "Try having deeper conversations", "2": "Not everything needs to be spontaneous", "3": "Respect your friend's quiet time" },
+      "psychology": "ESTPs are people of action. They are fully immersed in the present moment, with quick judgment and adaptability. They enjoy thrills and adventure and dislike boredom. Their charisma naturally draws people to follow them.",
+      "growth": "Practice considering long-term consequences. Others' emotions are also important information. Sometimes stopping to think is also necessary.",
+      "career": "Entrepreneur, sales professional, athlete, paramedic, marketer — jobs requiring quick judgment and action are ideal.",
+      "stress": "Under stress, you may become more impulsive or engage in risky behavior. Physical activity or new experiences help with stress relief."
+    },
+    "ESFP": {
+      "title": "The Entertainer",
+      "description": "Spontaneous, energetic, and passionate entertainer. Life is a party and you're the star. Loves enjoying the moment and making people happy.",
+      "love": { "0": "Invest in long-term relationships too", "1": "Serious conversations are needed too", "2": "Respect your partner's quiet time", "3": "Keeping promises builds trust" },
+      "work": { "0": "Pay attention to deadlines and details", "1": "Not every task will be fun", "2": "Set long-term goals too", "3": "Reduce impulsive decisions" },
+      "friend": { "0": "Respect your friends' quiet needs too", "1": "Try having deeper conversations", "2": "A party atmosphere isn't always needed", "3": "Sincerely celebrate your friends' success" },
+      "psychology": "ESFPs are people who enjoy life's celebrations. They are fully immersed in the present, love bringing joy to people, enjoy sensory experiences, and are spontaneous and flexible. They enjoy being the center of attention.",
+      "growth": "Practice considering long-term consequences. Life has responsibilities as well as parties. Serious conversations and deep relationships are also valuable. Planning for the future is sometimes necessary.",
+      "career": "Entertainer, event planner, sales, tour guide, teacher — jobs where you can be with people and bring joy are ideal.",
+      "stress": "Under stress, you may escape from reality or seek excessive stimulation. Time with close friends or creative activities help."
+    }
   }
 }
