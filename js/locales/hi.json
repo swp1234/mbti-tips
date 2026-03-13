@@ -534,5 +534,12 @@
       "career": "Entertainer, event planner, sales, tour guide, teacher — jobs where you can be with people and bring joy are ideal.",
       "stress": "Under stress, you may escape from reality or seek excessive stimulation. Time with close friends or creative activities help."
     }
+  },
+  "related": {
+    "title": "और खोजें",
+    "mbtiLove": "MBTI प्रेम",
+    "mbtiCareer": "MBTI करियर",
+    "mbtiCoffee": "MBTI कॉफ़ी",
+    "mbtiCity": "MBTI शहर"
   }
 }
