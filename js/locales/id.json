@@ -6,8 +6,8 @@
     "socialProof": "🔥 100.000+ pengguna"
   },
   "header": {
-    "title": "🧬 Kompatibilitas & Tips MBTI",
-    "subtitle": "Pilih tipe Anda dan jelajahi kecocokan sempurna Anda"
+    "title": "Kompatibilitas MBTI & Tips Hidup",
+    "subtitle": "Pilih tipe Anda dan temukan kecocokan terbaik"
   },
   "selector": {
     "label": "Pilih Jenis MBTI Anda",
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI Karier",
     "mbtiCoffee": "MBTI Kopi",
     "mbtiCity": "MBTI Kota"
+  },
+  "engage": {
+    "result1": "Life Hack INTJ -- Penguasaan Strategis",
+    "result2": "Tips ENFP -- Energi Kreatif",
+    "result3": "Kebijaksanaan INFJ -- Panduan Wawasan",
+    "result4": "Aksi ESTP -- Strategi Berani",
+    "socialProof": "100,000+ wawasan MBTI dijelajahi"
+  },
+  "about": {
+    "toggle": "Tentang Panduan Ini",
+    "heading1": "Cara Kerja",
+    "text1": "Pilih tipe MBTI Anda untuk melihat profil kepribadian dan analisis kompatibilitas.",
+    "heading2": "Memanfaatkan Tips MBTI",
+    "text2": "Memahami kekuatan dan kelemahan setiap tipe membantu membangun hubungan lebih baik."
   }
 }

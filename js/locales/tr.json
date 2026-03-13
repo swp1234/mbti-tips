@@ -6,8 +6,8 @@
     "socialProof": "🔥 100.000+ kullanıcı"
   },
   "header": {
-    "title": "🧬 MBTI Uyumluluğu & İpuçları",
-    "subtitle": "Tipini seç ve mükemmel eşleri keşfet"
+    "title": "MBTI Uyumluluk & Yaşam İpuçları",
+    "subtitle": "Tipinizi seçin ve en iyi eşleşmelerinizi keşfedin"
   },
   "selector": {
     "label": "MBTI Tipini Seç",
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI Kariyer",
     "mbtiCoffee": "MBTI Kahve",
     "mbtiCity": "MBTI Şehir"
+  },
+  "engage": {
+    "result1": "INTJ Yaşam Hilesi -- Stratejik Ustalık",
+    "result2": "ENFP Macera İpucu -- Yaratıcı Enerji",
+    "result3": "INFJ Bilgeliği -- Derin İçgörü",
+    "result4": "ESTP Eylem -- Cesur Strateji",
+    "socialProof": "100,000+ MBTI içgörü keşfedildi"
+  },
+  "about": {
+    "toggle": "Bu Rehber Hakkında",
+    "heading1": "Nasıl Çalışır",
+    "text1": "MBTI tipinizi seçerek kişilik profili ve uyumluluk analizi görün.",
+    "heading2": "MBTI İpuçlarından Yararlanma",
+    "text2": "Her tipin güçlü ve zayıf yönlerini anlamak daha iyi ilişkiler kurmaya yardımcı olur."
   }
 }

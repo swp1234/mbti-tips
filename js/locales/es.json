@@ -6,8 +6,8 @@
     "socialProof": "🔥 100.000+ usuarios"
   },
   "header": {
-    "title": "🧬 Compatibilidad MBTI y Consejos",
-    "subtitle": "Selecciona tu tipo y explora tus parejas perfectas"
+    "title": "Compatibilidad MBTI & Consejos",
+    "subtitle": "Selecciona tu tipo y descubre tus mejores coincidencias"
   },
   "selector": {
     "label": "Selecciona tu Tipo MBTI",
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI Carrera",
     "mbtiCoffee": "MBTI Café",
     "mbtiCity": "MBTI Ciudad"
+  },
+  "engage": {
+    "result1": "Truco INTJ -- Maestría Estratégica",
+    "result2": "Consejo ENFP -- Energía Creativa",
+    "result3": "Sabiduría INFJ -- Guía de Perspicacia",
+    "result4": "Acción ESTP -- Estrategia Audaz",
+    "socialProof": "100,000+ perspectivas MBTI"
+  },
+  "about": {
+    "toggle": "Sobre Esta Guía",
+    "heading1": "Cómo Funciona",
+    "text1": "Selecciona tu tipo MBTI para ver perfil de personalidad, análisis de compatibilidad y consejos.",
+    "heading2": "Aprovechando los Consejos MBTI",
+    "text2": "Entender las fortalezas y puntos ciegos de cada tipo ayuda a construir mejores relaciones."
   }
 }

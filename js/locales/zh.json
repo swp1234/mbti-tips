@@ -6,8 +6,8 @@
     "socialProof": "🔥 100,000+ 用户"
   },
   "header": {
-    "title": "🧬 MBTI 兼容性 & 提示",
-    "subtitle": "选择您的类型并探索您的完美匹配"
+    "title": "MBTI兼容性 & 生活贴士",
+    "subtitle": "选择你的类型探索最佳匹配"
   },
   "selector": {
     "label": "选择您的MBTI类型",
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI 职业",
     "mbtiCoffee": "MBTI 咖啡",
     "mbtiCity": "MBTI 城市"
+  },
+  "engage": {
+    "result1": "INTJ生活窘门 -- 战略大师",
+    "result2": "ENFP冒险贴士 -- 创造能量",
+    "result3": "INFJ智慧 -- 深度洞察指南",
+    "result4": "ESTP行动 -- 大胆生活策略",
+    "socialProof": "100,000+ MBTI洞察已探索"
+  },
+  "about": {
+    "toggle": "关于此指南",
+    "heading1": "如何运作",
+    "text1": "从16种类型中选择你的MBTI类型，查看性格分析和兼容性建议。",
+    "heading2": "充分利用MBTI建议",
+    "text2": "理解每种类型的优势和盲点有助于建立更好的关系。"
   }
 }

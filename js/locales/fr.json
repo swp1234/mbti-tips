@@ -6,8 +6,8 @@
     "socialProof": "🔥 100 000+ utilisateurs"
   },
   "header": {
-    "title": "🧬 Compatibilité MBTI & Conseils",
-    "subtitle": "Sélectionne ton type et explore tes correspondances parfaites"
+    "title": "Compatibilité MBTI & Conseils de Vie",
+    "subtitle": "Sélectionnez votre type et découvrez vos meilleures correspondances"
   },
   "selector": {
     "label": "Sélectionne ton Type MBTI",
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI Carrière",
     "mbtiCoffee": "MBTI Café",
     "mbtiCity": "MBTI Ville"
+  },
+  "engage": {
+    "result1": "Astuce INTJ -- Maîtrise Stratégique",
+    "result2": "Conseil ENFP -- Énergie Créative",
+    "result3": "Sagesse INFJ -- Guide de Perspicacité",
+    "result4": "Action ESTP -- Stratégie Audacieuse",
+    "socialProof": "100,000+ insights MBTI explorés"
+  },
+  "about": {
+    "toggle": "À propos de ce Guide",
+    "heading1": "Comment ça fonctionne",
+    "text1": "Sélectionnez votre type MBTI pour voir votre profil et analyse de compatibilité.",
+    "heading2": "Tirer le meilleur des conseils MBTI",
+    "text2": "Comprendre les forces et faiblesses de chaque type aide à construire de meilleures relations."
   }
 }

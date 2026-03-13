@@ -6,8 +6,8 @@
     "socialProof": "🔥 100,000+ ユーザー"
   },
   "header": {
-    "title": "🧬 MBTI相性とコツ",
-    "subtitle": "あなたのタイプを選んで、完璧な相手を探索してください"
+    "title": "MBTI相性 & ライフティップ",
+    "subtitle": "タイプを選んで相性を確認"
   },
   "selector": {
     "label": "あなたのMBTIタイプを選択",
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI 職業",
     "mbtiCoffee": "MBTI コーヒー",
     "mbtiCity": "MBTI 都市"
+  },
+  "engage": {
+    "result1": "INTJライフハック -- 戦略的マスタリー",
+    "result2": "ENFPアドベンチャー -- 創造的エネルギー",
+    "result3": "INFJの知恵 -- 深い洞察ガイド",
+    "result4": "ESTPアクション -- 大胆な人生戦略",
+    "socialProof": "100,000+件のMBTIインサイト"
+  },
+  "about": {
+    "toggle": "このガイドについて",
+    "heading1": "仕組み",
+    "text1": "16タイプから選択すると、性格プロフィール、相性分析、ティップが表示されます。",
+    "heading2": "MBTIティップを活用",
+    "text2": "各タイプの強みと弱みを理解することで、より良い関係を築けます。"
   }
 }

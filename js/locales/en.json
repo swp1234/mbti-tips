@@ -6,8 +6,8 @@
     "socialProof": "🔥 100,000+ Users"
   },
   "header": {
-    "title": "🧬 MBTI Compatibility & Tips",
-    "subtitle": "Select your type and explore your perfect matches"
+    "title": "MBTI Compatibility & Life Tips",
+    "subtitle": "Select your type and discover your best matches"
   },
   "selector": {
     "label": "Select Your MBTI Type",
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI Career",
     "mbtiCoffee": "MBTI Coffee",
     "mbtiCity": "MBTI City"
+  },
+  "engage": {
+    "result1": "INTJ Life Hack -- Strategic Mastery",
+    "result2": "ENFP Adventure Tip -- Creative Energy",
+    "result3": "INFJ Wisdom -- Deep Insight Guide",
+    "result4": "ESTP Action -- Bold Life Strategy",
+    "socialProof": "100,000+ MBTI insights explored"
+  },
+  "about": {
+    "toggle": "About the MBTI Compatibility Guide",
+    "heading1": "How the MBTI Compatibility Guide Works",
+    "text1": "Select your MBTI type from the 16-type grid to see your personality profile, compatibility analysis, and tips for love, work, and friendships. Compare your type with a friend's for detailed compatibility insights.",
+    "heading2": "Getting the Most from MBTI Tips",
+    "text2": "MBTI tips work best for self-awareness and improving communication. Each type has unique strengths and blind spots — understanding these helps build better relationships."
   }
 }

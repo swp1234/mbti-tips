@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
-    <meta name="robots" content="max-image-preview:large">
-    <meta name="description" content="Discover your MBTI compatibility, personality insights, and relationship tips for all 16 types. Free guide with love, career, and social match analysis on DopaBrain.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="description" content="Free MBTI compatibility guide for all 16 types! Get love, career & friendship tips. Find your best match and explore personality insights now!">
     <meta name="theme-color" content="#1abc9c">
     <meta name="keywords" content="MBTI, 궁합, 성격, 연애, 직장, 심리테스트, INFP, ENFJ, INTJ, 16유형, 성격 유형">
 
@@ -45,7 +45,7 @@
     <meta name="twitter:site" content="@dopabrain">
     <link rel="canonical" href="https://dopabrain.com/mbti-tips/">
 
-    <title>MBTI Compatibility & Tips - 16 Types Guide | DopaBrain</title>
+    <title>MBTI Compatibility Guide - Free 16 Types Tips | DopaBrain</title>
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -82,6 +82,53 @@
             "bestRating": "5",
             "worstRating": "1"
         }
+    }
+    </script>
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dopabrain.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 3, "name": "MBTI Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 4, "name": "MBTI Tips & Compatibility", "item": "https://dopabrain.com/mbti-tips/" }
+        ]
+    }
+    </script>
+    <!-- FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are the 16 MBTI personality types?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The 16 MBTI types are divided into 4 groups: Analysts (INTJ, INTP, ENTJ, ENTP), Diplomats (INFJ, INFP, ENFJ, ENFP), Sentinels (ISTJ, ISFJ, ESTJ, ESFJ), and Explorers (ISTP, ISFP, ESTP, ESFP). Each type has unique strengths, communication styles, and compatibility patterns." }
+            },
+            {
+                "@type": "Question",
+                "name": "How does MBTI compatibility work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "MBTI compatibility is based on how cognitive functions interact between types. Some pairings naturally complement each other (like INFP-ENFJ or INTJ-ENFP), while others may face communication challenges. Understanding your type helps improve all relationships." }
+            },
+            {
+                "@type": "Question",
+                "name": "What MBTI tips can improve my relationships?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Key tips include: understand your communication style (thinking vs feeling), respect different energy needs (introvert vs extrovert), appreciate different planning styles (judging vs perceiving), and learn to bridge sensing-intuition gaps in how you process information." }
+            },
+            {
+                "@type": "Question",
+                "name": "Which MBTI types work best together?",
+                "acceptedAnswer": { "@type": "Answer", "text": "In work settings, complementary types often excel together: ENTJ leaders pair well with ISFP creatives, INTJ strategists complement ESFP motivators, and INFJ counselors balance ESTP action-takers. The key is leveraging each type's natural strengths." }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I compare two MBTI types for compatibility?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes! This guide lets you select your type and compare it with a friend's type. You get detailed compatibility analysis across love, work, and friendship dimensions, plus specific tips for improving the relationship." }
+            }
+        ]
     }
     </script>
     <link rel="manifest" href="manifest.json">
@@ -129,11 +176,23 @@
         <!-- 테마 토글 -->
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
 
-        <!-- 헤더 + 사회적 증거 -->
+        <!-- Header -->
         <header class="app-header">
-            <h1 data-i18n="header.title">🧬 MBTI 궁합 & 팁</h1>
-            <p class="subtitle" data-i18n="header.subtitle">나의 유형을 선택하고 궁합을 확인하세요</p>
-            <div class="social-proof-badge" data-i18n="app.socialProof" style="margin-top: 12px; display: inline-block; background: rgba(26, 188, 156, 0.15); border: 1px solid rgba(26, 188, 156, 0.3); color: #48c9b0; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">🔥 100,000+ 사용자 경험</div>
+            <h1 data-i18n="header.title">MBTI Compatibility & Life Tips</h1>
+            <p class="subtitle" data-i18n="header.subtitle">Select your type and discover your best matches</p>
+
+            <!-- Result Preview Carousel -->
+            <div class="result-carousel" aria-live="polite">
+                <div class="carousel-track">
+                    <div class="carousel-item" data-i18n="engage.result1">INTJ Life Hack -- Strategic Mastery</div>
+                    <div class="carousel-item" data-i18n="engage.result2">ENFP Adventure Tip -- Creative Energy</div>
+                    <div class="carousel-item" data-i18n="engage.result3">INFJ Wisdom -- Deep Insight Guide</div>
+                    <div class="carousel-item" data-i18n="engage.result4">ESTP Action -- Bold Life Strategy</div>
+                </div>
+            </div>
+
+            <!-- Social Proof Badge -->
+            <div class="social-proof-badge" data-i18n="engage.socialProof">100,000+ MBTI insights explored</div>
         </header>
 
         <!-- 메인 콘텐츠 -->
@@ -309,11 +368,24 @@
         <!-- Hidden canvas for sharing images -->
         <canvas id="share-canvas" width="1080" height="1080" style="display:none"></canvas>
 
-            <!-- Footer with Home Link -->
+    <!-- About Section -->
+    <section class="about-section collapsible-section" id="about-section">
+      <details>
+        <summary data-i18n="about.toggle">About the MBTI Compatibility Guide</summary>
+        <div class="about-content">
+          <h2 data-i18n="about.heading1">How the MBTI Compatibility Guide Works</h2>
+          <p data-i18n="about.text1">Select your MBTI type from the 16-type grid to instantly see your personality profile, compatibility analysis, and personalized tips for love, work, and friendships. You can also compare your type with a friend's to discover detailed compatibility insights across all dimensions.</p>
+          <h2 data-i18n="about.heading2">Getting the Most from MBTI Tips</h2>
+          <p data-i18n="about.text2">MBTI tips work best when used for self-awareness and improving communication. Each type has unique strengths and blind spots — understanding these patterns helps you build better relationships, choose compatible partners, and navigate workplace dynamics more effectively.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Footer with Home Link -->
         <footer class="game-footer">
             <a href="https://dopabrain.com/portal/" class="back-link" data-i18n="game.back">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m15 18-6-6 6-6"></path></svg>
-                DopaBrain 홈
+                DopaBrain Home
             </a>
         </footer>
     </div>

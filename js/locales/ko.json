@@ -6,7 +6,7 @@
     "socialProof": "🔥 100,000+ 사용자 경험"
   },
   "header": {
-    "title": "🧬 MBTI 궁합 & 팁",
+    "title": "MBTI 궁합 & 라이프 팁",
     "subtitle": "나의 유형을 선택하고 궁합을 확인하세요"
   },
   "selector": {
@@ -541,5 +541,19 @@
     "mbtiCareer": "MBTI 직업궁합",
     "mbtiCoffee": "MBTI 커피",
     "mbtiCity": "MBTI 도시"
+  },
+  "engage": {
+    "result1": "INTJ 라이프 핵 -- 전략적 마스터리",
+    "result2": "ENFP 모험 팁 -- 창의적 에너지",
+    "result3": "INFJ 지혜 -- 깊은 통찰 가이드",
+    "result4": "ESTP 액션 -- 대담한 삶의 전략",
+    "socialProof": "100,000+ MBTI 인사이트 탐색 완료"
+  },
+  "about": {
+    "toggle": "MBTI 궁합 가이드에 대해",
+    "heading1": "MBTI 궁합 가이드 작동 방식",
+    "text1": "16가지 유형 그리드에서 나의 MBTI를 선택하면 성격 프로필, 궁합 분석, 연애/직장/우정 팁을 볼 수 있습니다.",
+    "heading2": "MBTI 팁 활용하기",
+    "text2": "MBTI 팁은 자기 인식과 소통 개선에 가장 효과적입니다. 각 유형의 강점과 약점을 이해하면 더 나은 관계를 만들 수 있습니다."
   }
 }
