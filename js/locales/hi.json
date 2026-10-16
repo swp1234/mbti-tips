@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI प्रेम",
     "mbtiCareer": "MBTI करियर",
     "mbtiCoffee": "MBTI कॉफ़ी",
-    "mbtiCity": "MBTI शहर"
+    "mbtiCity": "MBTI शहर",
+    "attachmentStyle": "अटैचमेंट स्टाइल",
+    "workStyle": "वर्क स्टाइल टेस्ट",
+    "animalPersonality": "पशु व्यक्तित्व",
+    "loveLanguage": "लव लैंग्वेज टेस्ट"
   },
   "engage": {
     "result1": "INTJ जीवन हैक -- रणनीतिक निपुणता",

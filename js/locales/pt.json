@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Amor",
     "mbtiCareer": "MBTI Carreira",
     "mbtiCoffee": "MBTI Café",
-    "mbtiCity": "MBTI Cidade"
+    "mbtiCity": "MBTI Cidade",
+    "attachmentStyle": "Estilo de Apego",
+    "workStyle": "Estilo de Trabalho",
+    "animalPersonality": "Personalidade Animal",
+    "loveLanguage": "Linguagem do Amor"
   },
   "engage": {
     "result1": "Dica INTJ -- Maestria Estratégica",

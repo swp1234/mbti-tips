@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Love",
     "mbtiCareer": "MBTI Career",
     "mbtiCoffee": "MBTI Coffee",
-    "mbtiCity": "MBTI City"
+    "mbtiCity": "MBTI City",
+    "attachmentStyle": "Attachment Style",
+    "workStyle": "Work Style",
+    "animalPersonality": "Animal Personality",
+    "loveLanguage": "Love Language"
   },
   "engage": {
     "result1": "INTJ Life Hack -- Strategic Mastery",

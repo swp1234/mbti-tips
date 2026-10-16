@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI 恋愛",
     "mbtiCareer": "MBTI 職業",
     "mbtiCoffee": "MBTI コーヒー",
-    "mbtiCity": "MBTI 都市"
+    "mbtiCity": "MBTI 都市",
+    "attachmentStyle": "愛着スタイル診断",
+    "workStyle": "仕事スタイル診断",
+    "animalPersonality": "動物性格診断",
+    "loveLanguage": "愛の言語テスト"
   },
   "engage": {
     "result1": "INTJライフハック -- 戦略的マスタリー",

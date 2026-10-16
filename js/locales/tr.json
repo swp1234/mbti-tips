@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Aşk",
     "mbtiCareer": "MBTI Kariyer",
     "mbtiCoffee": "MBTI Kahve",
-    "mbtiCity": "MBTI Şehir"
+    "mbtiCity": "MBTI Şehir",
+    "attachmentStyle": "Bağlanma Stili",
+    "workStyle": "Çalışma Stili",
+    "animalPersonality": "Hayvan Kişiliği",
+    "loveLanguage": "Sevgi Dili Testi"
   },
   "engage": {
     "result1": "INTJ Yaşam Hilesi -- Stratejik Ustalık",

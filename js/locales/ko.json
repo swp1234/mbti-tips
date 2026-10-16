@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI 연애궁합",
     "mbtiCareer": "MBTI 직업궁합",
     "mbtiCoffee": "MBTI 커피",
-    "mbtiCity": "MBTI 도시"
+    "mbtiCity": "MBTI 도시",
+    "attachmentStyle": "애착 유형 테스트",
+    "workStyle": "업무 스타일 테스트",
+    "animalPersonality": "나의 동물 성격",
+    "loveLanguage": "사랑의 언어 테스트"
   },
   "engage": {
     "result1": "INTJ 라이프 핵 -- 전략적 마스터리",

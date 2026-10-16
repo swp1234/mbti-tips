@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI 恋爱",
     "mbtiCareer": "MBTI 职业",
     "mbtiCoffee": "MBTI 咖啡",
-    "mbtiCity": "MBTI 城市"
+    "mbtiCity": "MBTI 城市",
+    "attachmentStyle": "依恋风格测试",
+    "workStyle": "工作风格测试",
+    "animalPersonality": "动物性格测试",
+    "loveLanguage": "爱的语言测试"
   },
   "engage": {
     "result1": "INTJ生活窘门 -- 战略大师",

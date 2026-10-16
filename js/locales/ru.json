@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Любовь",
     "mbtiCareer": "MBTI Карьера",
     "mbtiCoffee": "MBTI Кофе",
-    "mbtiCity": "MBTI Город"
+    "mbtiCity": "MBTI Город",
+    "attachmentStyle": "Тип привязанности",
+    "workStyle": "Рабочий стиль",
+    "animalPersonality": "Тотемное животное",
+    "loveLanguage": "Язык любви"
   },
   "engage": {
     "result1": "Лайфхак INTJ -- Стратегическое мастерство",

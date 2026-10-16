@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Cinta",
     "mbtiCareer": "MBTI Karier",
     "mbtiCoffee": "MBTI Kopi",
-    "mbtiCity": "MBTI Kota"
+    "mbtiCity": "MBTI Kota",
+    "attachmentStyle": "Gaya Kelekatan",
+    "workStyle": "Gaya Kerja",
+    "animalPersonality": "Kepribadian Hewan",
+    "loveLanguage": "Bahasa Cinta"
   },
   "engage": {
     "result1": "Life Hack INTJ -- Penguasaan Strategis",

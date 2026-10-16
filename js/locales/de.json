@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Liebe",
     "mbtiCareer": "MBTI Karriere",
     "mbtiCoffee": "MBTI Kaffee",
-    "mbtiCity": "MBTI Stadt"
+    "mbtiCity": "MBTI Stadt",
+    "attachmentStyle": "Bindungsstil-Test",
+    "workStyle": "Arbeitsstil-Test",
+    "animalPersonality": "Tier-Persönlichkeit",
+    "loveLanguage": "Sprache der Liebe"
   },
   "engage": {
     "result1": "INTJ-Lifehack -- Strategische Meisterschaft",

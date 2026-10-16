@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Amor",
     "mbtiCareer": "MBTI Carrera",
     "mbtiCoffee": "MBTI Café",
-    "mbtiCity": "MBTI Ciudad"
+    "mbtiCity": "MBTI Ciudad",
+    "attachmentStyle": "Estilo de Apego",
+    "workStyle": "Estilo de Trabajo",
+    "animalPersonality": "Animal Interior",
+    "loveLanguage": "Lenguaje del Amor"
   },
   "engage": {
     "result1": "Truco INTJ -- Maestría Estratégica",

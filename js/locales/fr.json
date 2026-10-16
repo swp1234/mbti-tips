@@ -540,7 +540,11 @@
     "mbtiLove": "MBTI Amour",
     "mbtiCareer": "MBTI Carrière",
     "mbtiCoffee": "MBTI Café",
-    "mbtiCity": "MBTI Ville"
+    "mbtiCity": "MBTI Ville",
+    "attachmentStyle": "Style d’Attachement",
+    "workStyle": "Style de Travail",
+    "animalPersonality": "Animal Totem",
+    "loveLanguage": "Langage de l’Amour"
   },
   "engage": {
     "result1": "Astuce INTJ -- Maîtrise Stratégique",
