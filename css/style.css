@@ -637,6 +637,8 @@ body {
 
 .compare-select {
     width: 100%;
+    min-height: 44px;
+    box-sizing: border-box;
     padding: 10px;
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid var(--glass-border);
@@ -827,7 +829,7 @@ body {
 /* === Accessibility Improvements === */
 button:focus-visible,a:focus-visible,input:focus-visible,[role="button"]:focus-visible{outline:3px solid #1abc9c;outline-offset:2px;}
 button,a[href],input[type="button"],input[type="submit"],[role="button"]{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;}
-.skip-link{position:absolute;top:-40px;left:0;background:#1abc9c;color:white;padding:8px;text-decoration:none;z-index:100;}
+.skip-link{position:absolute;top:-40px;left:0;min-height:44px;display:inline-flex;align-items:center;box-sizing:border-box;background:#1abc9c;color:white;padding:8px 16px;text-decoration:none;z-index:100;}
 .skip-link:focus{top:0;}
 [role="dialog"]{z-index:1000;}
 @media (prefers-reduced-motion: reduce){*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}}
