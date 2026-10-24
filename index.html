@@ -6,7 +6,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="description" content="Free MBTI compatibility guide for all 16 types! Get love, career & friendship tips. Find your best match and explore personality insights now!">
-    <meta name="dateModified" content="2026-06-19">
+    <meta name="dateModified" content="2026-10-24">
     <meta name="theme-color" content="#1abc9c">
     <meta name="keywords" content="MBTI, 궁합, 성격, 연애, 직장, 심리테스트, INFP, ENFJ, INTJ, 16유형, 성격 유형">
 
@@ -75,13 +75,6 @@
             "price": "0",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.5",
-            "ratingCount": "2100",
-            "bestRating": "5",
-            "worstRating": "1"
         }
     }
     </script>
@@ -98,40 +91,6 @@
         ]
     }
     </script>
-    <!-- FAQPage -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What are the 16 MBTI personality types?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The 16 MBTI types are divided into 4 groups: Analysts (INTJ, INTP, ENTJ, ENTP), Diplomats (INFJ, INFP, ENFJ, ENFP), Sentinels (ISTJ, ISFJ, ESTJ, ESFJ), and Explorers (ISTP, ISFP, ESTP, ESFP). Each type has unique strengths, communication styles, and compatibility patterns." }
-            },
-            {
-                "@type": "Question",
-                "name": "How does MBTI compatibility work?",
-                "acceptedAnswer": { "@type": "Answer", "text": "MBTI compatibility is based on how cognitive functions interact between types. Some pairings naturally complement each other (like INFP-ENFJ or INTJ-ENFP), while others may face communication challenges. Understanding your type helps improve all relationships." }
-            },
-            {
-                "@type": "Question",
-                "name": "What MBTI tips can improve my relationships?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Key tips include: understand your communication style (thinking vs feeling), respect different energy needs (introvert vs extrovert), appreciate different planning styles (judging vs perceiving), and learn to bridge sensing-intuition gaps in how you process information." }
-            },
-            {
-                "@type": "Question",
-                "name": "Which MBTI types work best together?",
-                "acceptedAnswer": { "@type": "Answer", "text": "In work settings, complementary types often excel together: ENTJ leaders pair well with ISFP creatives, INTJ strategists complement ESFP motivators, and INFJ counselors balance ESTP action-takers. The key is leveraging each type's natural strengths." }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I compare two MBTI types for compatibility?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes! This guide lets you select your type and compare it with a friend's type. You get detailed compatibility analysis across love, work, and friendship dimensions, plus specific tips for improving the relationship." }
-            }
-        ]
-    }
-    </script>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/svg+xml" href="icon-192.svg">
     <link rel="apple-touch-icon" href="icon-192.svg">
@@ -139,7 +98,6 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
-<script>setTimeout(function(){if(typeof gtag!=='undefined')gtag('event','page_engage',{event_category:'mbti_tips',engagement_time_msec:5000})},5000);</script>
     <script src="js/i18n.js"></script>
 </head>
 <body>
@@ -153,9 +111,6 @@
     </div>
 
     <div class="app-container">
-        <!-- 상단 배너 광고 영역 -->
-        <div class="ad-banner top-ad"></div>
-
         <!-- 언어 선택기 -->
         <div class="language-selector">
             <button class="lang-btn" id="lang-toggle" title="Select Language">🌐</button>
@@ -354,18 +309,6 @@
                 
             </section>
         </main>
-
-        <!-- 전면 광고 모달 -->
-        <div class="interstitial-ad hidden" id="interstitial-ad">
-            <div class="ad-content">
-                <p data-i18n="ads.label">광고</p>
-                <div class="ad-placeholder" data-i18n="ads.banner">광고 영역</div>
-                <button id="close-ad" disabled><span data-i18n="ads.close">닫기</span> (<span id="countdown">5</span>)</button>
-            </div>
-        </div>
-
-        <!-- 하단 배너 광고 영역 -->
-        <div class="ad-banner bottom-ad"></div>
 
         <!-- Hidden canvas for sharing images -->
         <canvas id="share-canvas" width="1080" height="1080" style="display:none"></canvas>

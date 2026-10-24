@@ -120,40 +120,11 @@ class MbtiApp {
 
     setupPremiumButton() {
         const btn = document.getElementById('deep-analysis-btn');
-        btn.addEventListener('click', () => {
-            this.showInterstitialAd(() => {
+        if (btn) {
+            btn.addEventListener('click', () => {
                 this.showPremiumContent();
             });
-        });
-    }
-
-    showInterstitialAd(callback) {
-        const adModal = document.getElementById('interstitial-ad');
-        const closeBtn = document.getElementById('close-ad');
-        const countdown = document.getElementById('countdown');
-
-        adModal.classList.remove('hidden');
-        closeBtn.disabled = true;
-
-        let seconds = 5;
-        countdown.textContent = seconds;
-
-        const timer = setInterval(() => {
-            seconds--;
-            countdown.textContent = seconds;
-
-            if (seconds <= 0) {
-                clearInterval(timer);
-                closeBtn.disabled = false;
-                closeBtn.textContent = i18n.t('buttons.close');
-
-                closeBtn.onclick = () => {
-                    adModal.classList.add('hidden');
-                    closeBtn.textContent = `${i18n.t('buttons.close')} (5)`;
-                    if (callback) callback();
-                };
-            }
-        }, 1000);
+        }
     }
 
     showPremiumContent() {
