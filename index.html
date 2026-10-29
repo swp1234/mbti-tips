@@ -149,7 +149,7 @@
             </div>
 
             <!-- Social Proof Badge -->
-            <div class="social-proof-badge" data-i18n="engage.socialProof">100,000+ MBTI insights explored</div>
+            <div class="social-proof-badge" data-i18n="engage.socialProof">16 Personality Archetypes · 100% Free Insights</div>
         </header>
 
         <!-- 메인 콘텐츠 -->
@@ -339,10 +339,29 @@
     <script src="js/app.js"></script>
     <script>
         // Initialize i18n system
+        
+  function preserveLanguageLinks() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var lang = params.get('lang');
+      if (!lang) return;
+      document.querySelectorAll('a[href^="/"]').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (!href) return;
+        var url = new URL(href, window.location.origin);
+        if (!url.searchParams.has('lang')) {
+          url.searchParams.set('lang', lang);
+          a.setAttribute('href', url.pathname + url.search + url.hash);
+        }
+      });
+    } catch (e) {}
+  }
+
         (async function initI18n() {
             try {
                 await i18n.loadTranslations(i18n.getCurrentLanguage());
                 i18n.updateUI();
+                preserveLanguageLinks();
             } catch (e) {
                 console.warn('i18n init failed:', e);
             }
@@ -357,6 +376,7 @@
             langOptions.forEach(opt => {
                 opt.addEventListener('click', async () => {
                     await i18n.setLanguage(opt.getAttribute('data-lang'));
+                    preserveLanguageLinks();
                     langOptions.forEach(o => o.classList.remove('active'));
                     opt.classList.add('active');
                     langMenu.classList.add('hidden');
