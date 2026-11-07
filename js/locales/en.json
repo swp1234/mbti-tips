@@ -554,10 +554,19 @@
     "socialProof": "16 Personality Archetypes · 100% Free Insights"
   },
   "about": {
-    "toggle": "About the MBTI Compatibility Guide",
-    "heading1": "How the MBTI Compatibility Guide Works",
-    "text1": "Select your MBTI type from the 16-type grid to see your personality profile, compatibility analysis, and tips for love, work, and friendships. Compare your type with a friend's for detailed compatibility insights.",
-    "heading2": "Getting the Most from MBTI Tips",
-    "text2": "MBTI tips work best for self-awareness and improving communication. Each type has unique strengths and blind spots — understanding these helps build better relationships."
+    "toggle": "About the 16 Personalities Compatibility & Cognitive Functions Guide",
+    "heading1": "Carl Jung's Cognitive Dimensions & Analytical Psychology",
+    "text1": "The 16-personality typology derives from Carl Gustav Jung's theory of psychological types (1921), structured across four fundamental dichotomies: Energy Orientation (Introversion vs. Extraversion), Information Perception (Sensing vs. Intuition), Decision-Making (Thinking vs. Feeling), and Lifestyle Orientation (Judging vs. Perceiving). Recognizing these cognitive preferences allows individuals to navigate interpersonal dynamics with empathy rather than judgment.",
+    "heading2": "Practical Growth: Love, Career, and Social Synergy",
+    "text2": "Compatibility is not a deterministic formula, but a framework for relational mindfulness. Understanding cognitive blind spots helps partners resolve repetitive communication loops in romantic relationships, optimizes role division in professional teams, and fosters deeper patience in long-term friendships.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "What psychological framework underpins type compatibility?",
+    "faq1A": "The 16 personality archetypes originate from Carl Jung's analytical psychology and the cognitive function model. Compatibility analysis highlights cognitive complementarity and communication synergy between differing cognitive orientations.",
+    "faq2Q": "Can two seemingly opposite personality types build a healthy relationship?",
+    "faq2A": "Yes. While shared preferences can facilitate immediate understanding, complementary 'opposite' types often foster profound long-term growth by balancing each other's cognitive blind spots, provided mutual emotional respect and active listening are practiced.",
+    "faq3Q": "Is my selected personality type or compatibility result stored on external servers?",
+    "faq3A": "Never. All type lookups, compatibility matrices, and communication tips are computed 100% locally in your web browser. No personal selection data is tracked or transmitted to external servers.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Personality Psychology & Cognitive Science Series"
   }
 }

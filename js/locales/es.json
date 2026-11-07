@@ -554,10 +554,19 @@
     "socialProof": "16 tipos de personalidad · Información 100% gratuita"
   },
   "about": {
-    "toggle": "Sobre Esta Guía",
-    "heading1": "Cómo Funciona",
-    "text1": "Selecciona tu tipo MBTI para ver perfil de personalidad, análisis de compatibilidad y consejos.",
-    "heading2": "Aprovechando los Consejos MBTI",
-    "text2": "Entender las fortalezas y puntos ciegos de cada tipo ayuda a construir mejores relaciones."
+    "toggle": "Acerca de la Guía de Compatibilidad de 16 Personalidades y Funciones Cognitivas",
+    "heading1": "Dimensiones Cognitivas de Carl Jung y Psicología Analítica",
+    "text1": "La tipología de 16 personalidades proviene de la teoría de tipos psicológicos de Carl Jung (1921), estructurada en cuatro dicotomías básicas: Energía (Introversión/Extraversión), Percepción (Sensación/Intuición), Juicio (Pensamiento/Sentimiento) y Estilo de Vida (Juicio/Percepción).",
+    "heading2": "Crecimiento Práctico en Pareja, Trabajo y Amistad",
+    "text2": "La compatibilidad no es una fórmula rígida, sino un marco para la empatía relacional. Comprender los puntos ciegos cognitivos permite desactivar conflictos repetitivos y optimizar la convivencia afectiva y laboral.",
+    "faqTitle": "Preguntas Frecuentes (FAQ)",
+    "faq1Q": "¿Cuál es el sustento psicológico de la compatibilidad entre tipos?",
+    "faq1A": "Se basa en el modelo de funciones cognitivas de Carl Jung, analizando la complementariedad y la sinergia comunicativa entre diferentes preferencias mentales.",
+    "faq2Q": "¿Pueden dos tipos totalmente opuestos tener una relación exitosa?",
+    "faq2A": "Sí. Las personalidades complementarias a menudo equilibran las debilidades del otro y fomentan un aprendizaje mutuo profundo.",
+    "faq3Q": "¿Se guardan mis selecciones o resultados en servidores externos?",
+    "faq3A": "Nunca. Toda la información y comparaciones se procesan de forma 100% local en tu navegador.",
+    "reviewDate": "Revisión Editorial: Noviembre 2026",
+    "reviewTeam": "DopaBrain Serie de Psicología de la Personalidad y Ciencias Cognitivas"
   }
 }

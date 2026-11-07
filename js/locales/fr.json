@@ -554,10 +554,19 @@
     "socialProof": "16 types de personnalité · Conseils 100% gratuits"
   },
   "about": {
-    "toggle": "À propos de ce Guide",
-    "heading1": "Comment ça fonctionne",
-    "text1": "Sélectionnez votre type MBTI pour voir votre profil et analyse de compatibilité.",
-    "heading2": "Tirer le meilleur des conseils MBTI",
-    "text2": "Comprendre les forces et faiblesses de chaque type aide à construire de meilleures relations."
+    "toggle": "À propos du Guide de Compatibilité des 16 Personnalités & Fonctions Cognitives",
+    "heading1": "Dimensions Cognitives de Carl Jung & Psychologie Analytique",
+    "text1": "La typologie des 16 profils découle des types psychologiques de Carl Gustav Jung (1921), organisés autour de 4 axes : Énergie (Introversion/Extraversion), Recueil d'information (Sensation/Intuition), Prise de décision (Pensée/Sentiment) et Mode de vie (Jugement/Perception).",
+    "heading2": "Synergie Pratique : Amour, Carrière et Amitié",
+    "text2": "La compatibilité n'est pas une fatalité mais une invitation à la bienveillance. Identifier les angles morts cognitifs de chacun apaise les incompréhensions et enrichit la dynamique de couple et d'équipe.",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Sur quoi repose l'analyse de compatibilité ?",
+    "faq1A": "Sur le modèle des fonctions cognitives jungiennes, mettant en lumière la complémentarité psychologique et la fluidité de communication.",
+    "faq2Q": "Deux profils opposés peuvent-ils réussir leur relation ?",
+    "faq2A": "Oui. Les opposés s'équilibrent et stimulent une formidable évolution mutuelle lorsque l'écoute et la maturité affective sont réunies.",
+    "faq3Q": "Mes sélections sont-elles transmises à des serveurs ?",
+    "faq3A": "Jamais. Tous les profils et comparaisons sont traités à 100% localement dans votre navigateur.",
+    "reviewDate": "Revue Éditoriale : Novembre 2026",
+    "reviewTeam": "DopaBrain Psychologie de la Personnalité & Sciences Cognitives"
   }
 }

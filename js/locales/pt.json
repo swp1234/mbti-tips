@@ -554,10 +554,19 @@
     "socialProof": "16 tipos de personalidade · Insights 100% gratuitos"
   },
   "about": {
-    "toggle": "Sobre Este Guia",
-    "heading1": "Como Funciona",
-    "text1": "Selecione seu tipo MBTI para ver perfil de personalidade e análise de compatibilidade.",
-    "heading2": "Aproveitando as Dicas MBTI",
-    "text2": "Entender forças e fraquezas de cada tipo ajuda a construir melhores relacionamentos."
+    "toggle": "Sobre o Guia de Compatibilidade das 16 Personalidades e Funções Cognitivas",
+    "heading1": "Dimensões Cognitivas de Carl Jung e Psicologia Analítica",
+    "text1": "A tipologia das 16 personalidades tem origem na teoria de tipos psicológicos de Carl Jung (1921), dividida em quatro preferências fundamentais: Energia (Introversão/Extroversão), Percepção (Sensação/Intuição), Julgamento (Pensamento/Sentimento) e Estilo de Vida (Julgamento/Percepção).",
+    "heading2": "Crescimento Prático: Amor, Carreira e Amizade",
+    "text2": "A compatibilidade não é uma fórmula fixa, mas um mapa para empatia relacional. Compreender os pontos cegos cognitivos mútuos dissolve conflitos repetitivos e enriquece parcerias afetivas e profissionais.",
+    "faqTitle": "Perguntas Frecuentes (FAQ)",
+    "faq1Q": "Qual é a base psicológica da compatibilidade de tipos?",
+    "faq1A": "O modelo de funções cognitivas de Jung, avaliando sinergia comunicativa e complementaridade comportamental.",
+    "faq2Q": "Dois tipos opostos podem ter um relacionamento duradouro e saudável?",
+    "faq2A": "Com certeza. Personalidades complementares oferecem equilíbrio e aprendizado contínuo quando há respeito e diálogo.",
+    "faq3Q": "Meus dados ou escolhas são enviados para fora?",
+    "faq3A": "Nunca. Todo o processamento funciona 100% de forma local no seu navegador.",
+    "reviewDate": "Revisão Editorial: Novembro 2026",
+    "reviewTeam": "DopaBrain Série de Psicologia da Personalidade e Ciências Cognitivas"
   }
 }

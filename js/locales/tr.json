@@ -554,10 +554,19 @@
     "socialProof": "16 kişilik tipi · %100 ücretsiz içgörüler"
   },
   "about": {
-    "toggle": "Bu Rehber Hakkında",
-    "heading1": "Nasıl Çalışır",
-    "text1": "MBTI tipinizi seçerek kişilik profili ve uyumluluk analizi görün.",
-    "heading2": "MBTI İpuçlarından Yararlanma",
-    "text2": "Her tipin güçlü ve zayıf yönlerini anlamak daha iyi ilişkiler kurmaya yardımcı olur."
+    "toggle": "16 Kişilik Uyumu Rehberi ve Bilişsel İşlevler Hakkında",
+    "heading1": "Carl Jung'un Bilişsel Boyutları ve Analitik Psikoloji",
+    "text1": "16 kişilik tipolojisi, Carl Gustav Jung'un 1921 tarihli psikolojik tipler kuramına dayanır: Enerji Yönelimi (İçe/Dışa Dönüklük), Bilgi Algılama (Duyumsama/Sezgi), Karar Verme (Düşünme/Hissetme) ve Yaşam Tarzı (Yargılama/Algılama).",
+    "heading2": "Aşk, Kariyer ve Arkadaşlıkta Pratik Sinerji",
+    "text2": "Kişilik uyumu katı bir kader değil, empatiyi geliştiren bir pusuladır. Bilişsel kör noktaları anlamak, ilişkilerdeki kısır döngüleri aşmayı ve iş birliğini güçlendirmeyi sağlar.",
+    "faqTitle": "Sıkça Sorulan Sorular (FAQ)",
+    "faq1Q": "Tip uyumunun psikolojik temeli nedir?",
+    "faq1A": "Jung'un bilişsel işlevler modeline dayanır ve farklı zihinsel yönelimlerin birbirini nasıl tamamladığını inceler.",
+    "faq2Q": "Zıt kişilik tipleri sağlıklı bir ilişki kurabilir mi?",
+    "faq2A": "Kesinlikle evet. Zıt tipler birbirlerinin eksik yönlerini tamamlayarak en güçlü kişisel gelişimi sağlayabilir.",
+    "faq3Q": "Seçtiğim tipler veya kıyaslama verileri kaydediliyor mu?",
+    "faq3A": "Asla. Tüm analizler %100 tarayıcınızın içinde yerel olarak çalışır.",
+    "reviewDate": "Editoryal İnceleme: Kasım 2026",
+    "reviewTeam": "DopaBrain Kişilik Psikolojisi ve Bilişsel Bilimler Serisi"
   }
 }

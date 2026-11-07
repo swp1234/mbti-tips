@@ -554,10 +554,19 @@
     "socialProof": "16 Persönlichkeitstypen · 100% kostenlose Einblicke"
   },
   "about": {
-    "toggle": "Über diesen Guide",
-    "heading1": "Wie es funktioniert",
-    "text1": "Wählen Sie Ihren MBTI-Typ für Persönlichkeitsprofil und Kompatibilitätsanalyse.",
-    "heading2": "MBTI-Tipps optimal nutzen",
-    "text2": "Das Verständnis der Stärken und Schwächen jedes Typs hilft beim Aufbau besserer Beziehungen."
+    "toggle": "Über den 16-Persönlichkeiten-Kompatibilitätsguide & Kognitionsfunktionen",
+    "heading1": "Carl Jungs kognitive Dimensionen & Analytische Psychologie",
+    "text1": "Die 16 Persönlichkeitstypen basieren auf Carl Gustav Jungs 'Psychologischen Typen' (1921) mit den vier Grunddimensionen: Extraversion/Introversion, Sensorik/Intuition, Denken/Fühlen und Urteilen/Wahrnehmen.",
+    "heading2": "Beziehungssynergie in Liebe, Beruf und Freundschaft",
+    "text2": "Kompatibilität ist kein starres Schicksal, sondern ein Werkzeug für gegenseitige Achtsamkeit. Das Erkennen kognitiver blinder Flecken stärkt die partnerschaftliche Kommunikation und das gegenseitige Verständnis.",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Worauf basiert die Kompatibilitätsanalyse?",
+    "faq1A": "Auf Jungs kognitivem Funktionsmodell und der psychologischen Komplementarität unterschiedlicher Wahrnehmungs- und Urteilsstile.",
+    "faq2Q": "Können gegensätzliche Persönlichkeitstypen harmonieren?",
+    "faq2A": "Absolut. Gegensätze können einander bereichern und lebenslanges persönliches Wachstum fördern, wenn Respekt und Dialogbereitschaft vorhanden sind.",
+    "faq3Q": "Werden meine ausgewählten Typen extern gespeichert?",
+    "faq3A": "Niemals. Sämtliche Abfragen und Vergleiche laufen zu 100 % lokal in Ihrem Browser.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Persönlichkeitspsychologie & Kognitionswissenschaft"
   }
 }

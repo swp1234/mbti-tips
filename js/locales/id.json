@@ -554,10 +554,19 @@
     "socialProof": "16 tipe kepribadian · Wawasan 100% gratis"
   },
   "about": {
-    "toggle": "Tentang Panduan Ini",
-    "heading1": "Cara Kerja",
-    "text1": "Pilih tipe MBTI Anda untuk melihat profil kepribadian dan analisis kompatibilitas.",
-    "heading2": "Memanfaatkan Tips MBTI",
-    "text2": "Memahami kekuatan dan kelemahan setiap tipe membantu membangun hubungan lebih baik."
+    "toggle": "Tentang Panduan Kompatibilitas 16 Kepribadian & Fungsi Kognitif",
+    "heading1": "Dimensi Kognitif Carl Jung & Psikologi Analitis",
+    "text1": "Tipologi 16 kepribadian berakar pada teori tipe psikologis Carl Gustav Jung (1921) dengan 4 poros utama: Orientasi Energi (Introversi/Ekstraversi), Persepsi (Penginderaan/Intuisi), Pengambilan Keputusan (Berpikir/Perasaan), dan Gaya Hidup (Penilaian/Pengamatan).",
+    "heading2": "Sinergi Praktis dalam Cinta, Karier, dan Pertemanan",
+    "text2": "Kecocokan bukan kepastian kaku melainkan sarana memahami sudut pandang pasangan. Mengenali titik buta kognitif membantu memecahkan konflik berulang dan mempererat hubungan.",
+    "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+    "faq1Q": "Apa landasan psikologis dari analisis kecocokan tipe kepribadian?",
+    "faq1A": "Model fungsi kognitif Jung, yang memetakan komplementaritas psikologis dan efektivitas komunikasi antar orientasi pikiran.",
+    "faq2Q": "Bisakah dua tipe kepribadian yang berlawanan membangun hubungan yang bahagia?",
+    "faq2A": "Tentu bisa. Tipe yang berlawanan justru saling melengkapi kelemahan dan mendorong pertumbuhan pribadi yang mendalam.",
+    "faq3Q": "Apakah pilihan tipe saya disimpan di server eksternal?",
+    "faq3A": "Sama sekali tidak. Semua analisis berjalan 100% secara lokal di browser Anda.",
+    "reviewDate": "Tinjauan Editorial: November 2026",
+    "reviewTeam": "DopaBrain Seri Psikologi Kepribadian & Ilmu Kognitif"
   }
 }
