@@ -2,7 +2,8 @@
   "app": {
     "title": "Compatibilidad MBTI y Consejos",
     "description": "Descubre la compatibilidad de tipos MBTI, análisis de personalidad y consejos para citas y el trabajo. ¿Quién es tu pareja perfecta?",
-    "skipLink": "Ir al contenido principal"
+    "skipLink": "Ir al contenido principal",
+    "loading": "Cargando..."
   },
   "header": {
     "title": "Compatibilidad MBTI & Consejos",
@@ -52,7 +53,7 @@
     "stress": "⚡ Respuesta al Estrés"
   },
   "buttons": {
-    "share": "",
+    "share": "📤 Compartir resultados",
     "close": "Cerrar",
     "saveCard": "📸 Guardar Tarjeta Story",
     "cardSaved": "¡Tarjeta guardada!"
@@ -584,5 +585,8 @@
       "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
       "why": "Hoja de ruta práctica para alinear cada tipo de personalidad con su estilo laboral."
     }
+  },
+  "game": {
+    "back": "Inicio de DopaBrain"
   }
 }

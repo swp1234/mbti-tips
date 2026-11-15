@@ -2,7 +2,8 @@
   "app": {
     "title": "Kompatibilitas & Tips MBTI",
     "description": "Temukan kompatibilitas jenis MBTI, analisis kepribadian, dan tips kencan/tempat kerja. Siapa pasangan sempurna Anda?",
-    "skipLink": "Langsung ke konten utama"
+    "skipLink": "Langsung ke konten utama",
+    "loading": "Memuat..."
   },
   "header": {
     "title": "Kompatibilitas MBTI & Tips Hidup",
@@ -52,7 +53,7 @@
     "stress": "⚡ Respons Stres"
   },
   "buttons": {
-    "share": "",
+    "share": "📤 Bagikan Hasil",
     "close": "Tutup",
     "saveCard": "📸 Simpan Kartu Story",
     "cardSaved": "Kartu story tersimpan!"
@@ -584,5 +585,8 @@
       "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
       "why": "Panduan praktis memadukan tiap tipe kepribadian dengan karier dan gaya kolaborasi."
     }
+  },
+  "game": {
+    "back": "Beranda DopaBrain"
   }
 }

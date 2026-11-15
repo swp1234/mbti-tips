@@ -2,7 +2,8 @@
   "app": {
     "title": "MBTI Kompatibilität & Tipps",
     "description": "Entdecke MBTI-Typ-Kompatibilität, Persönlichkeitsanalyse und Dating-/Arbeitsplatz-Tipps. Wer ist deine perfekte Passung?",
-    "skipLink": "Zum Hauptinhalt"
+    "skipLink": "Zum Hauptinhalt",
+    "loading": "Wird geladen..."
   },
   "header": {
     "title": "MBTI Kompatibilität & Lebenstipps",
@@ -52,7 +53,7 @@
     "stress": "⚡ Stressreaktion"
   },
   "buttons": {
-    "share": "",
+    "share": "📤 Ergebnisse teilen",
     "close": "Schließen",
     "saveCard": "📸 Story-Karte speichern",
     "cardSaved": "Story-Karte gespeichert!"
@@ -584,5 +585,8 @@
       "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
       "why": "Praxisnaher Leitfaden für passende Berufsfelder und Zusammenarbeit je Persönlichkeitstyp."
     }
+  },
+  "game": {
+    "back": "DopaBrain Startseite"
   }
 }

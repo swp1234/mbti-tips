@@ -2,7 +2,8 @@
   "app": {
     "title": "MBTI Uyumluluğu & İpuçları",
     "description": "MBTI tip uyumluluğunu, kişilik analizini ve dating/iş yerinde ipuçlarını keşfet. Mükemmel eşin kim?",
-    "skipLink": "Ana içeriğe geç"
+    "skipLink": "Ana içeriğe geç",
+    "loading": "Yükleniyor..."
   },
   "header": {
     "title": "MBTI Uyumluluk & Yaşam İpuçları",
@@ -52,7 +53,7 @@
     "stress": "⚡ Stres Tepkisi"
   },
   "buttons": {
-    "share": "",
+    "share": "📤 Sonuçları Paylaş",
     "close": "Kapat",
     "saveCard": "📸 Hikaye Kartını Kaydet",
     "cardSaved": "Hikaye kartı kaydedildi!"
@@ -584,5 +585,8 @@
       "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
       "why": "Her kişilik tipini tatmin edici iş ve ekip çalışması tarzlarıyla eşleştiren pratik rehber."
     }
+  },
+  "game": {
+    "back": "DopaBrain Ana Sayfa"
   }
 }

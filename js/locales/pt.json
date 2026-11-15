@@ -2,7 +2,8 @@
   "app": {
     "title": "Compatibilidade MBTI e Dicas",
     "description": "Descubra compatibilidade de tipo MBTI, análise de personalidade e dicas de namoro/trabalho. Quem é seu parceiro perfeito?",
-    "skipLink": "Ir para o conteúdo principal"
+    "skipLink": "Ir para o conteúdo principal",
+    "loading": "Carregando..."
   },
   "header": {
     "title": "Compatibilidade MBTI & Dicas",
@@ -52,7 +53,7 @@
     "stress": "⚡ Resposta ao Estresse"
   },
   "buttons": {
-    "share": "",
+    "share": "📤 Compartilhar resultado",
     "close": "Fechar",
     "saveCard": "📸 Salvar Card Story",
     "cardSaved": "Card salvo com sucesso!"
@@ -584,5 +585,8 @@
       "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
       "why": "Guia prático conectando cada um dos 16 perfis a carreiras e colaboração."
     }
+  },
+  "game": {
+    "back": "Início DopaBrain"
   }
 }

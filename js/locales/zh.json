@@ -2,7 +2,8 @@
   "app": {
     "title": "MBTI 兼容性 & 提示",
     "description": "发现MBTI类型兼容性，性格分析和约会/工作场所建议。谁是你的完美匹配？",
-    "skipLink": "跳到主内容"
+    "skipLink": "跳到主内容",
+    "loading": "加载中..."
   },
   "header": {
     "title": "MBTI兼容性 & 生活贴士",
@@ -52,7 +53,7 @@
     "stress": "⚡ 压力反应"
   },
   "buttons": {
-    "share": "",
+    "share": "📤 分享结果",
     "close": "关闭",
     "saveCard": "📸 保存故事卡片",
     "cardSaved": "已保存分享卡片！"
@@ -584,5 +585,8 @@
       "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
       "why": "将16种性格优势与理想职业路径及团队协作方式相匹配的实用指南。"
     }
+  },
+  "game": {
+    "back": "DopaBrain 首页"
   }
 }

@@ -2,7 +2,8 @@
   "app": {
     "title": "MBTI Compatibility & Tips",
     "description": "Discover MBTI type compatibility, personality analysis, and dating/workplace tips. Who is your perfect match?",
-    "skipLink": "Skip to main content"
+    "skipLink": "Skip to main content",
+    "loading": "Loading..."
   },
   "header": {
     "title": "MBTI Compatibility & Life Tips",
@@ -584,5 +585,8 @@
       "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
       "why": "Practical roadmap matching each of the 16 personality types with fulfilling work and collaboration styles."
     }
+  },
+  "game": {
+    "back": "DopaBrain Home"
   }
 }
