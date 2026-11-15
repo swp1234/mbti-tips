@@ -2,8 +2,7 @@
   "app": {
     "title": "MBTI相性とコツ",
     "description": "MBTIタイプ相性、性格分析、恋愛・職場での使えるコツを発見。あなたの完璧な相手は誰？",
-    "skipLink": "メインコンテンツへ",
-    "socialProof": "🔥 100,000+ ユーザー"
+    "skipLink": "メインコンテンツへ"
   },
   "header": {
     "title": "MBTI相性 & ライフティップ",
@@ -45,8 +44,8 @@
     "friend": "友情"
   },
   "premium": {
-    "button": "",
-    "badge": "",
+    "button": "✨ 深層タイプ分析を見る",
+    "badge": "✨ 深層タイプ分析",
     "psychology": "🧠 心理分析",
     "growth": "🌱 成長ポイント",
     "career": "💼 職業適性",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "",
-    "close": "閉じる"
+    "close": "閉じる",
+    "saveCard": "📸 カード画像を保存",
+    "cardSaved": "ストーリーカードを保存しました！"
   },
   "recommendations": {
     "title": "あなたも好きかもしれません"
@@ -568,5 +569,20 @@
     "faq3A": "一切保存されません。すべての相性判定やアドバイス表示はお使いの端末のブラウザ内で100%ローカルに処理されます。",
     "reviewDate": "監修・編集レビュー: 2026年11月",
     "reviewTeam": "DopaBrain 性格心理学＆認知科学研究チーム"
+  },
+  "curated": {
+    "badge": "おすすめガイド",
+    "title": "性格タイプと人間関係の理解を深める本",
+    "disclosure": "厳選セレクション · 追加費用なしで少額の紹介料を受け取る場合があります",
+    "giftsDiffering": {
+      "title": "Gifts Differing（MBTI性格タイプの理解）",
+      "author": "イザベル・ブリッグス・マイヤーズ",
+      "why": "16タイプの心理機能とコミュニケーション傾向をわかりやすく解説した古典的名著。"
+    },
+    "doWhatYouAre": {
+      "title": "Do What You Are（天職と性格タイプ）",
+      "author": "ポール・D・ティーガー 他",
+      "why": "16の性格タイプそれぞれの強みに合う働き方・協働スタイルを具体的に提案。"
+    }
   }
 }

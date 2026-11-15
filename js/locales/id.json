@@ -2,8 +2,7 @@
   "app": {
     "title": "Kompatibilitas & Tips MBTI",
     "description": "Temukan kompatibilitas jenis MBTI, analisis kepribadian, dan tips kencan/tempat kerja. Siapa pasangan sempurna Anda?",
-    "skipLink": "Langsung ke konten utama",
-    "socialProof": "🔥 100.000+ pengguna"
+    "skipLink": "Langsung ke konten utama"
   },
   "header": {
     "title": "Kompatibilitas MBTI & Tips Hidup",
@@ -45,8 +44,8 @@
     "friend": "Persahabatan"
   },
   "premium": {
-    "button": "",
-    "badge": "",
+    "button": "✨ Lihat Analisis Tipe Mendalam",
+    "badge": "✨ Analisis Tipe Mendalam",
     "psychology": "🧠 Psikologi",
     "growth": "🌱 Titik Pertumbuhan",
     "career": "💼 Kesesuaian Karir",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "",
-    "close": "Tutup"
+    "close": "Tutup",
+    "saveCard": "📸 Simpan Kartu Story",
+    "cardSaved": "Kartu story tersimpan!"
   },
   "recommendations": {
     "title": "Anda Mungkin Juga Menyukai"
@@ -568,5 +569,20 @@
     "faq3A": "Sama sekali tidak. Semua analisis berjalan 100% secara lokal di browser Anda.",
     "reviewDate": "Tinjauan Editorial: November 2026",
     "reviewTeam": "DopaBrain Seri Psikologi Kepribadian & Ilmu Kognitif"
+  },
+  "curated": {
+    "badge": "Panduan Pilihan",
+    "title": "Perdalam Wawasan 16 Tipe Kepribadian",
+    "disclosure": "Pilihan terkurasi · Dapat memperoleh komisi kecil tanpa biaya tambahan",
+    "giftsDiffering": {
+      "title": "Gifts Differing: Understanding Personality Type",
+      "author": "Isabel Briggs Myers & Peter B. Myers",
+      "why": "Panduan klasik tentang 16 preferensi kepribadian Jung dalam komunikasi dan hubungan."
+    },
+    "doWhatYouAre": {
+      "title": "Do What You Are",
+      "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
+      "why": "Panduan praktis memadukan tiap tipe kepribadian dengan karier dan gaya kolaborasi."
+    }
   }
 }

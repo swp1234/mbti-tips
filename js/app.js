@@ -7,10 +7,12 @@ class MbtiApp {
     }
 
     init() {
+        window.mbtiApp = this;
         this.setupMbtiGrid();
         this.setupTipTabs();
         this.setupPremiumButton();
         this.setupShareButton();
+        this.setupSaveCardButton();
         this.setupCompare();
         this.registerServiceWorker();
         this.loadSavedType();
@@ -25,7 +27,7 @@ class MbtiApp {
                 if (btn) {
                     document.querySelectorAll('.mbti-btn').forEach(b => b.classList.remove('selected'));
                     btn.classList.add('selected');
-                    this.selectType(saved);
+                    this.selectType(saved, false);
                 }
             }
         } catch (e) {
@@ -42,30 +44,39 @@ class MbtiApp {
                 btn.classList.add('selected');
                 
                 const type = btn.dataset.type;
-                this.selectType(type);
+                this.selectType(type, true);
             });
         });
     }
 
-    selectType(type) {
+    selectType(type, isUserAction = true) {
         this.selectedType = type;
         const data = mbtiData[type];
         if (!data) return;
 
+        if (isUserAction && typeof gtag === 'function') {
+            gtag('event', 'test_start', { event_category: 'mbti_tips', app_name: 'mbti-tips' });
+        }
+
         // localStorage에 저장
         try { localStorage.setItem('mbti_selectedType', type); } catch (e) {}
+
+        const tr = (k, fb) => {
+            const v = window.i18n?.t(k);
+            return (v && v !== k) ? v : fb;
+        };
 
         // basic info update (i18n with English fallback)
         document.getElementById('type-icon').textContent = data.icon;
         document.getElementById('type-name').textContent = data.name;
-        document.getElementById('type-title').textContent = window.i18n?.t(data.titleKey) || data.title;
-        document.getElementById('type-description').textContent = window.i18n?.t(data.descriptionKey) || data.description;
+        document.getElementById('type-title').textContent = tr(data.titleKey, data.title);
+        document.getElementById('type-description').textContent = tr(data.descriptionKey, data.description);
 
         // traits update (i18n with English fallback)
-        document.getElementById('trait-energy').textContent = window.i18n?.t(data.traits.energyKey) || data.traits.energy;
-        document.getElementById('trait-mind').textContent = window.i18n?.t(data.traits.mindKey) || data.traits.mind;
-        document.getElementById('trait-nature').textContent = window.i18n?.t(data.traits.natureKey) || data.traits.nature;
-        document.getElementById('trait-tactic').textContent = window.i18n?.t(data.traits.tacticKey) || data.traits.tactic;
+        document.getElementById('trait-energy').textContent = tr(data.traits.energyKey, data.traits.energy);
+        document.getElementById('trait-mind').textContent = tr(data.traits.mindKey, data.traits.mind);
+        document.getElementById('trait-nature').textContent = tr(data.traits.natureKey, data.traits.nature);
+        document.getElementById('trait-tactic').textContent = tr(data.traits.tacticKey, data.traits.tactic);
 
         // 궁합 정보
         document.getElementById('best-match').textContent = data.compatibility.best.join(', ');
@@ -73,7 +84,8 @@ class MbtiApp {
         document.getElementById('bad-match').textContent = data.compatibility.bad.join(', ');
 
         // 팁 표시
-        this.showTips('love');
+        this.showTips(this.currentTipTab || 'love');
+        this.renderCuratedResources();
 
         // 비교 섹션 업데이트
         this.updateCompareMyType();
@@ -88,7 +100,22 @@ class MbtiApp {
         // 결과 섹션 표시
         const resultSection = document.getElementById('result-section');
         resultSection.classList.remove('hidden');
-        resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (isUserAction) {
+            resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (typeof gtag === 'function') {
+                gtag('event', 'test_complete', {
+                    event_category: 'mbti_tips',
+                    app_name: 'mbti-tips',
+                    result_type: type
+                });
+            }
+        }
+    }
+
+    refreshLocale() {
+        if (this.selectedType && mbtiData[this.selectedType]) {
+            this.selectType(this.selectedType, false);
+        }
     }
 
     setupTipTabs() {
@@ -149,10 +176,131 @@ class MbtiApp {
 
     setupShareButton() {
         document.getElementById('share-btn').addEventListener('click', () => {
-            this.generateResultImage(() => {
-                this.shareResult();
-            });
+            this.shareResult();
         });
+    }
+
+    setupSaveCardButton() {
+        document.getElementById('save-card-btn')?.addEventListener('click', () => {
+            this.generateResultImage();
+        });
+    }
+
+    renderCuratedResources() {
+        const list = document.getElementById('curated-resources-list');
+        if (!list) return;
+        const lang = (window.i18n && window.i18n.currentLang) || 'ko';
+        const domains = {
+            ko: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            en: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            ja: 'https://www.amazon.co.jp/dp/{asin}?tag=dopabrain-20',
+            zh: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            es: 'https://www.amazon.es/dp/{asin}?tag=dopabrain-20',
+            pt: 'https://www.amazon.com.br/dp/{asin}?tag=dopabrain-20',
+            hi: 'https://www.amazon.in/dp/{asin}?tag=dopabrain-20',
+            ru: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            id: 'https://www.amazon.sg/dp/{asin}?tag=dopabrain-20',
+            tr: 'https://www.amazon.com.tr/dp/{asin}?tag=dopabrain-20',
+            de: 'https://www.amazon.de/dp/{asin}?tag=dopabrain-20',
+            fr: 'https://www.amazon.fr/dp/{asin}?tag=dopabrain-20'
+        };
+        const tr = (k, fb) => {
+            const v = window.i18n?.t(k);
+            return (v && v !== k) ? v : fb;
+        };
+        const books = [
+            {
+                key: 'giftsDiffering',
+                asin: '089106074X',
+                icon: '🧬',
+                title: tr('curated.giftsDiffering.title', 'Gifts Differing: Understanding Personality Type'),
+                author: tr('curated.giftsDiffering.author', 'Isabel Briggs Myers & Peter B. Myers'),
+                why: tr('curated.giftsDiffering.why', 'Classic guide to the 16 Jungian personality preferences in communication and relationships.')
+            },
+            {
+                key: 'doWhatYouAre',
+                asin: '0316497142',
+                icon: '💼',
+                title: tr('curated.doWhatYouAre.title', 'Do What You Are'),
+                author: tr('curated.doWhatYouAre.author', 'Paul D. Tieger, Barbara Barron & Kelly Tieger'),
+                why: tr('curated.doWhatYouAre.why', 'Practical roadmap matching each of the 16 personality types with fulfilling work and collaboration styles.')
+            }
+        ];
+
+        list.innerHTML = '';
+        books.forEach(book => {
+            const href = (domains[lang] || domains.en).replace('{asin}', book.asin);
+            const item = document.createElement('a');
+            item.className = 'curated-item';
+            item.href = href;
+            item.target = '_blank';
+            item.rel = 'noopener noreferrer sponsored';
+
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'curated-icon';
+            iconSpan.textContent = book.icon;
+
+            const copyDiv = document.createElement('div');
+            copyDiv.className = 'curated-copy';
+
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'curated-item-title';
+            titleDiv.textContent = book.title;
+
+            const authorDiv = document.createElement('div');
+            authorDiv.className = 'curated-item-author';
+            authorDiv.textContent = book.author;
+
+            const whyDiv = document.createElement('div');
+            whyDiv.className = 'curated-item-why';
+            whyDiv.textContent = book.why;
+
+            copyDiv.appendChild(titleDiv);
+            copyDiv.appendChild(authorDiv);
+            copyDiv.appendChild(whyDiv);
+
+            const arrowSpan = document.createElement('span');
+            arrowSpan.className = 'curated-arrow';
+            arrowSpan.textContent = '→';
+
+            item.appendChild(iconSpan);
+            item.appendChild(copyDiv);
+            item.appendChild(arrowSpan);
+
+            item.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'curated_resource_click', {
+                        app_name: 'mbti-tips',
+                        resource_key: book.key,
+                        content_locale: lang,
+                        cta_surface: 'curated_resources'
+                    });
+                    gtag('event', 'content_cta_click', {
+                        cta_type: 'curated_book',
+                        destination: href,
+                        source: 'mbti_tips'
+                    });
+                }
+            });
+
+            list.appendChild(item);
+        });
+    }
+
+    showToast(message) {
+        let toast = document.getElementById('mbti-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'mbti-toast';
+            toast.className = 'mbti-toast';
+            document.body.appendChild(toast);
+        }
+        toast.textContent = message;
+        toast.style.display = 'block';
+        clearTimeout(this._toastTimer);
+        this._toastTimer = setTimeout(() => {
+            if (toast) toast.style.display = 'none';
+        }, 2400);
     }
 
     generateResultImage(callback) {
@@ -161,104 +309,108 @@ class MbtiApp {
         const data = mbtiData[this.selectedType];
         const canvas = document.getElementById('share-canvas');
         canvas.width = 1080;
-        canvas.height = 1080;
+        canvas.height = 1920;
         const ctx = canvas.getContext('2d');
 
         // Get primary color based on MBTI group
         const colorMap = {
             analyst: '#667eea',
             diplomat: '#00b894',
-            sentinel: '#fdcb6e',
+            sentinel: '#f59e0b',
             explorer: '#e17055'
         };
-        const primaryColor = colorMap[data.group];
+        const primaryColor = colorMap[data.group] || '#1abc9c';
         const secondaryColor = '#0a0a1e';
 
         // Background gradient
-        const grad = ctx.createLinearGradient(0, 0, 0, 1080);
+        const grad = ctx.createLinearGradient(0, 0, 1080, 1920);
         grad.addColorStop(0, primaryColor);
+        grad.addColorStop(0.45, '#131836');
         grad.addColorStop(1, secondaryColor);
         ctx.fillStyle = grad;
-        ctx.fillRect(0, 0, 1080, 1080);
+        ctx.fillRect(0, 0, 1080, 1920);
 
-        // Decorative circles
-        ctx.fillStyle = 'rgba(255,255,255,0.02)';
-        for (let i = 0; i < 25; i++) {
-            const x = Math.random() * 1080;
-            const y = Math.random() * 1080;
-            const r = Math.random() * 50 + 10;
+        // Deterministic decorative aura rings
+        ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+        ctx.lineWidth = 3;
+        [240, 340, 440].forEach(r => {
             ctx.beginPath();
-            ctx.arc(x, y, r, 0, Math.PI * 2);
-            ctx.fill();
-        }
+            ctx.arc(540, 620, r, 0, Math.PI * 2);
+            ctx.stroke();
+        });
+
+        const tr = (k, fb) => {
+            const v = window.i18n?.t(k);
+            return (v && v !== k) ? v : fb;
+        };
 
         // App title
         ctx.textAlign = 'center';
-        ctx.fillStyle = 'rgba(255,255,255,0.5)';
-        ctx.font = '32px sans-serif';
-        ctx.fillText(i18n.t('canvas.myType'), 540, 140);
+        ctx.fillStyle = 'rgba(255,255,255,0.72)';
+        ctx.font = 'bold 34px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillText(tr('canvas.myType', 'My MBTI Type Is'), 540, 220);
 
         // Main emoji (large)
-        ctx.font = '140px serif';
+        ctx.font = '150px sans-serif';
         ctx.fillStyle = '#fff';
-        ctx.fillText(data.icon, 540, 340);
+        ctx.fillText(data.icon, 540, 450);
 
         // MBTI Type
-        ctx.font = 'bold 90px sans-serif';
+        ctx.font = 'bold 124px -apple-system, BlinkMacSystemFont, sans-serif';
         ctx.fillStyle = '#fff';
-        ctx.fillText(data.name, 540, 450);
+        ctx.fillText(data.name, 540, 620);
 
         // Title
-        ctx.font = 'bold 52px sans-serif';
-        ctx.fillStyle = 'rgba(255,255,255,0.9)';
-        ctx.fillText(`"${window.i18n?.t(data.titleKey) || data.title}"`, 540, 530);
+        ctx.font = 'bold 54px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillStyle = 'rgba(255,255,255,0.94)';
+        ctx.fillText(`"${tr(data.titleKey, data.title)}"`, 540, 720);
 
         // Description (wrapped)
-        ctx.font = '24px sans-serif';
-        ctx.fillStyle = 'rgba(255,255,255,0.7)';
-        this.wrapText(ctx, window.i18n?.t(data.descriptionKey) || data.description, 540, 600, 900, 32);
+        ctx.font = '32px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillStyle = 'rgba(255,255,255,0.82)';
+        this.wrapText(ctx, tr(data.descriptionKey, data.description), 540, 840, 860, 48);
 
-        // Best match
-        ctx.font = 'bold 32px sans-serif';
-        ctx.fillStyle = 'rgba(255,255,255,0.8)';
-        ctx.fillText(`💕 ${i18n.t('canvas.bestMatch')}: ${data.compatibility.best.join(', ')}`, 540, 820);
+        // Best match card
+        ctx.fillStyle = 'rgba(255,255,255,0.1)';
+        ctx.beginPath();
+        if (ctx.roundRect) ctx.roundRect(120, 1220, 840, 180, 28);
+        else ctx.rect(120, 1220, 840, 180);
+        ctx.fill();
+
+        ctx.font = 'bold 36px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillStyle = '#ffffff';
+        ctx.fillText(`💕 ${tr('canvas.bestMatch', 'Best Match')}: ${data.compatibility.best.join(', ')}`, 540, 1325);
 
         // CTA
-        ctx.font = '26px sans-serif';
-        ctx.fillStyle = 'rgba(255,255,255,0.6)';
-        ctx.fillText(i18n.t('canvas.cta'), 540, 900);
+        ctx.font = '600 30px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillStyle = 'rgba(255,255,255,0.75)';
+        ctx.fillText(tr('canvas.cta', 'Check Your MBTI Compatibility Too →'), 540, 1660);
 
         // Branding
-        ctx.font = '20px sans-serif';
-        ctx.fillStyle = 'rgba(255,255,255,0.4)';
-        ctx.fillText('🧬 DopaBrain', 540, 1010);
+        ctx.font = 'bold 28px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillStyle = 'rgba(255,255,255,0.62)';
+        ctx.fillText('🧬 dopabrain.com/mbti-tips', 540, 1740);
 
-        // Convert canvas to blob and share
-        canvas.toBlob((blob) => {
-            if (navigator.share && navigator.canShare) {
-                const file = new File([blob], 'mbti-result.png', { type: 'image/png' });
-                navigator.share({
-                    title: (window.i18n?.t('share.nativeTitle') || 'I am {type}!').replace('{type}', data.name),
-                    text: (window.i18n?.t('share.nativeText') || 'My MBTI is {type} ({title})!').replace('{type}', data.name).replace('{title}', window.i18n?.t(data.titleKey) || data.title),
-                    files: [file]
-                }).catch(() => {
-                    // Fallback
-                    const url = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = `MBTI_${data.name}.png`;
-                    a.click();
-                });
-            } else {
-                // Desktop fallback
-                const url = canvas.toDataURL('image/png');
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `MBTI_${data.name}.png`;
-                a.click();
-            }
-            if (callback) callback();
-        });
+        try {
+            const url = canvas.toDataURL('image/png');
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `MBTI_${data.name}.png`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            this.showToast(tr('buttons.cardSaved', 'Story card saved!'));
+        } catch (e) {}
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'save_image', {
+                event_category: 'mbti_tips',
+                app_name: 'mbti-tips',
+                result_type: data.name,
+                save_surface: 'result_story_1080x1920'
+            });
+        }
+        if (callback) callback();
     }
 
     wrapText(ctx, text, x, y, maxWidth, lineHeight) {
@@ -282,7 +434,8 @@ class MbtiApp {
         if (!this.selectedType) return;
 
         const data = mbtiData[this.selectedType];
-        const url = 'https://dopabrain.com/mbti-tips/';
+        const lang = (window.i18n && window.i18n.currentLang) || 'ko';
+        const url = `https://dopabrain.com/mbti-tips/?lang=${encodeURIComponent(lang)}&utm_source=share`;
         const localTitle = window.i18n?.t(data.titleKey) || data.title;
         const text = `🧩 ${i18n.t('share.intro')} ${data.name} (${localTitle})!\n\n` +
             `💕 ${i18n.t('share.best')}: ${data.compatibility.best.join(', ')}\n` +
@@ -291,10 +444,17 @@ class MbtiApp {
 
         if (navigator.share) {
             navigator.share({ title: (window.i18n?.t('share.compareTitle') || 'I am {type}! What\'s your MBTI compatibility?').replace('{type}', data.name), text, url }).catch(() => {});
-        } else {
+        } else if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(text).then(() => {
-                alert(i18n.t('share.copied'));
+                this.showToast(i18n.t('share.copied'));
             }).catch(() => {});
+        }
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                event_category: 'mbti_tips',
+                method: navigator.share ? 'native' : 'copy',
+                content_type: 'mbti_profile'
+            });
         }
     }
 
@@ -374,9 +534,7 @@ class MbtiApp {
 
     registerServiceWorker() {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(() => console.log('Service Worker registered'))
-                .catch(err => console.log('SW registration failed:', err));
+            navigator.serviceWorker.register('sw.js').catch(() => {});
         }
     }
 }

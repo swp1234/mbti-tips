@@ -2,8 +2,7 @@
   "app": {
     "title": "MBTI 궁합 & 팁",
     "description": "MBTI 유형별 궁합, 성격 분석, 연애/직장 팁을 확인하세요. 나와 찰떡궁합인 유형은?",
-    "skipLink": "본문으로 이동",
-    "socialProof": "🔥 100,000+ 사용자 경험"
+    "skipLink": "본문으로 이동"
   },
   "header": {
     "title": "MBTI 궁합 & 라이프 팁",
@@ -45,8 +44,8 @@
     "friend": "친구"
   },
   "premium": {
-    "button": "✨ AI 심층 분석 보기",
-    "badge": "✨ AI 심층 분석",
+    "button": "✨ 심층 유형 분석 보기",
+    "badge": "✨ 심층 유형 분석",
     "psychology": "🧠 심리 분석",
     "growth": "🌱 성장 포인트",
     "career": "💼 추천 직업",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "📤 결과 공유하기",
-    "close": "닫기"
+    "close": "닫기",
+    "saveCard": "📸 스토리 카드 저장",
+    "cardSaved": "스토리 카드가 저장되었습니다!"
   },
   "recommendations": {
     "title": "이것도 해보세요"
@@ -568,5 +569,20 @@
     "faq3A": "전혀 저장되지 않습니다. 모든 유형별 특징 조회, 친구 비교, 맞춤형 팁 분석은 브라우저 내부에서 100% 로컬 연산으로 동작합니다.",
     "reviewDate": "학술 및 편집 검토: 2026년 11월",
     "reviewTeam": "DopaBrain 성격심리학 & 인지과학 연구팀"
+  },
+  "curated": {
+    "badge": "추천 가이드",
+    "title": "성격 유형과 관계 통찰을 깊게 이해하는 도서",
+    "disclosure": "선별 추천 도서 · 추가 비용 없이 소정의 수수료를 받을 수 있습니다",
+    "giftsDiffering": {
+      "title": "성격의 재발견 (Gifts Differing)",
+      "author": "이사벨 브릭스 마이어스 · 피터 마이어스",
+      "why": "16가지 심리 유형이 소통과 관계 역학에서 작동하는 원리를 정리한 고전 입문서."
+    },
+    "doWhatYouAre": {
+      "title": "나는 왜 이 일에 끌리는가 (Do What You Are)",
+      "author": "폴 티거 · 바바라 배런 · 켈리 티거",
+      "why": "각 성격 유형의 강점을 커리어와 협업 방식에 연결해 주는 실용적 안내서."
+    }
   }
 }

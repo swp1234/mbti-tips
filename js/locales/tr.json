@@ -2,8 +2,7 @@
   "app": {
     "title": "MBTI Uyumluluğu & İpuçları",
     "description": "MBTI tip uyumluluğunu, kişilik analizini ve dating/iş yerinde ipuçlarını keşfet. Mükemmel eşin kim?",
-    "skipLink": "Ana içeriğe geç",
-    "socialProof": "🔥 100.000+ kullanıcı"
+    "skipLink": "Ana içeriğe geç"
   },
   "header": {
     "title": "MBTI Uyumluluk & Yaşam İpuçları",
@@ -45,8 +44,8 @@
     "friend": "Arkadaşlık"
   },
   "premium": {
-    "button": "",
-    "badge": "",
+    "button": "✨ Derin Tip Analizini Gör",
+    "badge": "✨ Derin Tip Analizi",
     "psychology": "🧠 Psikoloji",
     "growth": "🌱 Büyüme Noktaları",
     "career": "💼 Kariyer Uygunluğu",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "",
-    "close": "Kapat"
+    "close": "Kapat",
+    "saveCard": "📸 Hikaye Kartını Kaydet",
+    "cardSaved": "Hikaye kartı kaydedildi!"
   },
   "recommendations": {
     "title": "Ayrıca Beğenebilirsin"
@@ -568,5 +569,20 @@
     "faq3A": "Asla. Tüm analizler %100 tarayıcınızın içinde yerel olarak çalışır.",
     "reviewDate": "Editoryal İnceleme: Kasım 2026",
     "reviewTeam": "DopaBrain Kişilik Psikolojisi ve Bilişsel Bilimler Serisi"
+  },
+  "curated": {
+    "badge": "Önerilen Rehberler",
+    "title": "16 Kişilik Tipini ve İlişkileri Derinleştir",
+    "disclosure": "Seçilmiş öneriler · Ek ücret olmadan küçük bir komisyon kazanılabilir",
+    "giftsDiffering": {
+      "title": "Gifts Differing: Kişilik Tiplerini Anlamak",
+      "author": "Isabel Briggs Myers & Peter B. Myers",
+      "why": "İletişim ve ilişkilerde 16 Jungcu kişilik tercihini anlatan temel başvuru eseri."
+    },
+    "doWhatYouAre": {
+      "title": "Do What You Are",
+      "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
+      "why": "Her kişilik tipini tatmin edici iş ve ekip çalışması tarzlarıyla eşleştiren pratik rehber."
+    }
   }
 }

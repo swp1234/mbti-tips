@@ -2,8 +2,7 @@
   "app": {
     "title": "MBTI Compatibility & Tips",
     "description": "Discover MBTI type compatibility, personality analysis, and dating/workplace tips. Who is your perfect match?",
-    "skipLink": "Skip to main content",
-    "socialProof": "🔥 100,000+ Users"
+    "skipLink": "Skip to main content"
   },
   "header": {
     "title": "MBTI Compatibility & Life Tips",
@@ -45,8 +44,8 @@
     "friend": "Friendship"
   },
   "premium": {
-    "button": "✨ Show AI Deep Analysis",
-    "badge": "✨ AI Deep Analysis",
+    "button": "✨ Show Deep Archetype Reading",
+    "badge": "✨ Deep Archetype Reading",
     "psychology": "🧠 Psychology",
     "growth": "🌱 Growth Points",
     "career": "💼 Career Fit",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "📤 Share Results",
-    "close": "Close"
+    "close": "Close",
+    "saveCard": "📸 Save Story Card",
+    "cardSaved": "Story card saved!"
   },
   "recommendations": {
     "title": "You Might Also Like"
@@ -568,5 +569,20 @@
     "faq3A": "Never. All type lookups, compatibility matrices, and communication tips are computed 100% locally in your web browser. No personal selection data is tracked or transmitted to external servers.",
     "reviewDate": "Editorial Review: November 2026",
     "reviewTeam": "DopaBrain Personality Psychology & Cognitive Science Series"
+  },
+  "curated": {
+    "badge": "Recommended Guides",
+    "title": "Deepen Jungian Type & Relationship Insight",
+    "disclosure": "Curated picks · May earn a small commission at no extra cost",
+    "giftsDiffering": {
+      "title": "Gifts Differing: Understanding Personality Type",
+      "author": "Isabel Briggs Myers & Peter B. Myers",
+      "why": "Classic guide to the 16 Jungian personality preferences in communication and relationships."
+    },
+    "doWhatYouAre": {
+      "title": "Do What You Are",
+      "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
+      "why": "Practical roadmap matching each of the 16 personality types with fulfilling work and collaboration styles."
+    }
   }
 }

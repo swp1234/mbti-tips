@@ -2,8 +2,7 @@
   "app": {
     "title": "MBTI 兼容性 & 提示",
     "description": "发现MBTI类型兼容性，性格分析和约会/工作场所建议。谁是你的完美匹配？",
-    "skipLink": "跳到主内容",
-    "socialProof": "🔥 100,000+ 用户"
+    "skipLink": "跳到主内容"
   },
   "header": {
     "title": "MBTI兼容性 & 生活贴士",
@@ -45,8 +44,8 @@
     "friend": "友谊"
   },
   "premium": {
-    "button": "",
-    "badge": "",
+    "button": "✨ 查看深度性格解析",
+    "badge": "✨ 深度性格解析",
     "psychology": "🧠 心理分析",
     "growth": "🌱 成长点",
     "career": "💼 职业推荐",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "",
-    "close": "关闭"
+    "close": "关闭",
+    "saveCard": "📸 保存故事卡片",
+    "cardSaved": "已保存分享卡片！"
   },
   "recommendations": {
     "title": "您可能也会喜欢"
@@ -568,5 +569,20 @@
     "faq3A": "绝不。所有类型检索、相性分析和互动提示均在浏览器本地100%执行，不存储或传输任何个人数据。",
     "reviewDate": "学术与编辑审阅：2026年11月",
     "reviewTeam": "DopaBrain 人格心理学与认知科学研究组"
+  },
+  "curated": {
+    "badge": "精选阅读指南",
+    "title": "深化荣格人格类型与关系洞察的必读佳作",
+    "disclosure": "精选推荐 · 在不增加您费用的前提下可能获得微薄佣金",
+    "giftsDiffering": {
+      "title": "天资差异 (Gifts Differing)",
+      "author": "Isabel Briggs Myers & Peter B. Myers",
+      "why": "阐释16种荣格人格偏好如何影响日常沟通与亲密关系的经典之作。"
+    },
+    "doWhatYouAre": {
+      "title": "做你自己 (Do What You Are)",
+      "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
+      "why": "将16种性格优势与理想职业路径及团队协作方式相匹配的实用指南。"
+    }
   }
 }

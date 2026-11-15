@@ -2,8 +2,7 @@
   "app": {
     "title": "MBTI Kompatibilität & Tipps",
     "description": "Entdecke MBTI-Typ-Kompatibilität, Persönlichkeitsanalyse und Dating-/Arbeitsplatz-Tipps. Wer ist deine perfekte Passung?",
-    "skipLink": "Zum Hauptinhalt",
-    "socialProof": "🔥 100.000+ Nutzer"
+    "skipLink": "Zum Hauptinhalt"
   },
   "header": {
     "title": "MBTI Kompatibilität & Lebenstipps",
@@ -45,8 +44,8 @@
     "friend": "Freundschaft"
   },
   "premium": {
-    "button": "",
-    "badge": "",
+    "button": "✨ Tiefe Typ-Deutung ansehen",
+    "badge": "✨ Tiefe Typ-Deutung",
     "psychology": "🧠 Psychologie",
     "growth": "🌱 Wachstumspunkte",
     "career": "💼 Berufliche Eignung",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "",
-    "close": "Schließen"
+    "close": "Schließen",
+    "saveCard": "📸 Story-Karte speichern",
+    "cardSaved": "Story-Karte gespeichert!"
   },
   "recommendations": {
     "title": "Dir könnten auch diese gefallen"
@@ -568,5 +569,20 @@
     "faq3A": "Niemals. Sämtliche Abfragen und Vergleiche laufen zu 100 % lokal in Ihrem Browser.",
     "reviewDate": "Redaktionelle Prüfung: November 2026",
     "reviewTeam": "DopaBrain Persönlichkeitspsychologie & Kognitionswissenschaft"
+  },
+  "curated": {
+    "badge": "Empfohlene Lektüre",
+    "title": "16 Persönlichkeitstypen & Beziehungen vertiefen",
+    "disclosure": "Kuratierte Auswahl · Kleine Provision ohne Mehrkosten möglich",
+    "giftsDiffering": {
+      "title": "Gifts Differing: Persönlichkeitstypen verstehen",
+      "author": "Isabel Briggs Myers & Peter B. Myers",
+      "why": "Klassiker über die 16 Jungschen Präferenzen in Kommunikation und Partnerschaft."
+    },
+    "doWhatYouAre": {
+      "title": "Do What You Are",
+      "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
+      "why": "Praxisnaher Leitfaden für passende Berufsfelder und Zusammenarbeit je Persönlichkeitstyp."
+    }
   }
 }

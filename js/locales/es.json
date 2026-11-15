@@ -2,8 +2,7 @@
   "app": {
     "title": "Compatibilidad MBTI y Consejos",
     "description": "Descubre la compatibilidad de tipos MBTI, análisis de personalidad y consejos para citas y el trabajo. ¿Quién es tu pareja perfecta?",
-    "skipLink": "Ir al contenido principal",
-    "socialProof": "🔥 100.000+ usuarios"
+    "skipLink": "Ir al contenido principal"
   },
   "header": {
     "title": "Compatibilidad MBTI & Consejos",
@@ -45,8 +44,8 @@
     "friend": "Amistad"
   },
   "premium": {
-    "button": "",
-    "badge": "",
+    "button": "✨ Ver Lectura Profunda",
+    "badge": "✨ Lectura Profunda",
     "psychology": "🧠 Psicología",
     "growth": "🌱 Puntos de Crecimiento",
     "career": "💼 Ajuste de Carrera",
@@ -54,7 +53,9 @@
   },
   "buttons": {
     "share": "",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "saveCard": "📸 Guardar Tarjeta Story",
+    "cardSaved": "¡Tarjeta guardada!"
   },
   "recommendations": {
     "title": "También Te Puede Gustar"
@@ -568,5 +569,20 @@
     "faq3A": "Nunca. Toda la información y comparaciones se procesan de forma 100% local en tu navegador.",
     "reviewDate": "Revisión Editorial: Noviembre 2026",
     "reviewTeam": "DopaBrain Serie de Psicología de la Personalidad y Ciencias Cognitivas"
+  },
+  "curated": {
+    "badge": "Guías Recomendadas",
+    "title": "Profundiza en los 16 Tipos y Relaciones",
+    "disclosure": "Selección curada · Puede generar una pequeña comisión sin coste adicional",
+    "giftsDiffering": {
+      "title": "Gifts Differing: Comprender la Personalidad",
+      "author": "Isabel Briggs Myers & Peter B. Myers",
+      "why": "Guía clásica sobre cómo las 16 preferencias junguianas moldean la comunicación y los vínculos."
+    },
+    "doWhatYouAre": {
+      "title": "Do What You Are",
+      "author": "Paul D. Tieger, Barbara Barron & Kelly Tieger",
+      "why": "Hoja de ruta práctica para alinear cada tipo de personalidad con su estilo laboral."
+    }
   }
 }

@@ -6,7 +6,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="description" content="Free MBTI compatibility guide for all 16 types! Get love, career & friendship tips. Find your best match and explore personality insights now!">
-    <meta name="dateModified" content="2026-11-07">
+    <meta name="dateModified" content="2026-11-15">
     <meta name="theme-color" content="#1abc9c">
     <meta name="keywords" content="MBTI, 궁합, 성격, 연애, 직장, 심리테스트, INFP, ENFJ, INTJ, 16유형, 성격 유형">
 
@@ -59,7 +59,7 @@
         "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
-        "inLanguage": ["ko", "en", "zh", "hi", "ru"],
+        "inLanguage": ["ko", "en", "ja", "zh", "hi", "ru", "es", "pt", "id", "tr", "de", "fr"],
         "author": {
             "@type": "Organization",
             "name": "DopaBrain",
@@ -320,35 +320,45 @@
                     </div>
                 </div>
 
-                <!-- 프리미엄 심층 분석 버튼 -->
+                <!-- Deep Archetype Reading Button -->
                 <div class="premium-section">
                     <button class="premium-btn" id="deep-analysis-btn">
                         <span class="premium-icon">✨</span>
-                        <span data-i18n="premium.button">AI 심층 분석 보기</span>
-                        <span class="ad-tag" data-i18n="ad.label">AD</span>
+                        <span data-i18n="premium.button">심층 유형 분석 보기</span>
                     </button>
                 </div>
 
-                <!-- 프리미엄 결과 (광고 후 표시) -->
+                <!-- Deep Reading Result -->
                 <div class="result-card premium-result hidden" id="premium-result">
-                    <div class="premium-badge" data-i18n="premium.badge">✨ AI 심층 분석</div>
+                    <div class="premium-badge" data-i18n="premium.badge">✨ 심층 유형 분석</div>
                     <div id="premium-content"></div>
                 </div>
 
-                <!-- 공유 버튼 -->
-                <button class="share-btn" id="share-btn" data-i18n="buttons.share">📤 결과 공유하기</button>
+                <!-- Action Buttons -->
+                <div class="action-buttons-row">
+                    <button class="share-btn" id="share-btn" data-i18n="buttons.share">📤 결과 공유하기</button>
+                    <button class="share-btn save-card-btn" id="save-card-btn" data-i18n="buttons.saveCard">📸 스토리 카드 저장</button>
+                </div>
 
-                <!-- 크로스 프로모션 섹션 (확대: 6개 앱 포함) -->
+                <!-- Curated Resources Card -->
+                <div class="curated-resources-card" id="curated-resources-card">
+                    <div class="curated-header">
+                        <span class="curated-badge" data-i18n="curated.badge">Recommended Guides</span>
+                        <h3 class="curated-title" data-i18n="curated.title">Deepen Jungian Type &amp; Relationship Insight</h3>
+                    </div>
+                    <div class="curated-list" id="curated-resources-list"></div>
+                    <p class="curated-disclosure" data-i18n="curated.disclosure">Curated picks · May earn a small commission at no extra cost</p>
+                </div>
                 
             </section>
         </main>
 
         <!-- Hidden canvas for sharing images -->
-        <canvas id="share-canvas" width="1080" height="1080" style="display:none"></canvas>
+        <canvas id="share-canvas" width="1080" height="1920" style="display:none"></canvas>
 
     <!-- About Section -->
     <section class="about-section collapsible-section" id="about-section">
-      <details>
+      <details open>
         <summary data-i18n="about.toggle" style="min-height:48px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;">About the 16 Personalities Compatibility & Cognitive Functions Guide</summary>
         <div class="about-content">
           <h2 data-i18n="about.heading1" style="font-size:16px;color:var(--primary);margin:16px 0 8px;">Carl Jung's Cognitive Dimensions & Analytical Psychology</h2>
@@ -396,16 +406,29 @@
         
   function preserveLanguageLinks() {
     try {
-      var params = new URLSearchParams(window.location.search);
-      var lang = params.get('lang');
-      if (!lang) return;
+      var lang = (window.i18n && window.i18n.currentLang) || new URLSearchParams(window.location.search).get('lang') || 'ko';
       document.querySelectorAll('a[href^="/"]').forEach(function(a) {
+        if (a.closest('#curated-resources-card')) return;
         var href = a.getAttribute('href');
-        if (!href) return;
+        if (!href || href.startsWith('/portal/')) return;
         var url = new URL(href, window.location.origin);
-        if (!url.searchParams.has('lang')) {
-          url.searchParams.set('lang', lang);
-          a.setAttribute('href', url.pathname + url.search + url.hash);
+        url.searchParams.set('lang', lang);
+        if (a.classList.contains('related-link') || a.closest('.related-links-grid')) {
+          url.searchParams.set('source', 'mbti_tips_result');
+        }
+        a.setAttribute('href', url.pathname + url.search + url.hash);
+        if (!a.__ctaBound && (a.classList.contains('related-link') || a.closest('.related-links-grid'))) {
+          a.__ctaBound = true;
+          a.addEventListener('click', function() {
+            if (typeof gtag === 'function') {
+              gtag('event', 'content_cta_click', {
+                cta_surface: 'related_tools',
+                destination: a.getAttribute('href'),
+                source: 'mbti_tips_result',
+                lang: (window.i18n && window.i18n.currentLang) || lang
+              });
+            }
+          });
         }
       });
     } catch (e) {}
@@ -413,9 +436,14 @@
 
         (async function initI18n() {
             try {
-                await i18n.loadTranslations(i18n.getCurrentLanguage());
+                const lang = i18n.getCurrentLanguage();
+                document.documentElement.lang = lang;
+                await i18n.loadTranslations(lang);
                 i18n.updateUI();
                 preserveLanguageLinks();
+                if (window.mbtiApp && typeof window.mbtiApp.refreshLocale === 'function') {
+                    window.mbtiApp.refreshLocale();
+                }
             } catch (e) {
                 console.warn('i18n init failed:', e);
             }
@@ -431,6 +459,9 @@
                 opt.addEventListener('click', async () => {
                     await i18n.setLanguage(opt.getAttribute('data-lang'));
                     preserveLanguageLinks();
+                    if (window.mbtiApp && typeof window.mbtiApp.refreshLocale === 'function') {
+                        window.mbtiApp.refreshLocale();
+                    }
                     langOptions.forEach(o => o.classList.remove('active'));
                     opt.classList.add('active');
                     langMenu.classList.add('hidden');
@@ -439,13 +470,13 @@
         })();
     </script>
 
-  <div style="max-width:420px;margin:20px auto;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
+  <div class="related-links-box" style="max-width:420px;margin:20px auto;padding:20px 16px 0;border-top:1px solid rgba(255,255,255,0.1);box-sizing:border-box;">
     <h3 data-i18n="related.title" style="font-size:16px;color:#a0a0b8;margin-bottom:12px;text-align:center;">More to Explore</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-      <a href="/attachment-style/" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🔗</span><span data-i18n="related.attachmentStyle" style="font-size:12px;font-weight:600;color:#a0a0b8;">Attachment Style</span></a>
-      <a href="/work-style/" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💼</span><span data-i18n="related.workStyle" style="font-size:12px;font-weight:600;color:#a0a0b8;">Work Style</span></a>
-      <a href="/animal-personality/" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🐾</span><span data-i18n="related.animalPersonality" style="font-size:12px;font-weight:600;color:#a0a0b8;">Animal Personality</span></a>
-      <a href="/love-language/" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💕</span><span data-i18n="related.loveLanguage" style="font-size:12px;font-weight:600;color:#a0a0b8;">Love Language</span></a>
+    <div class="related-links-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;">
+      <a href="/attachment-style/" class="related-link" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🔗</span><span data-i18n="related.attachmentStyle" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Attachment Style</span></a>
+      <a href="/work-style/" class="related-link" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💼</span><span data-i18n="related.workStyle" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Work Style</span></a>
+      <a href="/animal-personality/" class="related-link" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🐾</span><span data-i18n="related.animalPersonality" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Animal Personality</span></a>
+      <a href="/love-language/" class="related-link" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💕</span><span data-i18n="related.loveLanguage" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Love Language</span></a>
     </div>
   </div>
 
